@@ -1,0 +1,126 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project hsoc_test
+# Compile of HSOC.sv was successful.
+vsim -gui work.HSOC -L iCE40UP
+# vsim -gui work.HSOC -L iCE40UP 
+# Start time: 18:30:22 on Sep 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.HSOC(fast)
+# Loading iCE40UP.HSOSC(fast)
+add wave -position insertpoint  \
+sim:/HSOC/clk
+run 10
+run 100
+run 1000
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/HSOC/int_osc
+run 1000000
+run 1000000000
+quit -sim
+# End time: 18:52:02 on Sep 13,2025, Elapsed time: 0:21:40
+# Errors: 0, Warnings: 5
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv failed with 3 errors.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 1 failed with 3 errors.
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv failed with 1 errors.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv failed with 1 errors.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv failed with 1 errors.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 0 failed with no errors.
+# Load canceled
+# Load canceled
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP work.clk_tb
+# vsim -gui -L iCE40UP work.clk_tb 
+# Start time: 18:56:21 on Sep 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.clk_tb(fast)
+quit -sim
+# End time: 18:56:45 on Sep 13,2025, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 8
+vsim -gui -L iCE40UP work.clk_tb -voptargs=+acc
+# vsim -gui -L iCE40UP work.clk_tb -voptargs="+acc" 
+# Start time: 18:56:56 on Sep 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.clk_tb(fast)
+# Loading work.clock_divider(fast)
+add wave -position insertpoint  \
+sim:/clk_tb/clk \
+sim:/clk_tb/reset \
+sim:/clk_tb/slow_clk
+run 1000
+run 1000
+run 1000000
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.clk_tb(fast)
+# Loading work.clock_divider(fast)
+run 10000
+# Compile of HSOC.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of clock_divider.sv was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.clk_tb(fast)
+# Loading work.clock_divider(fast)
+run 10000
+add wave -position insertpoint  \
+sim:/clk_tb/dut/counter
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.clk_tb(fast)
+# Loading work.clock_divider(fast)
+run 100
+run 100
+run 500
+run 500
