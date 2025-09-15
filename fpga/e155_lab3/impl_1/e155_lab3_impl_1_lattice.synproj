@@ -45,6 +45,7 @@
 -sver "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv"
 "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv"
 "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
+"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv"
 
 
 -path "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3"

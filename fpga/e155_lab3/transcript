@@ -13,114 +13,271 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Loading project hsoc_test
-# Compile of HSOC.sv was successful.
-vsim -gui work.HSOC -L iCE40UP
-# vsim -gui work.HSOC -L iCE40UP 
-# Start time: 18:30:22 on Sep 13,2025
+# Loading project row_test
+# Compile of row_sweep_tb.sv failed with 2 errors.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.row_sweep_tb -L iCE40UP -voptargs=+acc
+# vsim -gui work.row_sweep_tb -L iCE40UP -voptargs="+acc" 
+# Start time: 14:36:27 on Sep 14,2025
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.HSOC(fast)
-# Loading iCE40UP.HSOSC(fast)
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
 add wave -position insertpoint  \
-sim:/HSOC/clk
-run 10
-run 100
-run 1000
+sim:/row_sweep_tb/clk \
+sim:/row_sweep_tb/reset \
+sim:/row_sweep_tb/vectornum \
+sim:/row_sweep_tb/errors \
+sim:/row_sweep_tb/testvectors \
+sim:/row_sweep_tb/stop \
+sim:/row_sweep_tb/rows \
+sim:/row_sweep_tb/rows_expected
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
+#           Attempting to use alternate WLF file "./wlft07cdec".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft07cdec
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "e155_lab3_row_sweep.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# ** Warning: (vsim-7) Failed to open readmem file "e155_lab3_row_sweep.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 9 of file "e155_lab3_row_sweep.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
 # Causality operation skipped due to absence of debug database file
-add wave -position insertpoint  \
-sim:/HSOC/int_osc
-run 1000000
-run 1000000000
-quit -sim
-# End time: 18:52:02 on Sep 13,2025, Elapsed time: 0:21:40
-# Errors: 0, Warnings: 5
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv failed with 3 errors.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 1 failed with 3 errors.
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv failed with 1 errors.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv failed with 1 errors.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv failed with 1 errors.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv was successful.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 0 failed with no errors.
-# Load canceled
-# Load canceled
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv was successful.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui -L iCE40UP work.clk_tb
-# vsim -gui -L iCE40UP work.clk_tb 
-# Start time: 18:56:21 on Sep 13,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading sv_std.std
-# Loading work.clk_tb(fast)
-quit -sim
-# End time: 18:56:45 on Sep 13,2025, Elapsed time: 0:00:24
-# Errors: 0, Warnings: 8
-vsim -gui -L iCE40UP work.clk_tb -voptargs=+acc
-# vsim -gui -L iCE40UP work.clk_tb -voptargs="+acc" 
-# Start time: 18:56:56 on Sep 13,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.clk_tb(fast)
-# Loading work.clock_divider(fast)
-add wave -position insertpoint  \
-sim:/clk_tb/clk \
-sim:/clk_tb/reset \
-sim:/clk_tb/slow_clk
-run 1000
-run 1000
-run 1000000
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv was successful.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 0 failed with no errors.
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 13 of file "e155_lab3_row_sweep.tv". Expected 16, found 13.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.clk_tb(fast)
-# Loading work.clock_divider(fast)
-run 10000
-# Compile of HSOC.sv was successful.
-# Compile of clk_tb.sv was successful.
-# Compile of clock_divider.sv was successful.
-# 3 compiles, 0 failed with no errors.
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 0
+#  outputs = 0001 (0010 expected)
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.clk_tb(fast)
-# Loading work.clock_divider(fast)
-run 10000
-add wave -position insertpoint  \
-sim:/clk_tb/dut/counter
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 0
+#  outputs = 0001 (0010 expected)
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.clk_tb(fast)
-# Loading work.clock_divider(fast)
-run 100
-run 100
-run 500
-run 500
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(41)
+#    Time: 27 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 41
+# Compile of row_sweep_tb.sv failed with 1 errors.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of row_sweep_tb.sv failed with 1 errors.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+run 1000
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 0
+#  outputs = 1000 (0001 expected)
+# Error: inputs = 0
+#  outputs = 0100 (0010 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0100 expected)
+# Error: inputs = 0
+#  outputs = 0001 (1000 expected)
+# Error: inputs = 0
+#  outputs = 1000 (0001 expected)
+# Error: inputs = 0
+#  outputs = 0100 (0010 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0100 expected)
+# Error: inputs = 0
+#  outputs = 0001 (1000 expected)
+# Error: inputs = 1
+#  outputs = 1000 (0001 expected)
+# Error: inputs = 1
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 1
+#  outputs = 1000 (0001 expected)
+# Error: inputs = 1
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 0
+#  outputs = 1000 (0010 expected)
+#         13 tests completed with         13 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
+#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 1
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 1
+#  outputs = 0100 (0010 expected)
+# Error: inputs = 1
+#  outputs = 1000 (0100 expected)
+# Error: inputs = 1
+#  outputs = 0001 (1000 expected)
+# Error: inputs = 1
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 1
+#  outputs = 0100 (0010 expected)
+# Error: inputs = 1
+#  outputs = 1000 (0100 expected)
+# Error: inputs = 1
+#  outputs = 0001 (1000 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0001 expected)
+# Error: inputs = 0
+#  outputs = 0010 (0001 expected)
+#         13 tests completed with         12 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
+#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 1
+#  outputs = 0001 (0010 expected)
+#         13 tests completed with          1 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
+#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+# Error: inputs = 1
+#  outputs = 0001 (0010 expected)
+# Error: inputs = 1
+#  outputs = 0010 (0100 expected)
+#         14 tests completed with          2 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
+#    Time: 165 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
+# Compile of row_sweep_tb.sv was successful.
+# Compile of row_sweep.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.row_sweep_tb(fast)
+# Loading work.row_sweep(fast)
+run -all
+#         21 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
+#    Time: 235 ns  Iteration: 1  Instance: /row_sweep_tb
+# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45

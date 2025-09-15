@@ -1,46 +1,15 @@
-<HTML>
-<HEAD>
-<TITLE>Synthesis Report</TITLE>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
-<style type="text/css">
-#toc {
-  position: fixed;
-  right: 2px;
-  top: 2px;
-  padding: 2px 5px 2px 5px;
-  background-color:rgba(210,210,210,0.1);
-  border-style: solid;
-  border-color: rgba(192,192,192,0.8);
-  border-width:1px;
-}
-#toc_list {
-  display: none;
-  }
-</style>
+synthesis:  version Radiant Software (64-bit) 2024.2.0.3.0
 
-<script type="text/javascript">
-<!--
-function showTocList() {
-var a = document.getElementById("toc_list");
-a.style.display = "block";
-}
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Sep 14 17:03:21 2025
 
-function hideTocList() {
-var a = document.getElementById("toc_list");
-if (a)
-    a.style.display = "none";
-}
 
-//-->
-</script>
+Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
 
-</HEAD>
-
-<BODY>
-
-<DIV id="content" onclick="hideTocList()"><PRE>
-<A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
 INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
 
 The -top option is not used.
@@ -205,111 +174,3 @@ Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/so
 Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv. VERI-1482
 Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv. VERI-1482
 ERROR <35901137> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(16): syntax error near =. VERI-1137
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></DIV>
-
-<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
-<script type="text/javascript">
-<!--
-var scrollStep = 0;
-function scrollToTop(){
-  var funScroll = function() {
-    var top = document.body.scrollTop;
-    if (top == 0) {
-      scrollStep = 0;
-      return;
-    }
-    if (scrollStep == 0)
-      scrollStep = top/20 + 1;
-    top -= scrollStep;
-    if (top < 0)
-      top = 0;
-    document.body.scrollTop = top;
-    requestAnimationFrame(funScroll);
-  };
-  funScroll();
-}
-
-window.addEventListener('scroll', function(e) {
-  var backToTop = document.getElementById('back_to_top')
-  if (document.body.scrollTop > 0) {
-    backToTop.style.display = 'block';
-  } else {	backToTop.style.display = 'none'  }});
-
-//-->
-</script>
-
-<style type="text/css">
-#back_to_top {
-  bottom:20px; right:20px;
-  width:30px; height:30px;
-  font-size: 20px;
-  padding: 2px 5px 2px 5px;
-  position:fixed;
-  background-color:rgba(210,210,210,0.1);
-  border-style: solid;
-  border-color: rgba(192,192,192,0.8);
-  border-width:1px;
-  display:none;
-  -webkit-transform: rotate(90deg);
-  -webkit-transform-origin:50% 50%;
-}
-#back_to_top:focus {
-  outline-width:0px;
-}
-</style>
-
-</BODY>
-

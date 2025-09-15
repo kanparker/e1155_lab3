@@ -325,105 +325,12 @@
             <Navigation>17</Navigation>
         </Message>
         <Message>
-            <ID>35921014</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
-            <Dynamic>components</Dynamic>
-            <Navigation>c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd</Navigation>
-            <Navigation>4</Navigation>
-        </Message>
-        <Message>
-            <ID>35001200</ID>
-            <Severity>16</Severity>
-            <Dynamic>row_sweep</Dynamic>
-        </Message>
-        <Message>
-            <ID>35921504</ID>
-            <Severity>1</Severity>
-            <Dynamic></Dynamic>
-            <Dynamic>C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1</Dynamic>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(1): </Dynamic>
-            <Dynamic>row_sweep</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901084</ID>
-            <Severity>128</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(11): </Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>11</Navigation>
-        </Message>
-        <Message>
-            <ID>35901221</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
-            <Dynamic>current_state</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>15</Navigation>
-        </Message>
-        <Message>
-            <ID>35901221</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
-            <Dynamic>stop</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>15</Navigation>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>256</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>256</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
+            <ID>35901137</ID>
+            <Severity>4096</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(16): </Dynamic>
+            <Dynamic>=</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>16</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

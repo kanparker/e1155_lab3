@@ -9,10 +9,10 @@ module row_sweep(
 
 	
 	always_ff@(posedge clk, reset)
-		if(reset) current_state = 2'b00;
+		if(reset) current_state = 2'b11;
 		else
 			begin
-				current_state = current_state + ~stop;
+				current_state = current_state + stop;
 			end
 	
 	always_comb
