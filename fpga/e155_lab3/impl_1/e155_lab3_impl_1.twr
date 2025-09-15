@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2024.2.0.3.0
 
-Sun Sep 14 22:02:24 2025
+Mon Sep 15 16:41:35 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -89,20 +89,21 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 9 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
-cin[1]                                  |                     input
-cin[3]                                  |                     input
 cin[0]                                  |                     input
+cin[1]                                  |                     input
 cin[2]                                  |                     input
-clamps[3]                               |                    output
+cin[3]                                  |                     input
 stop                                    |                    output
-clamps[1]                               |                    output
-clamps[2]                               |                    output
 cout[0]                                 |                    output
+cout[1]                                 |                    output
+cout[2]                                 |                    output
+cout[3]                                 |                    output
+clamps[0]                               |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         9
+Number of I/O ports without constraint  |                        13
                                         |                          
 -------------------------------------------------------------------
 

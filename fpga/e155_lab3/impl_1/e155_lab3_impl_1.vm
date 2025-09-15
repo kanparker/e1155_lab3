@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2024.2.0.3.0
-// Netlist written on Sun Sep 14 22:02:10 2025
+// Netlist written on Mon Sep 15 16:41:22 2025
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv"
@@ -65,41 +65,62 @@
 // Verilog Description of module stop_clamp
 //
 
-module stop_clamp (input [3:0]cin, output stop, output [3:0]clamps, output [3:0]cout);
+module stop_clamp (input [3:0]cin, output [3:0]clamps, output [3:0]cout, 
+            output stop);
     
-    wire GND_net;
-    wire VCC_net;
     wire cin_c_3;
     wire cin_c_2;
     wire cin_c_1;
     wire cin_c_0;
+    wire clamps_c_3;
+    wire clamps_c_2;
+    wire clamps_c_1;
+    wire clamps_c_0;
+    wire cout_c_2;
+    wire cout_c_1;
+    wire cout_c_0;
     wire stop_c;
-    wire clamps_0;
-    wire clamps_0_N_5;
+    
+    wire GND_net, VCC_net;
     
     VHI i2 (.Z(VCC_net));
-    (* lut_function="(A+(B+(C+(D))))", lineinfo="@4(17[4],17[11])" *) LUT4 i1_2_lut_4_lut (.A(cin_c_3), 
-            .B(cin_c_2), .C(cin_c_1), .D(cin_c_0), .Z(stop_c));
-    defparam i1_2_lut_4_lut.INIT = "0xfffe";
-    (* lineinfo="@4(4[20],4[26])" *) OB \clamps_pad[3]  (.I(clamps_0), .O(clamps[3]));
-    (* lineinfo="@4(5[21],5[25])" *) OB \cout_pad[3]  (.I(GND_net), .O(cout[3]));
-    (* lineinfo="@4(5[21],5[25])" *) OB \cout_pad[2]  (.I(GND_net), .O(cout[2]));
-    (* lineinfo="@4(3[15],3[19])" *) OB stop_pad (.I(stop_c), .O(stop));
-    VLO i1 (.Z(GND_net));
-    (* lineinfo="@4(2[19],2[22])" *) IB \cin_pad[1]  (.I(cin[1]), .O(cin_c_1));
-    (* lineinfo="@4(4[20],4[26])" *) OB \clamps_pad[0]  (.I(VCC_net), .O(clamps[0]));
-    (* lineinfo="@4(5[21],5[25])" *) OB \cout_pad[1]  (.I(GND_net), .O(cout[1]));
-    (* lineinfo="@4(2[19],2[22])" *) IB \cin_pad[3]  (.I(cin[3]), .O(cin_c_3));
-    (* lineinfo="@4(4[20],4[26])" *) OB \clamps_pad[1]  (.I(clamps_0), .O(clamps[1]));
-    (* lut_function="(A+(B+(C+!(D))))", lineinfo="@4(17[4],17[11])" *) LUT4 i1_2_lut_4_lut_adj_1 (.A(cin_c_3), 
-            .B(cin_c_2), .C(cin_c_1), .D(cin_c_0), .Z(clamps_0));
-    defparam i1_2_lut_4_lut_adj_1.INIT = "0xfeff";
-    (* lineinfo="@4(4[20],4[26])" *) OB \clamps_pad[2]  (.I(clamps_0), .O(clamps[2]));
-    (* lineinfo="@4(2[19],2[22])" *) IB \cin_pad[0]  (.I(cin[0]), .O(cin_c_0));
-    (* lineinfo="@4(2[19],2[22])" *) IB \cin_pad[2]  (.I(cin[2]), .O(cin_c_2));
-    (* lineinfo="@4(5[21],5[25])" *) OB \cout_pad[0]  (.I(clamps_0_N_5), .O(cout[0]));
-    (* lut_function="(!(A))", lineinfo="@4(17[4],17[11])" *) LUT4 clamps_0_I_0_1_lut (.A(clamps_0), 
-            .Z(clamps_0_N_5));
-    defparam clamps_0_I_0_1_lut.INIT = "0x5555";
+    (* lut_function="(!(A+(B+(C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i112_2_lut_3_lut (.A(cin_c_2), 
+            .B(cin_c_3), .C(cin_c_1), .Z(clamps_c_0));
+    defparam i112_2_lut_3_lut.INIT = "0x0101";
+    (* lut_function="(!((B)+!A))", lineinfo="@4(32[4],97[11])" *) LUT4 i88_2_lut (.A(cin_c_2), 
+            .B(cin_c_3), .Z(cout_c_2));
+    defparam i88_2_lut.INIT = "0x2222";
+    (* lut_function="(A (C)+!A (B (C)+!B (C+!(D))))", lineinfo="@4(32[4],97[11])" *) LUT4 i81_3_lut_4_lut (.A(cin_c_1), 
+            .B(cin_c_2), .C(cin_c_3), .D(cin_c_0), .Z(clamps_c_3));
+    defparam i81_3_lut_4_lut.INIT = "0xf0f1";
+    VLO i113 (.Z(GND_net));
+    (* lut_function="(!(A+(B+!(C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i92_2_lut_3_lut (.A(cin_c_2), 
+            .B(cin_c_3), .C(cin_c_1), .Z(cout_c_1));
+    defparam i92_2_lut_3_lut.INIT = "0x1010";
+    (* lut_function="(!(A+(B+((D)+!C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i91_2_lut_3_lut_4_lut (.A(cin_c_1), 
+            .B(cin_c_2), .C(cin_c_0), .D(cin_c_3), .Z(cout_c_0));
+    defparam i91_2_lut_3_lut_4_lut.INIT = "0x0010";
+    (* lut_function="(!(A (B+!(C))+!A (B+!(C+!(D)))))", lineinfo="@4(32[4],97[11])" *) LUT4 i83_4_lut (.A(cin_c_0), 
+            .B(cin_c_3), .C(cin_c_2), .D(cin_c_1), .Z(clamps_c_2));
+    defparam i83_4_lut.INIT = "0x3031";
+    (* lut_function="(A+(B+(C+(D))))", lineinfo="@4(32[4],97[11])" *) LUT4 i1_2_lut_3_lut_4_lut (.A(cin_c_1), 
+            .B(cin_c_2), .C(cin_c_0), .D(cin_c_3), .Z(stop_c));
+    defparam i1_2_lut_3_lut_4_lut.INIT = "0xfffe";
+    (* lut_function="(!(A+(B+!(C+!(D)))))", lineinfo="@4(32[4],97[11])" *) LUT4 i86_3_lut_4_lut (.A(cin_c_2), 
+            .B(cin_c_3), .C(cin_c_1), .D(cin_c_0), .Z(clamps_c_1));
+    defparam i86_3_lut_4_lut.INIT = "0x1011";
+    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[0]  (.I(cin[0]), .O(cin_c_0));
+    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[1]  (.I(cin[1]), .O(cin_c_1));
+    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[2]  (.I(cin[2]), .O(cin_c_2));
+    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[3]  (.I(cin[3]), .O(cin_c_3));
+    (* lineinfo="@4(5[15],5[19])" *) OB stop_pad (.I(stop_c), .O(stop));
+    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[0]  (.I(cout_c_0), .O(cout[0]));
+    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[1]  (.I(cout_c_1), .O(cout[1]));
+    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[2]  (.I(cout_c_2), .O(cout[2]));
+    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[3]  (.I(cin_c_3), .O(cout[3]));
+    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[0]  (.I(clamps_c_0), .O(clamps[0]));
+    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[1]  (.I(clamps_c_1), .O(clamps[1]));
+    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[2]  (.I(clamps_c_2), .O(clamps[2]));
+    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[3]  (.I(clamps_c_3), .O(clamps[3]));
     
 endmodule

@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Sep 14 22:02:02 2025
+Mon Sep 15 16:41:14 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
@@ -226,9 +226,6 @@ INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Use
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): stop_clamp
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(1): compiling module stop_clamp. VERI-1018
-WARNING <35901017> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(21): case condition never applies due to comparison with x or z. VERI-1017
-WARNING <35901017> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(25): case condition never applies due to comparison with x or z. VERI-1017
-WARNING <35901017> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(29): case condition never applies due to comparison with x or z. VERI-1017
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
@@ -245,7 +242,7 @@ WARNING <35901017> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e15
 ################### Begin Area Report (stop_clamp)######################
 Number of register bits => 0 of 5280 (0 % )
 IB => 4
-LUT4 => 3
+LUT4 => 8
 OB => 9
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -261,16 +258,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clamps_0, loads : 5
-  Net : clamps_0_N_5, loads : 4
-  Net : cin_c_3, loads : 2
-  Net : cin_c_2, loads : 2
-  Net : cin_c_1, loads : 2
-  Net : cin_c_0, loads : 2
-  Net : stop_c, loads : 2
-  Net : clamps[1], loads : 0
-  Net : cout[1], loads : 0
-  Net : stop, loads : 0
+  Net : cin_c_3, loads : 9
+  Net : cin_c_2, loads : 8
+  Net : cin_c_1, loads : 7
+  Net : cin_c_0, loads : 5
+  Net : clamps_c_2, loads : 4
+  Net : clamps_c_3, loads : 2
+  Net : clamps_c_1, loads : 2
+  Net : clamps_c_0, loads : 2
+  Net : cout_c_2, loads : 2
+  Net : cout_c_1, loads : 2
 ################### End Clock Report ##################
 
 
@@ -282,13 +279,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 91 MB
+Peak Memory Usage: 92 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
 Total REAL Time: 8 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: efc9c69f5d51c4fc4194392aebc98af5535122c3
+Checksum -- synthesis -- netlist: 2a05726255e79abcb1a25a2cf302c3c027c5947c
 
 
 

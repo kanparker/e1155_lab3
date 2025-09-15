@@ -5,6 +5,6 @@ I/O cells:      13
                                   Cell usage:
                                cell     count   Res Usage(%)
                                  IB         4          100.0
-                               LUT4         3          100.0
+                               LUT4         8          100.0
                                  OB         9          100.0
-                              TOTAL        16
+                              TOTAL        21

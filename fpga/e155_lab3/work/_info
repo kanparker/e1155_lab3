@@ -3,15 +3,63 @@ K4
 z2
 Z0 !s12c _opt1
 Z1 !s99 nomlopt
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
 Z2 !s12c _opt
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
 R1
 R0
 R1
@@ -58,10 +106,10 @@ R1
 cModel Technology
 Z4 dC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3
 T_opt
-!s110 1757906476
-V2^bJM>Be8CdM^RSBPm[MQ2
-04 15 4 work synchronizer_tb fast 0
-=1-00be43e571e5-68c7862b-35a-4d84
+!s110 1757979759
+VJL@n@lg]I;<UmRWOz_`XY0
+04 13 4 work stop_clamp_tb fast 0
+=14-00be43e571e5-68c8a46f-8d-66dc
 R1
 Z5 !s12f OEM25U2 
 Z6 !s12b OEM100
@@ -73,12 +121,12 @@ n@_opt
 Z11 OL;O;2024.2;79
 R4
 T_opt1
-!s110 1757912688
-VEBP[VJPcT3NCa:kCRE>Rz3
-04 13 4 work stop_clamp_tb fast 0
-=1-00be43e571e5-68c79e70-230-da0
+!s110 1757980293
+Vo=dQK<9S0ic^=R@3leGGH3
+04 10 4 work stop_clamp fast 0
+=1-00be43e571e5-68c8a685-243-c78
 R1
-R5
+!s12f OEM25U1 
 R6
 R7
 R8
@@ -280,23 +328,23 @@ R10
 vstop_clamp
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 R13
-Z40 !s110 1757912669
+Z40 !s110 1757979748
 !i10b 1
-!s100 ;eEZ<9;AjAJ1C0Ad=UIBI3
-I=6e8ck?Sh8K_KIYd76mFT3
+!s100 =8EYTkWU59gz_ZLi^?50[2
+IaId_dgzT3Ue]YocJz4NKQ1
 S1
 R4
-w1757909959
+Z41 w1757979667
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
-!i122 79
-L0 1 39
+!i122 128
+L0 1 99
 R18
 R19
 r1
 !s85 0
 31
-Z41 !s108 1757912669.000000
+Z42 !s108 1757979748.000000
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !i113 0
@@ -307,21 +355,21 @@ vstop_clamp_tb
 R13
 R40
 !i10b 1
-!s100 40HN@e@[o:RBG0zSj52XU2
-InPhfal6`DU;TeYf<zCIgW0
+!s100 >Im4EME7zN[@2nYL?k^D=2
+I0ZGa>edaBhH0Db7W;llo;0
 S1
 R4
-w1757912664
+R41
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
-!i122 78
-L0 4 66
+!i122 129
+L0 4 67
 R18
 R19
 r1
 !s85 0
 31
-R41
+R42
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
 !i113 0
@@ -330,7 +378,7 @@ R10
 vsynchronizer
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
 R13
-Z42 !s110 1757906443
+Z43 !s110 1757906443
 !i10b 1
 !s100 S;>`Ye4:FCbjlMD9;N5iP2
 Ibh<HFOOIMlLCjf:V3Dom^3
@@ -346,7 +394,7 @@ R19
 r1
 !s85 0
 31
-Z43 !s108 1757906443.000000
+Z44 !s108 1757906443.000000
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
 !i113 0
@@ -355,7 +403,7 @@ R10
 vsynchronizer_tb
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
 R13
-R42
+R43
 !i10b 1
 !s100 kP7lB]z?mJ96cFS10Xb_:3
 Io?TJM@[3h;Gj@OI3[dDBb2
@@ -371,7 +419,7 @@ R19
 r1
 !s85 0
 31
-R43
+R44
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
 !i113 0
@@ -405,7 +453,7 @@ R10
 vtestbench_seven
 R12
 R13
-Z44 !s110 1757814891
+Z45 !s110 1757814891
 !i10b 1
 !s100 dUZ:YJQ64IoQ;RJC;fSTK3
 IZKl=W7b4lDKbLFe5?iNcW0
@@ -421,7 +469,7 @@ R19
 r1
 !s85 0
 31
-Z45 !s108 1757814891.000000
+Z46 !s108 1757814891.000000
 R21
 R22
 !i113 0
@@ -430,7 +478,7 @@ R10
 vthree_led
 R24
 R13
-R44
+R45
 !i10b 1
 !s100 d_Y?k42LcoVN5HS>JZX7K1
 IAkCA_mS:cFaFTPKiF_[b51
@@ -446,7 +494,7 @@ R19
 r1
 !s85 0
 31
-R45
+R46
 R28
 R29
 !i113 0

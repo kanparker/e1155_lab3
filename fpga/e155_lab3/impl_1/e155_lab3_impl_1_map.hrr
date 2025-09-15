@@ -3,6 +3,6 @@ Report for cell stop_clamp
    Instance path: stop_clamp
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          5        100.0
-                               LUTGATE	          5        100.0
+                                  LUT4	          8        100.0
+                               LUTGATE	          8        100.0
                                  IOBUF	         13        100.0

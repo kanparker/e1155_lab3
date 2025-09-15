@@ -13,487 +13,175 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Loading project row_test
-# Compile of row_sweep_tb.sv failed with 2 errors.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 1 failed with 2 errors.
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
+# Loading project stop_Clamp2
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
-# Load canceled
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
+vsim -gui work.stop_clamp_tb -L iCE40UP
+# vsim -gui work.stop_clamp_tb -L iCE40UP 
+# Start time: 15:14:58 on Sep 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+quit -sim
+# End time: 15:15:31 on Sep 15,2025, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 5
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
-vsim -gui work.row_sweep_tb -L iCE40UP -voptargs=+acc
-# vsim -gui work.row_sweep_tb -L iCE40UP -voptargs="+acc" 
-# Start time: 14:36:27 on Sep 14,2025
+vsim -gui -L iCE40UP work.stop_clamp_tb -voptargs=+acc
+# vsim -gui -L iCE40UP work.stop_clamp_tb -voptargs="+acc" 
+# Start time: 15:16:46 on Sep 15,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/stop_clamp_tb/stop', driven via a port connection, is multiply driven. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(12).
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv Line: 20
+# Error loading design
+# End time: 15:16:59 on Sep 15,2025, Elapsed time: 0:00:13
+# Errors: 1, Warnings: 3
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp_tb
+# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp_tb 
+# Start time: 15:17:53 on Sep 15,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
 add wave -position insertpoint  \
-sim:/row_sweep_tb/clk \
-sim:/row_sweep_tb/reset \
-sim:/row_sweep_tb/vectornum \
-sim:/row_sweep_tb/errors \
-sim:/row_sweep_tb/testvectors \
-sim:/row_sweep_tb/stop \
-sim:/row_sweep_tb/rows \
-sim:/row_sweep_tb/rows_expected
+sim:/stop_clamp_tb/dut/cin \
+sim:/stop_clamp_tb/dut/stop \
+sim:/stop_clamp_tb/dut/clamps \
+sim:/stop_clamp_tb/dut/cout \
+sim:/stop_clamp_tb/dut/cin_cleaned
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlft07cdec".
+#           Attempting to use alternate WLF file "./wlftt5w2ex".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft07cdec
+#           Using alternate file: ./wlftt5w2ex
 run -all
-# ** Warning: (vsim-7) Failed to open readmem file "e155_lab3_row_sweep.tv" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
-#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# ** Warning: (vsim-7) Failed to open readmem file "e155_lab3_row_sweep.tv" in read mode.
-# No such file or directory. (errno = ENOENT)    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
-#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 9 of file "e155_lab3_row_sweep.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
-#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+#         16 tests completed with         30 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
+#    Time: 185 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
 # Causality operation skipped due to absence of debug database file
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 13 of file "e155_lab3_row_sweep.tv". Expected 16, found 13.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(17)
-#    Time: 0 ns  Iteration: 0  Instance: /row_sweep_tb
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 0
-#  outputs = 0001 (0010 expected)
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 0
-#  outputs = 0001 (0010 expected)
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(41)
-#    Time: 27 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 41
-# Compile of row_sweep_tb.sv failed with 1 errors.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of row_sweep_tb.sv failed with 1 errors.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-run 1000
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 0
-#  outputs = 1000 (0001 expected)
-# Error: inputs = 0
-#  outputs = 0100 (0010 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0100 expected)
-# Error: inputs = 0
-#  outputs = 0001 (1000 expected)
-# Error: inputs = 0
-#  outputs = 1000 (0001 expected)
-# Error: inputs = 0
-#  outputs = 0100 (0010 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0100 expected)
-# Error: inputs = 0
-#  outputs = 0001 (1000 expected)
-# Error: inputs = 1
-#  outputs = 1000 (0001 expected)
-# Error: inputs = 1
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 1
-#  outputs = 1000 (0001 expected)
-# Error: inputs = 1
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 0
-#  outputs = 1000 (0010 expected)
-#         13 tests completed with         13 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
-#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 1
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 1
-#  outputs = 0100 (0010 expected)
-# Error: inputs = 1
-#  outputs = 1000 (0100 expected)
-# Error: inputs = 1
-#  outputs = 0001 (1000 expected)
-# Error: inputs = 1
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 1
-#  outputs = 0100 (0010 expected)
-# Error: inputs = 1
-#  outputs = 1000 (0100 expected)
-# Error: inputs = 1
-#  outputs = 0001 (1000 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0001 expected)
-# Error: inputs = 0
-#  outputs = 0010 (0001 expected)
-#         13 tests completed with         12 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
-#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 1
-#  outputs = 0001 (0010 expected)
-#         13 tests completed with          1 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
-#    Time: 155 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-# Error: inputs = 1
-#  outputs = 0001 (0010 expected)
-# Error: inputs = 1
-#  outputs = 0010 (0100 expected)
-#         14 tests completed with          2 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
-#    Time: 165 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
-# Compile of row_sweep_tb.sv was successful.
-# Compile of row_sweep.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.row_sweep_tb(fast)
-# Loading work.row_sweep(fast)
-run -all
-#         21 tests completed with          0 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv(45)
-#    Time: 235 ns  Iteration: 1  Instance: /row_sweep_tb
-# Break in Module row_sweep_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv line 45
 quit -sim
-# End time: 19:31:53 on Sep 14,2025, Elapsed time: 4:55:26
-# Errors: 0, Warnings: 2
-# reading C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
-# Loading project debounce
-# Compile of debounce.sv was successful.
-# Compile of debounce_tb.sv failed with 3 errors.
-# 2 compiles, 1 failed with 3 errors.
-# Compile of debounce.sv was successful.
-# Compile of debounce_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -L iCE40UP -voptargs=+acc work.debounce_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.debounce_tb 
-# Start time: 19:34:07 on Sep 14,2025
+# End time: 15:19:56 on Sep 15,2025, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 6
+vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp
+# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp 
+# Start time: 15:20:10 on Sep 15,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
-# Loading work.debounce_tb(fast)
-# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
 add wave -position insertpoint  \
-sim:/debounce_tb/clk \
-sim:/debounce_tb/reset \
-sim:/debounce_tb/raw_data \
-sim:/debounce_tb/filtered_data
+sim:/stop_clamp/cin \
+sim:/stop_clamp/stop \
+sim:/stop_clamp/clamps \
+sim:/stop_clamp/cout \
+sim:/stop_clamp/cin_cleaned
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlft64kfda".
+#           Attempting to use alternate WLF file "./wlftk64yah".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft64kfda
+#           Using alternate file: ./wlftk64yah
+force cin 0000
 run 100
-quit -sim
-# End time: 19:35:23 on Sep 14,2025, Elapsed time: 0:01:16
-# Errors: 0, Warnings: 9
-vsim -gui -L iCE40UP -voptargs=+acc work.debounce_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.debounce_tb 
-# Start time: 19:35:42 on Sep 14,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading sv_std.std
-# Loading work.debounce_tb(fast)
-# Loading work.debounce(fast)
-add wave -position insertpoint  \
-sim:/debounce_tb/dut/clk \
-sim:/debounce_tb/dut/reset \
-sim:/debounce_tb/dut/raw_data \
-sim:/debounce_tb/dut/filtered_data \
-sim:/debounce_tb/dut/pvalue \
-sim:/debounce_tb/dut/nvalue
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlftjr18ha".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjr18ha
+force cin 0001
 run 100
-# Compile of debounce.sv was successful.
-# Compile of debounce_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.debounce_tb(fast)
-# Loading work.debounce(fast)
+force cin 0010
 run 100
-# Compile of debounce.sv was successful.
-# Compile of debounce_tb.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.debounce_tb(fast)
-# Loading work.debounce(fast)
+force cin 2
 run 100
-add wave -position insertpoint  \
-sim:/debounce_tb/raw_data
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.debounce_tb(fast)
-# Loading work.debounce(fast)
-run 100
-quit -sim
-# End time: 20:17:26 on Sep 14,2025, Elapsed time: 0:41:44
-# Errors: 0, Warnings: 2
-# reading C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
-# Loading project synchornizer
-# Compile of synchronizer_tb.sv failed with 1 errors.
-# Compile of synchronizer.sv was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of synchronizer_tb.sv was successful.
-# Compile of synchronizer.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -L iCE40UP -voptargs=+acc work.synchronizer_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.synchronizer_tb 
-# Start time: 20:19:42 on Sep 14,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Error: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv(12): Module 'syncrhonizer' is not defined.
-#  For instance 'dut' at path 'synchronizer_tb'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# End time: 20:19:42 on Sep 14,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 7
-# Compile of synchronizer_tb.sv was successful.
-# Compile of synchronizer.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -L iCE40UP -voptargs=+acc work.synchronizer_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.synchronizer_tb 
-# Start time: 20:21:15 on Sep 14,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.synchronizer_tb(fast)
-# Loading work.synchronizer(fast)
-add wave -position insertpoint  \
-sim:/synchronizer_tb/clk \
-sim:/synchronizer_tb/reset \
-sim:/synchronizer_tb/vectornum \
-sim:/synchronizer_tb/errors \
-sim:/synchronizer_tb/testvectors \
-sim:/synchronizer_tb/stop \
-sim:/synchronizer_tb/cin \
-sim:/synchronizer_tb/cmid \
-sim:/synchronizer_tb/cout \
-sim:/synchronizer_tb/cout_expected
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlft8xsdjc".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft8xsdjc
-run -all
-#         24 tests completed with          0 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv(45)
-#    Time: 265 ns  Iteration: 1  Instance: /synchronizer_tb
-# Break in Module synchronizer_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv line 45
-add wave -position insertpoint  \
-sim:/synchronizer_tb/dut/cout
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.synchronizer_tb(fast)
-# Loading work.synchronizer(fast)
-run -all
-#         24 tests completed with          0 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv(45)
-#    Time: 265 ns  Iteration: 1  Instance: /synchronizer_tb
-# Break in Module synchronizer_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv line 45
-add wave -position insertpoint  \
-sim:/synchronizer_tb/cmid
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.synchronizer_tb(fast)
-# Loading work.synchronizer(fast)
-run -all
-#         24 tests completed with          0 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv(45)
-#    Time: 265 ns  Iteration: 1  Instance: /synchronizer_tb
-# Break in Module synchronizer_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv line 45
-add wave -position insertpoint  \
-sim:/synchronizer_tb/dut/cmid
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.synchronizer_tb(fast)
-# Loading work.synchronizer(fast)
-run -all
-#         24 tests completed with          0 errors
-# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv(45)
-#    Time: 265 ns  Iteration: 1  Instance: /synchronizer_tb
-# Break in Module synchronizer_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv line 45
-quit -sim
-# End time: 21:51:12 on Sep 14,2025, Elapsed time: 1:29:57
-# Errors: 0, Warnings: 2
-# reading C:/lscc/radiant/2024.2/questasim/win64/../modelsim.ini
-# Loading project stop_clamp
-# Compile of stop_clamp_tb.sv was successful.
 # Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.stop_clamp(fast)
+quit -sim
+# End time: 15:24:24 on Sep 15,2025, Elapsed time: 0:04:14
+# Errors: 0, Warnings: 2
 vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp_tb
 # vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp_tb 
-# Start time: 21:52:02 on Sep 14,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Start time: 15:24:47 on Sep 15,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.stop_clamp_tb(fast)
-# Loading work.synchronizer(fast)
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.stop_clamp_tb(fast)
-# Loading work.synchronizer(fast)
+# Loading work.stop_clamp(fast)
 add wave -position insertpoint  \
 sim:/stop_clamp_tb/clk \
 sim:/stop_clamp_tb/reset \
@@ -509,32 +197,78 @@ sim:/stop_clamp_tb/cout \
 sim:/stop_clamp_tb/cout_expected
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlft4ivf56".
+#           Attempting to use alternate WLF file "./wlftam7v94".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4ivf56
+#           Using alternate file: ./wlftam7v94
 run -all
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
 #    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
-#  outputs = 0000 (0111 expected)
+#  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
+#  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  outputs = 0000 (0001 expected)
-#         16 tests completed with          7 errors
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+#         16 tests completed with         30 errors
 # ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
 #    Time: 185 ns  Iteration: 1  Instance: /stop_clamp_tb
 # Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
-# Compile of stop_clamp_tb.sv was successful.
 # Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -543,94 +277,535 @@ restart -f
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.stop_clamp_tb(fast)
-# Loading work.synchronizer(fast)
+# Loading work.stop_clamp(fast)
 run -all
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
 #    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
-#  Cout outputs = 0000 (0111 expected)
+#  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
+#  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-#         16 tests completed with          7 errors
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+#         16 tests completed with         30 errors
 # ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
 #    Time: 185 ns  Iteration: 1  Instance: /stop_clamp_tb
 # Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
-# Compile of stop_clamp_tb.sv was successful.
 # Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
 # 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Error: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(12): Module 'stop_clapm' is not defined.
-#  For instance 'dut' at path 'stop_clamp_tb'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-run -all
-# No Design Loaded!
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# No Design Loaded!
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# No Design Loaded!
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# No Design Loaded!
-vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp_tb 
-# Start time: 21:52:02 on Sep 14,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
-# Loading sv_std.std
-# Loading work.stop_clamp_tb(fast)
-# Loading work.stop_clamp(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'clamps'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(4).
-#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb/dut File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv Line: 12
-# ** Error (suppressible): (vsim-3839) Variable '/stop_clamp_tb/reset', driven via a port connection, is multiply driven. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(12).
-#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv Line: 18
-# ** Error (suppressible): (vsim-3839) Variable '/stop_clamp_tb/reset', driven via a port connection, is multiply driven. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(12).
-#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv Line: 18
-# Error loading design
-# End time: 22:03:54 on Sep 14,2025, Elapsed time: 0:11:52
-# Errors: 3, Warnings: 8
-# Compile of stop_clamp_tb.sv was successful.
-# Compile of stop_clamp.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp_tb
-# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp_tb 
-# Start time: 22:04:48 on Sep 14,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
 # Loading work.stop_clamp_tb(fast)
 # Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 16 of file "stop_clamp.tv". Expected 21, found 18.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         34 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
+#    Time: 205 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 16 of file "stop_clamp.tv". Expected 21, found 18.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         34 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
+#    Time: 205 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
+quit -sim
+# End time: 15:36:21 on Sep 15,2025, Elapsed time: 0:11:34
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp
+# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp 
+# Start time: 15:36:37 on Sep 15,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp(fast)
+add wave -position insertpoint  \
+sim:/stop_clamp/cin \
+sim:/stop_clamp/stop \
+sim:/stop_clamp/clamps \
+sim:/stop_clamp/cout \
+sim:/stop_clamp/cin_cleaned
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
-#           Attempting to use alternate WLF file "./wlft966jr1".
+#           Attempting to use alternate WLF file "./wlft3kan6b".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft966jr1
+#           Using alternate file: ./wlft3kan6b
+force cin 0000
+run 100
+force cin 0100
+run 100
+quit -sim
+# End time: 15:38:59 on Sep 15,2025, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 4
+vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp_tb
+# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp_tb 
+# Start time: 15:41:48 on Sep 15,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+add wave -position insertpoint  \
+sim:/stop_clamp_tb/dut/cin \
+sim:/stop_clamp_tb/dut/stop \
+sim:/stop_clamp_tb/dut/clamps \
+sim:/stop_clamp_tb/dut/cout \
+sim:/stop_clamp_tb/dut/cin_cleaned
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
+#           Attempting to use alternate WLF file "./wlfth85jys".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth85jys
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 16 of file "stop_clamp.tv". Expected 21, found 18.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         34 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
+#    Time: 205 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 16 of file "stop_clamp.tv". Expected 21, found 18.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+# Break key hit
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 28
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 20 of file "stop_clamp.tv". (Current address [21], address range [0:20])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Break key hit
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 35
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
 add wave -position insertpoint  \
 sim:/stop_clamp_tb/clk \
 sim:/stop_clamp_tb/reset \
@@ -645,72 +820,771 @@ sim:/stop_clamp_tb/clamps_expected \
 sim:/stop_clamp_tb/cout \
 sim:/stop_clamp_tb/cout_expected
 run -all
-# ** Warning: (vsim-PLI-3407) Too many data words read on line 5 of file "stop_clamp.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 20 of file "stop_clamp.tv". (Current address [21], address range [0:20])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
 #    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0111 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
 #  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
 #  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Stop outputs = 0 (1 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
-# Error: inputs = 0000
-#  Cout outputs = 0000 (0001 expected)
-# Error: inputs = 0000
-#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
 # Error: inputs = 0000
 #  Clamps outputs = 1111 (0000 expected)
 # Error: inputs = 0000
 #  Stop outputs = 0 (1 expected)
-#         16 tests completed with         31 errors
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+#         21 tests completed with         30 errors
 # ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(55)
-#    Time: 185 ns  Iteration: 1  Instance: /stop_clamp_tb
+#    Time: 235 ns  Iteration: 1  Instance: /stop_clamp_tb
 # Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 55
-# A time value could not be extracted from the current line
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 16 of file "stop_clamp.tv". Expected 21, found 18.    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         34 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(54)
+#    Time: 205 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 54
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         34 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(56)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 56
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# Error: inputs = 0000
+#  Cout outputs = xxxx (0000 expected)
+# Error: inputs = 0010
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0010
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0100
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0100
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Cout outputs = 0001 (0100 expected)
+# Error: inputs = 0101
+#  Clamps outputs = 0001 (0100 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Cout outputs = 0001 (0000 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Cout outputs = 0001 (0010 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0001 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Cout outputs = 0001 (0000 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 1000
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1000
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1001
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1010
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1011
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1100
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1101
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1110
+#  Clamps outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Cout outputs = 0001 (1000 expected)
+# Error: inputs = 1111
+#  Clamps outputs = 0001 (1000 expected)
+#         18 tests completed with         37 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(56)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 56
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+#         18 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(56)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 56
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+#  0
+# 15
+#  0
+# 15
+#  0
+# 15
+#  1
+#  1
+#  2
+#  2
+#  3
+#  2
+#  4
+#  4
+#  5
+#  4
+#  3
+#  2
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+#  0
+#  0
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+#  3
+# 10
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+#  0
+#  0
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+#  8
+#  8
+#  9
+#  8
+# 10
+#  8
+# 11
+#  8
+# 12
+#  8
+# 13
+#  8
+# 14
+#  8
+# 15
+#  8
+#         18 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(57)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 57
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# 0000
+# 1111
+# 0000
+# 1111
+# 0000
+# 1111
+# 0001
+# 0001
+# 0010
+# 0010
+# 0011
+# 0010
+# 0100
+# 0100
+# 0101
+# 0100
+# 0011
+# 0010
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 0011
+# 1010
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 1000
+# 1000
+# 1001
+# 1000
+# 1010
+# 1000
+# 1011
+# 1000
+# 1100
+# 1000
+# 1101
+# 1000
+# 1110
+# 1000
+# 1111
+# 1000
+#         18 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(57)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 57
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# 0000
+# 1111
+# 0000
+# 1111
+# 0000
+# 1111
+# 0001
+# 0001
+# 0010
+# 0010
+# 0011
+# 0010
+# 0100
+# 0100
+# 0101
+# 0100
+# 0011
+# 0010
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 0011
+# 1010
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 1000
+# 1000
+# 1001
+# 1000
+# 1010
+# 1000
+# 1011
+# 1000
+# 1100
+# 1000
+# 1101
+# 1000
+# 1110
+# 1000
+# 1111
+# 1000
+#         18 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(57)
+#    Time: 195 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 57
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clampper.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# 0000
+# 1111
+# 0000
+# 1111
+# 0000
+# 1111
+# 0001
+# 0001
+# 0010
+# 0010
+# 0011
+# 0010
+# 0100
+# 0100
+# 0101
+# 0100
+# 0011
+# 0010
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 0011
+# 1010
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000
+# 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 1000
+# 1000
+# 1001
+# 1000
+# 1010
+# 1000
+# 1011
+# 1000
+# 1100
+# 1000
+# 1101
+# 1000
+#         16 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(57)
+#    Time: 175 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 57
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clampper.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# 0000 1111 0000
+# 0000 1111 0000
+# 0000 1111 0000
+# 0001 0001 0001
+# 0010 0010 0010
+# 0011 0010 0010
+# 0100 0100 0100
+# 0101 0100 0100
+# 0011 0010 0010
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000 0000 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 0011 1010 0010
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000 0000 0000
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 1000 1000 1000
+# 1001 1000 1000
+# 1010 1000 1000
+# 1011 1000 1000
+# 1100 1000 1000
+# 1101 1000 1000
+#         16 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 56
+# Compile of stop_clamp.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp_tb(fast)
+# Loading work.stop_clamp(fast)
+run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 15 of file "stop_clampper.tv". (Current address [16], address range [0:15])    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(17)
+#    Time: 0 ns  Iteration: 0  Instance: /stop_clamp_tb
+# 0000 1111 0000 0
+# 0000 1111 0000 0
+# 0000 1111 0000 0
+# 0001 0001 0001 1
+# 0010 0010 0010 1
+# 0011 0010 0010 1
+# 0100 0100 0100 1
+# 0101 0100 0100 1
+# 0011 0010 0010 0
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000 0000 0000 1
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 0011 1010 0010 0
+# Error: inputs = 0011
+#  Clamps outputs = 0010 (1010 expected)
+# Error: inputs = 0011
+#  Stop outputs = 1 (0 expected)
+# 0000 0000 0000 1
+# Error: inputs = 0000
+#  Clamps outputs = 1111 (0000 expected)
+# Error: inputs = 0000
+#  Stop outputs = 0 (1 expected)
+# 1000 1000 1000 1
+# 1001 1000 1000 1
+# 1010 1000 1000 1
+# 1011 1000 1000 1
+# 1100 1000 1000 1
+# 1101 1000 1000 1
+#         16 tests completed with          7 errors
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv(56)
+#    Time: 175 ns  Iteration: 1  Instance: /stop_clamp_tb
+# Break in Module stop_clamp_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv line 56
+quit -sim
+# End time: 16:51:15 on Sep 15,2025, Elapsed time: 1:09:27
+# Errors: 0, Warnings: 3
+vsim -gui -L iCE40UP -voptargs=+acc work.stop_clamp
+# vsim -gui -L iCE40UP -voptargs="+acc" work.stop_clamp 
+# Start time: 16:51:33 on Sep 15,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.stop_clamp(fast)
+force cin 0000
+run 100
+add wave -position insertpoint  \
+sim:/stop_clamp/cin \
+sim:/stop_clamp/clamps \
+sim:/stop_clamp/cout \
+sim:/stop_clamp/stop \
+sim:/stop_clamp/cin_cleaned
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
+#           Attempting to use alternate WLF file "./wlftmct4kf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmct4kf
+force cin 0000
+run 100
+force cin 0001
+run 100
+force cin 0010
+run 100
+force cin 0010
+run 100
+force cin 1000
+run 100
+# End time: 16:58:06 on Sep 15,2025, Elapsed time: 0:06:33
+# Errors: 0, Warnings: 4

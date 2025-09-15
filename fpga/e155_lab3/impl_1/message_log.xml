@@ -342,27 +342,6 @@
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv</Navigation>
             <Navigation>1</Navigation>
         </Message>
-        <Message>
-            <ID>35901017</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(21): </Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv</Navigation>
-            <Navigation>21</Navigation>
-        </Message>
-        <Message>
-            <ID>35901017</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(25): </Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv</Navigation>
-            <Navigation>25</Navigation>
-        </Message>
-        <Message>
-            <ID>35901017</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(29): </Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv</Navigation>
-            <Navigation>29</Navigation>
-        </Message>
     </Task>
     <Task name="Export">
         <Message>
