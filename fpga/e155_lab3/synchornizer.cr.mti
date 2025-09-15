@@ -1,0 +1,8 @@
+C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module synchronizer
+
+Top level modules:
+	synchronizer
+
+} {} {}}

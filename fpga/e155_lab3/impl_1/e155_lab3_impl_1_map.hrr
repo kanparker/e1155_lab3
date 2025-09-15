@@ -1,8 +1,8 @@
 ---------------------------------------------------
-Report for cell row_sweep
-   Instance path: row_sweep
+Report for cell stop_clamp
+   Instance path: stop_clamp
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          6        100.0
-                               LUTGATE	          6        100.0
-                                 IOBUF	          6        100.0
+                                  LUT4	          5        100.0
+                               LUTGATE	          5        100.0
+                                 IOBUF	         13        100.0

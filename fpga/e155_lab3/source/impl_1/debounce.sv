@@ -1,31 +1,29 @@
 module debounce(
-	input raw_data,
-	input clk,
-	output filtered_data
+	input logic clk,reset,
+	input logic raw_data,
+	output logic filtered_data
 );
-
-
-	logic [15:0] counter;
-	logic [15:0] P;
+	logic pvalue, nvalue;
 	
-	assign counter = 0;
-	always_ff @(posedge clk,counter[15])
-		counter = counter+P;
-		if(counter[15])
-			if(raw_data) begin
-					filtered_data = 1'b1;
-					P = 16'b1111111111111111;
+	always_ff @(posedge clk, reset)
+		if(reset) begin
+			pvalue <= 0;
+			end
+		else begin
+			pvalue <= raw_data;
+			if(pvalue == nvalue) begin
+				filtered_data <= raw_data;
 				end
-			else 
-				begin
-					filtered_data = 1'b0;
-					counter = 0;
-					P = 0;
-				end
+			end
 	
-	always_ff @(posedge raw_data)
-		P = 1;
-
+	always_ff @(negedge clk)
+		if(reset) begin
+			nvalue <= 0;
+			end
+		else begin
+			nvalue <= raw_data;
+		end
+		
 	
 
 			

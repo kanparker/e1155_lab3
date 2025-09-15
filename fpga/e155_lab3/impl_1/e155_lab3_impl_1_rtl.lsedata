@@ -1,4 +1,4 @@
-<top name = "row_sweep"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "stop_clamp"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
 </clocks>

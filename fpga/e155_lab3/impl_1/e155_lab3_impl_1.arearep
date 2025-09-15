@@ -1,10 +1,10 @@
 ----------------------------------------------------------------------
-Report for cell row_sweep.TECH
+Report for cell stop_clamp.TECH
 Register bits:  0 of 5280 (0.000%)
-I/O cells:      6
+I/O cells:      13
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                 IB         2          100.0
-                               LUT4         6          100.0
-                                 OB         4          100.0
-                              TOTAL        12
+                                 IB         4          100.0
+                               LUT4         3          100.0
+                                 OB         9          100.0
+                              TOTAL        16

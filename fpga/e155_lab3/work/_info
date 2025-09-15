@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
 R0
 R1
@@ -11,25 +11,43 @@ R0
 R1
 R0
 R1
-R0
+Z2 !s12c _opt
 R1
 R0
 R1
 R0
 R1
 R0
-R1
-R0
-R1
-Z2 !s12c _opt2
 R1
 R2
 R1
 R2
 R1
-!s12c _opt1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt2
+R1
+R3
+R1
+R3
 R1
 R0
+R1
+R2
 R1
 !s11f vlog 2024.2 2024.05, May 20 2024
 13
@@ -38,51 +56,51 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z3 dC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3
+Z4 dC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3
 T_opt
-!s110 1757889124
-V^gEdP4H[ihQE`@Kb[g?9I0
-04 12 4 work row_sweep_tb fast 0
-=13-00be43e571e5-68c74264-255-5cc8
+!s110 1757906476
+V2^bJM>Be8CdM^RSBPm[MQ2
+04 15 4 work synchronizer_tb fast 0
+=1-00be43e571e5-68c7862b-35a-4d84
 R1
-Z4 !s12f OEM25U2 
-Z5 !s12b OEM100
-Z6 !s124 OEM100
-Z7 !s135 nogc
-Z8 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
-Z9 tCvgOpt 0
+Z5 !s12f OEM25U2 
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+Z10 tCvgOpt 0
 n@_opt
-Z10 OL;O;2024.2;79
+Z11 OL;O;2024.2;79
+R4
 T_opt1
-!s110 1757814982
-VdV@icgZBD<;Z4a2=6eiRU2
-Z11 04 6 4 work clk_tb fast 0
-=1-00be43e571e5-68c620c6-e7-1090
+!s110 1757912688
+VEBP[VJPcT3NCa:kCRE>Rz3
+04 13 4 work stop_clamp_tb fast 0
+=1-00be43e571e5-68c79e70-230-da0
 R1
-R4
-R5
-R6
-R7
-o-quiet -auto_acc_if_foreign -work work -L iCE40UP
-R9
-n@_opt1
-R10
-R3
-T_opt2
-!s110 1757815216
-VOcLJ^Cgd:g5UQF14JN8YG2
-R11
-=3-00be43e571e5-68c621b0-2b4-4d84
-R1
-R4
 R5
 R6
 R7
 R8
 R9
-n@_opt2
 R10
-R3
+n@_opt1
+R11
+T_opt2
+!s110 1757815216
+VOcLJ^Cgd:g5UQF14JN8YG2
+04 6 4 work clk_tb fast 0
+=3-00be43e571e5-68c621b0-2b4-4d84
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt2
+R11
+R4
 vclk_tb
 Z12 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
 Z13 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
@@ -91,7 +109,7 @@ Z14 !s110 1757815209
 !s100 QZAX;K3M12eZT`aiknOmd2
 IASoUIl^OLGfijjoYDf4Fk2
 S1
-R3
+R4
 w1757814958
 Z15 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
 Z16 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
@@ -107,7 +125,7 @@ Z21 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/c
 Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv|
 !i113 0
 Z23 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R9
+R10
 vclock_divider
 Z24 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 R13
@@ -116,7 +134,7 @@ R14
 !s100 g<3GVb;M60nf2oGQ7f5NG3
 IG5aQ<SAQ_<M=75E8ab6ER0
 S1
-R3
+R4
 w1757815191
 Z25 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 Z26 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
@@ -132,7 +150,57 @@ Z28 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/c
 Z29 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv|
 !i113 0
 R23
-R9
+R10
+vdebounce
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
+R13
+Z30 !s110 1757904171
+!i10b 1
+!s100 Ko1nW[N;^9Dh@mK>]koTj3
+IgKdBifOBz9YXhV5>E_m3I3
+S1
+R4
+w1757903487
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
+!i122 53
+L0 1 31
+R18
+R19
+r1
+!s85 0
+31
+Z31 !s108 1757904171.000000
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv|
+!i113 0
+R23
+R10
+vdebounce_tb
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
+R13
+R30
+!i10b 1
+!s100 b2d`]4kZ1j<Zz7DPCO6ok3
+ID2ZoZFhLnh[z]AGkR5PN40
+S1
+R4
+w1757904155
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
+!i122 54
+L0 4 43
+R18
+R19
+r1
+!s85 0
+31
+R31
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv|
+!i113 0
+R23
+R10
 vHSOC
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
 R13
@@ -141,7 +209,7 @@ R14
 !s100 O66:eGiRW[lgL:^C:J=WX2
 I6MRVa25m?e=^m`9o5[M@K3
 S1
-R3
+R4
 w1757813263
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
@@ -157,17 +225,17 @@ R20
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv|
 !i113 0
 R23
-R9
+R10
 n@h@s@o@c
 vrow_sweep
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
 R13
-Z30 !s110 1757889119
+Z32 !s110 1757889119
 !i10b 1
 !s100 CUm8LIa0IfT89eRD0l[If3
 Ib@UF^d:gY@l8gnA@LfmVo2
 S1
-R3
+R4
 w1757888175
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
@@ -178,49 +246,149 @@ R19
 r1
 !s85 0
 31
-Z31 !s108 1757889119.000000
+Z33 !s108 1757889119.000000
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv|
 !i113 0
 R23
-R9
+R10
 vrow_sweep_tb
-Z32 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
+Z34 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
 R13
-R30
+R32
 !i10b 1
 !s100 HH=n`8B=`75D@5m6zhKL01
 IZ9l=80>5=C0Z7YX9ZP2G[2
 S1
-R3
+R4
 w1757889114
-Z33 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
-Z34 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
+Z35 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
+Z36 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
 !i122 46
-L0 4 56
+Z37 L0 4 56
 R18
 R19
 r1
 !s85 0
 31
-R31
-Z35 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
-Z36 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
+R33
+Z38 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
+Z39 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
 !i113 0
 R23
-R9
+R10
+vstop_clamp
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
+R13
+Z40 !s110 1757912669
+!i10b 1
+!s100 ;eEZ<9;AjAJ1C0Ad=UIBI3
+I=6e8ck?Sh8K_KIYd76mFT3
+S1
+R4
+w1757909959
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
+!i122 79
+L0 1 39
+R18
+R19
+r1
+!s85 0
+31
+Z41 !s108 1757912669.000000
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
+!i113 0
+R23
+R10
+vstop_clamp_tb
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
+R13
+R40
+!i10b 1
+!s100 40HN@e@[o:RBG0zSj52XU2
+InPhfal6`DU;TeYf<zCIgW0
+S1
+R4
+w1757912664
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
+!i122 78
+L0 4 66
+R18
+R19
+r1
+!s85 0
+31
+R41
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
+!i113 0
+R23
+R10
+vsynchronizer
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+R13
+Z42 !s110 1757906443
+!i10b 1
+!s100 S;>`Ye4:FCbjlMD9;N5iP2
+Ibh<HFOOIMlLCjf:V3Dom^3
+S1
+R4
+w1757905080
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+!i122 59
+L0 1 22
+R18
+R19
+r1
+!s85 0
+31
+Z43 !s108 1757906443.000000
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
+!i113 0
+R23
+R10
+vsynchronizer_tb
+2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
+R13
+R42
+!i10b 1
+!s100 kP7lB]z?mJ96cFS10Xb_:3
+Io?TJM@[3h;Gj@OI3[dDBb2
+S1
+R4
+w1757906420
+8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
+FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
+!i122 58
+R37
+R18
+R19
+r1
+!s85 0
+31
+R43
+!s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
+!i113 0
+R23
+R10
 vtestbench_lab2
-R32
+R34
 R13
 !s110 1757885681
 !i10b 1
 !s100 _P0boGP4?4Mm`?2^>DjGA1
 IVQMEcUE1iD91BbB<6R`Z>2
 S1
-R3
+R4
 w1757885670
-R33
-R34
+R35
+R36
 !i122 22
 L0 4 48
 R18
@@ -229,20 +397,20 @@ r1
 !s85 0
 31
 !s108 1757885681.000000
-R35
-R36
+R38
+R39
 !i113 0
 R23
-R9
+R10
 vtestbench_seven
 R12
 R13
-Z37 !s110 1757814891
+Z44 !s110 1757814891
 !i10b 1
 !s100 dUZ:YJQ64IoQ;RJC;fSTK3
 IZKl=W7b4lDKbLFe5?iNcW0
 S1
-R3
+R4
 w1757814887
 R15
 R16
@@ -253,21 +421,21 @@ R19
 r1
 !s85 0
 31
-Z38 !s108 1757814891.000000
+Z45 !s108 1757814891.000000
 R21
 R22
 !i113 0
 R23
-R9
+R10
 vthree_led
 R24
 R13
-R37
+R44
 !i10b 1
 !s100 d_Y?k42LcoVN5HS>JZX7K1
 IAkCA_mS:cFaFTPKiF_[b51
 S1
-R3
+R4
 w1757814420
 R25
 R26
@@ -278,9 +446,9 @@ R19
 r1
 !s85 0
 31
-R38
+R45
 R28
 R29
 !i113 0
 R23
-R9
+R10

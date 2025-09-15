@@ -46,9 +46,12 @@
 "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv"
 "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
 "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv"
+"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv"
+"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv"
 
 
 -path "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3"
+-top stop_clamp
 -udb "e155_lab3_impl_1_rtl.udb"
 -output_hdl "e155_lab3_impl_1.vm"
 

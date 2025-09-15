@@ -1,8 +1,34 @@
-4.2/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv. VERI-1482
-ERROR <35901137> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(16): syntax error near =. VERI-1137
 
-child process exited abnormally
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "e155_lab3_impl_1.twr" "e155_lab3_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt e155_lab3_impl_1.twr e155_lab3_impl_1.udb -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.2/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  stop_clamp
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.02 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  0  counted  22  covered  0
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 97 MB
+
+ 0.489180s wall, 0.390625s user + 0.093750s system = 0.484375s CPU (99.0%)
+
