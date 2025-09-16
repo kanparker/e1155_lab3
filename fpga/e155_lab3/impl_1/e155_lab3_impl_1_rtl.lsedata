@@ -1,4 +1,4 @@
-<top name = "stop_clamp"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "read_writer"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
 </clocks>

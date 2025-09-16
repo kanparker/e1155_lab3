@@ -1,126 +1,168 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2024.2.0.3.0
-// Netlist written on Mon Sep 15 16:41:22 2025
+// Netlist written on Mon Sep 15 21:44:21 2025
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv"
 // file 1 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv"
 // file 2 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv"
-// file 3 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
-// file 4 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv"
-// file 5 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv"
-// file 6 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v"
-// file 7 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd"
-// file 8 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ccu2_b.v"
-// file 9 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
-// file 10 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
-// file 11 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
-// file 12 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
-// file 13 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc.v"
-// file 14 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
-// file 15 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ib.v"
-// file 16 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
-// file 17 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc.v"
-// file 18 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
-// file 19 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ob.v"
-// file 20 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/obz_b.v"
-// file 21 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
-// file 22 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/pdp4k.v"
-// file 23 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb.v"
-// file 24 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
-// file 25 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/sp256k.v"
-// file 26 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/legacy.v"
-// file 27 "c:/lscc/radiant/2024.2/ip/common/adder/rtl/lscc_adder.v"
-// file 28 "c:/lscc/radiant/2024.2/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
-// file 29 "c:/lscc/radiant/2024.2/ip/common/complex_mult/rtl/lscc_complex_mult.v"
-// file 30 "c:/lscc/radiant/2024.2/ip/common/counter/rtl/lscc_cntr.v"
-// file 31 "c:/lscc/radiant/2024.2/ip/common/fifo/rtl/lscc_fifo.v"
-// file 32 "c:/lscc/radiant/2024.2/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
-// file 33 "c:/lscc/radiant/2024.2/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
-// file 34 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
-// file 35 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
-// file 36 "c:/lscc/radiant/2024.2/ip/common/multiplier/rtl/lscc_multiplier.v"
-// file 37 "c:/lscc/radiant/2024.2/ip/common/ram_dp/rtl/lscc_ram_dp.v"
-// file 38 "c:/lscc/radiant/2024.2/ip/common/ram_dq/rtl/lscc_ram_dq.v"
-// file 39 "c:/lscc/radiant/2024.2/ip/common/rom/rtl/lscc_rom.v"
-// file 40 "c:/lscc/radiant/2024.2/ip/common/subtractor/rtl/lscc_subtractor.v"
-// file 41 "c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v"
-// file 42 "c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v"
-// file 43 "c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v"
-// file 44 "c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v"
-// file 45 "c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v"
-// file 46 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v"
-// file 47 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v"
-// file 48 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v"
-// file 49 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v"
-// file 50 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v"
-// file 51 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v"
-// file 52 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v"
-// file 53 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v"
-// file 54 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v"
-// file 55 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v"
-// file 56 "c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v"
-// file 57 "c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v"
+// file 3 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv"
+// file 4 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
+// file 5 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv"
+// file 6 "c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv"
+// file 7 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v"
+// file 8 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd"
+// file 9 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 10 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 11 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 12 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 13 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 14 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 15 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 16 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ib.v"
+// file 17 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 18 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 19 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 20 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ob.v"
+// file 21 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 22 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 23 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 24 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 25 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 26 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 27 "c:/lscc/radiant/2024.2/cae_library/simulation/verilog/ice40up/legacy.v"
+// file 28 "c:/lscc/radiant/2024.2/ip/common/adder/rtl/lscc_adder.v"
+// file 29 "c:/lscc/radiant/2024.2/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 30 "c:/lscc/radiant/2024.2/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 31 "c:/lscc/radiant/2024.2/ip/common/counter/rtl/lscc_cntr.v"
+// file 32 "c:/lscc/radiant/2024.2/ip/common/fifo/rtl/lscc_fifo.v"
+// file 33 "c:/lscc/radiant/2024.2/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 34 "c:/lscc/radiant/2024.2/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 35 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 36 "c:/lscc/radiant/2024.2/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 37 "c:/lscc/radiant/2024.2/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 38 "c:/lscc/radiant/2024.2/ip/common/ram_dp/rtl/lscc_ram_dp.v"
+// file 39 "c:/lscc/radiant/2024.2/ip/common/ram_dq/rtl/lscc_ram_dq.v"
+// file 40 "c:/lscc/radiant/2024.2/ip/common/rom/rtl/lscc_rom.v"
+// file 41 "c:/lscc/radiant/2024.2/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 42 "c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v"
+// file 43 "c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v"
+// file 44 "c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v"
+// file 45 "c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v"
+// file 46 "c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v"
+// file 47 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v"
+// file 48 "c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v"
+// file 49 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v"
+// file 50 "c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v"
+// file 51 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v"
+// file 52 "c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v"
+// file 53 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v"
+// file 54 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v"
+// file 55 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v"
+// file 56 "c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v"
+// file 57 "c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v"
+// file 58 "c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v"
 
 //
-// Verilog Description of module stop_clamp
+// Verilog Description of module read_writer
 //
 
-module stop_clamp (input [3:0]cin, output [3:0]clamps, output [3:0]cout, 
-            output stop);
+module read_writer (input clk, input reset, input [3:0]rows, input [3:0]columns, 
+            output control_1, output control_2);
     
-    wire cin_c_3;
-    wire cin_c_2;
-    wire cin_c_1;
-    wire cin_c_0;
-    wire clamps_c_3;
-    wire clamps_c_2;
-    wire clamps_c_1;
-    wire clamps_c_0;
-    wire cout_c_2;
-    wire cout_c_1;
-    wire cout_c_0;
-    wire stop_c;
+    wire reset_c;
+    wire rows_c_3;
+    wire rows_c_2;
+    wire rows_c_1;
+    wire rows_c_0;
+    wire columns_c_3;
+    wire columns_c_2;
+    wire columns_c_1;
+    wire columns_c_0;
+    wire control_1_c;
+    wire control_2_c;
+    wire cstatus;
+    wire new_control;
+    wire [3:0]current_state;
+    wire [3:0]next_state;
     
-    wire GND_net, VCC_net;
+    wire GND_net, VCC_net, n4, n227, n7, n153, n311, n7_adj_1, 
+        n297, n219, n425, n398, n519, n7_adj_2;
     
-    VHI i2 (.Z(VCC_net));
-    (* lut_function="(!(A+(B+(C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i112_2_lut_3_lut (.A(cin_c_2), 
-            .B(cin_c_3), .C(cin_c_1), .Z(clamps_c_0));
-    defparam i112_2_lut_3_lut.INIT = "0x0101";
-    (* lut_function="(!((B)+!A))", lineinfo="@4(32[4],97[11])" *) LUT4 i88_2_lut (.A(cin_c_2), 
-            .B(cin_c_3), .Z(cout_c_2));
-    defparam i88_2_lut.INIT = "0x2222";
-    (* lut_function="(A (C)+!A (B (C)+!B (C+!(D))))", lineinfo="@4(32[4],97[11])" *) LUT4 i81_3_lut_4_lut (.A(cin_c_1), 
-            .B(cin_c_2), .C(cin_c_3), .D(cin_c_0), .Z(clamps_c_3));
-    defparam i81_3_lut_4_lut.INIT = "0xf0f1";
-    VLO i113 (.Z(GND_net));
-    (* lut_function="(!(A+(B+!(C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i92_2_lut_3_lut (.A(cin_c_2), 
-            .B(cin_c_3), .C(cin_c_1), .Z(cout_c_1));
-    defparam i92_2_lut_3_lut.INIT = "0x1010";
-    (* lut_function="(!(A+(B+((D)+!C))))", lineinfo="@4(32[4],97[11])" *) LUT4 i91_2_lut_3_lut_4_lut (.A(cin_c_1), 
-            .B(cin_c_2), .C(cin_c_0), .D(cin_c_3), .Z(cout_c_0));
-    defparam i91_2_lut_3_lut_4_lut.INIT = "0x0010";
-    (* lut_function="(!(A (B+!(C))+!A (B+!(C+!(D)))))", lineinfo="@4(32[4],97[11])" *) LUT4 i83_4_lut (.A(cin_c_0), 
-            .B(cin_c_3), .C(cin_c_2), .D(cin_c_1), .Z(clamps_c_2));
-    defparam i83_4_lut.INIT = "0x3031";
-    (* lut_function="(A+(B+(C+(D))))", lineinfo="@4(32[4],97[11])" *) LUT4 i1_2_lut_3_lut_4_lut (.A(cin_c_1), 
-            .B(cin_c_2), .C(cin_c_0), .D(cin_c_3), .Z(stop_c));
-    defparam i1_2_lut_3_lut_4_lut.INIT = "0xfffe";
-    (* lut_function="(!(A+(B+!(C+!(D)))))", lineinfo="@4(32[4],97[11])" *) LUT4 i86_3_lut_4_lut (.A(cin_c_2), 
-            .B(cin_c_3), .C(cin_c_1), .D(cin_c_0), .Z(clamps_c_1));
-    defparam i86_3_lut_4_lut.INIT = "0x1011";
-    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[0]  (.I(cin[0]), .O(cin_c_0));
-    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[1]  (.I(cin[1]), .O(cin_c_1));
-    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[2]  (.I(cin[2]), .O(cin_c_2));
-    (* lineinfo="@4(2[20],2[23])" *) IB \cin_pad[3]  (.I(cin[3]), .O(cin_c_3));
-    (* lineinfo="@4(5[15],5[19])" *) OB stop_pad (.I(stop_c), .O(stop));
-    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[0]  (.I(cout_c_0), .O(cout[0]));
-    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[1]  (.I(cout_c_1), .O(cout[1]));
-    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[2]  (.I(cout_c_2), .O(cout[2]));
-    (* lineinfo="@4(4[21],4[25])" *) OB \cout_pad[3]  (.I(cin_c_3), .O(cout[3]));
-    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[0]  (.I(clamps_c_0), .O(clamps[0]));
-    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[1]  (.I(clamps_c_1), .O(clamps[1]));
-    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[2]  (.I(clamps_c_2), .O(clamps[2]));
-    (* lineinfo="@4(3[21],3[27])" *) OB \clamps_pad[3]  (.I(clamps_c_3), .O(clamps[3]));
+    (* lut_function="(A (B (C))+!A (B (C+!(D))))", lineinfo="@3(21[2],80[6])" *) LUT4 i430_4_lut (.A(next_state[0]), 
+            .B(cstatus), .C(reset_c), .D(next_state[1]), .Z(n519));
+    defparam i430_4_lut.INIT = "0xc0c4";
+    (* lut_function="(A (B+!(C+!(D)))+!A (B (C+!(D))))", lineinfo="@3(21[2],80[6])" *) LUT4 i11_4_lut (.A(next_state[0]), 
+            .B(n519), .C(n398), .D(current_state[1]), .Z(next_state[0]));
+    defparam i11_4_lut.INIT = "0xcacc";
+    (* lineinfo="@3(3[20],3[24])" *) IB \rows_pad[2]  (.I(rows[2]), .O(rows_c_2));
+    (* lineinfo="@3(3[20],3[24])" *) IB \rows_pad[3]  (.I(rows[3]), .O(rows_c_3));
+    (* lineinfo="@3(3[20],3[24])" *) IB \rows_pad[1]  (.I(rows[1]), .O(rows_c_1));
+    (* lut_function="(!(A))" *) LUT4 i1_1_lut (.A(current_state[0]), .Z(n398));
+    defparam i1_1_lut.INIT = "0x5555";
+    (* lut_function="(!((B)+!A))", lineinfo="@3(14[3],19[7])" *) LUT4 i253_2_lut (.A(next_state[0]), 
+            .B(reset_c), .Z(current_state[0]));
+    defparam i253_2_lut.INIT = "0x2222";
+    (* lut_function="(!((B)+!A))", lineinfo="@3(14[3],19[7])" *) LUT4 i254_2_lut (.A(next_state[1]), 
+            .B(reset_c), .Z(current_state[1]));
+    defparam i254_2_lut.INIT = "0x2222";
+    (* lineinfo="@3(3[26],3[33])" *) IB \columns_pad[0]  (.I(columns[0]), 
+            .O(columns_c_0));
+    (* lineinfo="@3(3[26],3[33])" *) IB \columns_pad[1]  (.I(columns[1]), 
+            .O(columns_c_1));
+    (* lineinfo="@3(2[19],2[24])" *) IB reset_pad (.I(reset), .O(reset_c));
+    (* lineinfo="@3(3[26],3[33])" *) IB \columns_pad[2]  (.I(columns[2]), 
+            .O(columns_c_2));
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(21[2],80[6])" *) LUT4 i21_3_lut (.A(next_state[1]), 
+            .B(cstatus), .C(n398), .Z(n7_adj_2));
+    defparam i21_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(21[2],80[6])" *) LUT4 i20_3_lut (.A(current_state[0]), 
+            .B(n7_adj_2), .C(current_state[1]), .Z(next_state[1]));
+    defparam i20_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+(C+(D)))+!A (B (C+(D))+!B (C (D)+!C !(D))))" *) LUT4 i2_3_lut_4_lut (.A(columns_c_0), 
+            .B(columns_c_1), .C(columns_c_3), .D(columns_c_2), .Z(n425));
+    defparam i2_3_lut_4_lut.INIT = "0xfee9";
+    (* lut_function="(A+(B+((D)+!C)))", lineinfo="@3(51[8],51[15])" *) LUT4 i2_3_lut_4_lut_adj_1 (.A(columns_c_0), 
+            .B(columns_c_1), .C(columns_c_3), .D(columns_c_2), .Z(n7_adj_1));
+    defparam i2_3_lut_4_lut_adj_1.INIT = "0xffef";
+    (* lineinfo="@3(4[26],4[35])" *) OB control_2_pad (.I(control_2_c), .O(control_2));
+    (* lut_function="(A+(B+(C+!(D))))", lineinfo="@3(51[8],51[15])" *) LUT4 i2_3_lut_4_lut_adj_2 (.A(columns_c_0), 
+            .B(columns_c_1), .C(columns_c_3), .D(columns_c_2), .Z(n219));
+    defparam i2_3_lut_4_lut_adj_2.INIT = "0xfeff";
+    (* lineinfo="@3(3[20],3[24])" *) IB \rows_pad[0]  (.I(rows[0]), .O(rows_c_0));
+    (* lineinfo="@3(3[26],3[33])" *) IB \columns_pad[3]  (.I(columns[3]), 
+            .O(columns_c_3));
+    VLO i510 (.Z(GND_net));
+    (* lineinfo="@3(4[15],4[24])" *) OB control_1_pad (.I(control_1_c), .O(control_1));
+    (* lut_function="(!(A (B+(C+(D)))+!A (B (C+(D))+!B (C (D)+!C !(D)))))" *) LUT4 i1_4_lut_4_lut (.A(rows_c_2), 
+            .B(rows_c_0), .C(rows_c_3), .D(rows_c_1), .Z(n153));
+    defparam i1_4_lut_4_lut.INIT = "0x0116";
+    (* lut_function="(A+(B+(C+!(D))))", lineinfo="@3(48[8],48[15])" *) LUT4 i2_3_lut_4_lut_adj_3 (.A(columns_c_2), 
+            .B(columns_c_3), .C(columns_c_1), .D(columns_c_0), .Z(n7));
+    defparam i2_3_lut_4_lut_adj_3.INIT = "0xfeff";
+    (* lut_function="(A (B+(C+(D)))+!A !((C+(D))+!B))", lineinfo="@3(21[2],80[6])" *) LUT4 i210_4_lut (.A(control_2_c), 
+            .B(new_control), .C(n398), .D(current_state[1]), .Z(control_2_c));
+    defparam i210_4_lut.INIT = "0xaaac";
+    (* lut_function="(A+(B (C+(D))+!B ((D)+!C)))" *) LUT4 i255_4_lut_4_lut (.A(columns_c_0), 
+            .B(columns_c_1), .C(columns_c_3), .D(columns_c_2), .Z(n297));
+    defparam i255_4_lut_4_lut.INIT = "0xffeb";
+    (* lut_function="(!(A (B+(C))+!A (B+!(C))))" *) LUT4 i1_3_lut (.A(rows_c_0), 
+            .B(rows_c_3), .C(rows_c_1), .Z(n4));
+    defparam i1_3_lut.INIT = "0x1212";
+    (* lut_function="(A+(B+(C+(D))))", lineinfo="@3(51[8],51[15])" *) LUT4 cstatus_I_0_2_lut_3_lut_4_lut (.A(columns_c_0), 
+            .B(columns_c_1), .C(columns_c_2), .D(columns_c_3), .Z(cstatus));
+    defparam cstatus_I_0_2_lut_3_lut_4_lut.INIT = "0xfffe";
+    (* lut_function="(A (B+!(C (D)))+!A (B (C (D))))" *) LUT4 i200_4_lut (.A(n7), 
+            .B(n7_adj_1), .C(rows_c_0), .D(n4), .Z(n227));
+    defparam i200_4_lut.INIT = "0xcaaa";
+    (* lut_function="(A (B (C+(D))+!B !(C+!(D)))+!A (B (C)))", lineinfo="@3(45[4],79[11])" *) LUT4 mux_128_i1_4_lut (.A(n227), 
+            .B(n297), .C(rows_c_2), .D(n219), .Z(n311));
+    defparam mux_128_i1_4_lut.INIT = "0xcac0";
+    (* lut_function="(A ((C+!(D))+!B)+!A !(B+(C+!(D))))", lineinfo="@3(21[2],80[6])" *) LUT4 i212_4_lut (.A(new_control), 
+            .B(n311), .C(n425), .D(n153), .Z(new_control));
+    defparam i212_4_lut.INIT = "0xa3aa";
+    (* lut_function="(A (B+(C+(D)))+!A !((C+(D))+!B))", lineinfo="@3(21[2],80[6])" *) LUT4 i208_4_lut (.A(control_1_c), 
+            .B(control_2_c), .C(n398), .D(current_state[1]), .Z(control_1_c));
+    defparam i208_4_lut.INIT = "0xaaac";
+    VHI i202 (.Z(VCC_net));
     
 endmodule

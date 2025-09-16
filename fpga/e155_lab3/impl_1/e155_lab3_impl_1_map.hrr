@@ -1,8 +1,8 @@
 ---------------------------------------------------
-Report for cell stop_clamp
-   Instance path: stop_clamp
+Report for cell read_writer
+   Instance path: read_writer
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8        100.0
-                               LUTGATE	          8        100.0
-                                 IOBUF	         13        100.0
+                                  LUT4	         19        100.0
+                               LUTGATE	         19        100.0
+                                 IOBUF	         11        100.0

@@ -48,13 +48,14 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep 15 16:41:14 2025
+Mon Sep 15 21:44:13 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
 
 INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
 
+The -top option is not used.
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -94,7 +95,7 @@ Resolving user-selected strategy settings...
 ----------------------------------------------------------------
 Optimization Goal     | Area
 ----------------------------------------------------------------
-Top-level Module Name | stop_clamp
+Top-level Module Name | 
 ----------------------------------------------------------------
 Target Frequency      | 200.000 MHz
 ----------------------------------------------------------------
@@ -155,6 +156,7 @@ Output HDL filename: e155_lab3_impl_1.vm
 -path C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1 (searchpath added)
 -path C:/lscc/radiant/2024.2/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
+CRITICAL <35001476> - synthesis: A top-level module has not been specified for the mixed language design.
 Verilog design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v
 Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
 Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
@@ -162,6 +164,7 @@ Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/sour
 Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
 Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
 Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
+Verilog design file: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
 VHDL library: pmi
 VHDL design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
@@ -218,32 +221,89 @@ Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/so
 Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv. VERI-1482
 Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv. VERI-1482
 Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv. VERI-1482
+Analyzing Verilog file c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+WARNING <35001200> - synthesis: Setting read_writer as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
 INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1". VHDL-1504
 Top module language type = Verilog.
-Top module name (Verilog, mixed language): stop_clamp
-INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(1): compiling module stop_clamp. VERI-1018
+Top module name (Verilog, mixed language): read_writer
+INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(1): compiling module read_writer. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(13): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(18): next_state should be on the sensitivity list. VERI-1221
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(48): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(50): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(51): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(56): expression size 3 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(57): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(58): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(59): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(64): expression size 3 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(65): expression size 3 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(66): expression size 3 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(67): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(73): expression size 2 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(74): expression size 2 truncated to fit in target size 1. VERI-1209
+WARNING <35901209> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(75): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING <35901899> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(80): behavior inside always_comb block does not represent combinational logic. VERI-1899
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
 
 [Parameter Setting Section End]
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
 
 
 
+WARNING <35935043> - synthesis: Latch next_state[2:0]_i3 input is stuck at Zero. VDB-5043
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
+Combinational loop due to latch found: 1
+
+	Instance next_state_1__I_1 
+
+	Net next_state[1] 
+
+Combinational loop due to latch found: 2
+
+	Instance next_state_0__I_2 
+
+	Net next_state[0] 
+
+Combinational loop due to latch found: 3
+
+	Instance control_2_c_I_0 
+
+	Net control_1_c 
+
+Combinational loop due to latch found: 4
+
+	Instance new_control_I_3 
+
+	Net control_2_c 
+
+Combinational loop due to latch found: 5
+
+	Instance new_control_I_0 
+
+	Net new_control 
+
+CRITICAL <35001783> - synthesis: Mapping latch next_state_1__I_1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch next_state_0__I_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch control_2_c_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch new_control_I_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch new_control_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
-################### Begin Area Report (stop_clamp)######################
+################### Begin Area Report (read_writer)######################
 Number of register bits => 0 of 5280 (0 % )
-IB => 4
-LUT4 => 8
-OB => 9
+IB => 9
+LUT4 => 20
+OB => 2
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 0
@@ -258,16 +318,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : cin_c_3, loads : 9
-  Net : cin_c_2, loads : 8
-  Net : cin_c_1, loads : 7
-  Net : cin_c_0, loads : 5
-  Net : clamps_c_2, loads : 4
-  Net : clamps_c_3, loads : 2
-  Net : clamps_c_1, loads : 2
-  Net : clamps_c_0, loads : 2
-  Net : cout_c_2, loads : 2
-  Net : cout_c_1, loads : 2
+  Net : n311, loads : 7
+  Net : n425, loads : 7
+  Net : columns_c_3, loads : 6
+  Net : columns_c_2, loads : 6
+  Net : columns_c_1, loads : 6
+  Net : columns_c_0, loads : 6
+  Net : n227, loads : 5
+  Net : n153, loads : 5
+  Net : n297, loads : 5
+  Net : cstatus, loads : 4
 ################### End Clock Report ##################
 
 
@@ -279,13 +339,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 92 MB
+Peak Memory Usage: 97 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
 Total REAL Time: 8 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 2a05726255e79abcb1a25a2cf302c3c027c5947c
+Checksum -- synthesis -- netlist: 13d3524a3ca647801ef7c641c8c10f4585275d9a
 
 
 

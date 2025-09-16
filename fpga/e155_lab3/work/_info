@@ -134,6 +134,7 @@ R9
 R10
 n@_opt1
 R11
+R4
 T_opt2
 !s110 1757815216
 VOcLJ^Cgd:g5UQF14JN8YG2
@@ -328,23 +329,23 @@ R10
 vstop_clamp
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 R13
-Z40 !s110 1757979748
+Z40 !s110 1757993886
 !i10b 1
 !s100 =8EYTkWU59gz_ZLi^?50[2
 IaId_dgzT3Ue]YocJz4NKQ1
 S1
 R4
-Z41 w1757979667
+Z41 w1757993416
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
-!i122 128
+!i122 130
 L0 1 99
 R18
 R19
 r1
 !s85 0
 31
-Z42 !s108 1757979748.000000
+Z42 !s108 1757993886.000000
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !i113 0
@@ -362,7 +363,7 @@ R4
 R41
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
-!i122 129
+!i122 131
 L0 4 67
 R18
 R19
