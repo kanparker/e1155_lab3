@@ -1,12 +1,11 @@
 `timescale 1ns/1ns
 `default_nettype none
-`define N_TV 16
+`define N_TV 13
 module read_writer_tb();
 	logic clk, reset;
 	logic [31:0] vectornum,errors;
-	logic [12:0] testvectors[10000:0];
-	logic stop,stop_expected;
-	logic [3:0] cin,rows,control_1,control_2,control_1exp,control_2exp;
+	logic [15:0] testvectors[10000:0];
+	logic [3:0] rows,columns,control_1,control_2,control_1exp,control_2exp;
 	
 	// instantiate device under test
 	read_writer dut(clk,reset,rows,columns,control_1,control_2);
@@ -14,7 +13,7 @@ module read_writer_tb();
 	// at start of test, load vectors and pulse reset
 	initial
 		begin
-			$readmemb("read_writer.tv", testvectors, 0, `N_TV - 1);
+			$readmemb("read_write.tv", testvectors, 0, `N_TV - 1);
 			vectornum = 0; errors = 0; reset = 1; #22; reset = 0;
 		end
 		
@@ -26,32 +25,27 @@ module read_writer_tb();
 		// apply test vectors on rising edge of clk
 	always @(posedge clk)
 		begin
-			#1; {cin,clamps_expected,cout_expected,stop_expected} = testvectors[vectornum];
-			$display("%b %b %b %b", cin, clamps_expected, cout_expected,stop_expected);
+			#1; {rows,columns,control_1exp,control_2exp} = testvectors[vectornum];
+			///$display("%b %b %b %b", row, columns, cont,stop_expected);
 		end
 
 // check results on falling edge of clk
 	always @(negedge clk)
 		if (~reset) begin // skip during reset
-			if(cout !==cout_expected) begin
-					$display("Error: inputs = %b", cin);
-					$display(" Cout outputs = %b (%b expected)", cout, cout_expected);
+			if(control_1 !==control_1exp) begin
+					$display("Error: inputs = %b %b", columns, rows);
+					$display(" Control_1 outputs = %b (%b expected)", control_1, control_1exp);
 					errors = errors + 1;
 				end;
-			if(clamps !==clamps_expected) begin
-					$display("Error: inputs = %b", cin);
-					$display(" Clamps outputs = %b (%b expected)", clamps, clamps_expected);
-					errors = errors + 1;
-				end;
-			if(stop !==stop_expected) begin
-					$display("Error: inputs = %b", cin);
-					$display(" Stop outputs = %b (%b expected)", stop, stop_expected);
+			if(control_2 !==control_2exp) begin
+					$display("Error: inputs = %b %b", columns, rows);
+					$display(" Control_2 outputs = %b (%b expected)", control_2, control_2exp);
 					errors = errors + 1;
 				end;
 				
 			assign vectornum = vectornum +1;
 			
-			if (testvectors[vectornum] === 13'bx) begin
+			if (testvectors[vectornum] === 16'bx) begin
 				$display("%d tests completed with %d errors", vectornum, errors);
 				$stop;
 			end

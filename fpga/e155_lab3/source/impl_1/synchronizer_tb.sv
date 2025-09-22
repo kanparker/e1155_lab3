@@ -1,14 +1,14 @@
 `timescale 1ns/1ns
 `default_nettype none
-`define N_TV 24
+`define N_TV 13
 module synchronizer_tb();
 	logic clk, reset;
 	logic [31:0] vectornum,errors;
-	logic [13:0] testvectors[10000:0];
-	logic [3:0] cin, cmid, cout, cout_expected;
+	logic [2:0] testvectors[10000:0];
+	logic cin, cout, stop, cout_expected;
 	
 	// instantiate device under test
-	synchronizer dut(cin,clk,reset,cout);
+	synchronizer dut(cin,clk,reset,stop,cout);
 	
 	// at start of test, load vectors and pulse reset
 	initial
@@ -26,7 +26,7 @@ module synchronizer_tb();
 		// apply test vectors on rising edge of clk
 	always @(posedge clk)
 		begin
-			#1; {cin,cout_expected} = testvectors[vectornum];
+			#1; {cin,cout_expected,stop} = testvectors[vectornum];
 			
 		end
 
@@ -39,7 +39,7 @@ module synchronizer_tb();
 					errors = errors + 1;
 				end;
 			
-			if (testvectors[vectornum] === 14'bx) begin
+			if (testvectors[vectornum] === 3'bx) begin
 				$display("%d tests completed with %d errors", vectornum, errors);
 				$stop;
 			end

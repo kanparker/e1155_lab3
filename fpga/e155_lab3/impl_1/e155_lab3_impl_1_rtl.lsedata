@@ -1,11 +1,15 @@
-<top name = "read_writer"  library = "work"  arch = ""  entry = "Verilog">
+<top name = "top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
+    <clockitem name = "debounce0/n10"  type = "net" />
+    <clockitem name = "debounce2/n10"  type = "net" />
+    <clockitem name = "debounce3/n10"  type = "net" />
+    <clockitem name = "debounce1/n10"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 0
+    //  Number of Clocks processed: 4
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.

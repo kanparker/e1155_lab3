@@ -4,7 +4,7 @@ module read_writer(
 	output logic [3:0] control_1, control_2
 );
 	logic cstatus;
-	logic new_control;
+	logic [3:0]new_control;
 	typedef enum logic[3:0]{idle, update, hold} states;
 	states current_state, next_state;
 	
@@ -21,26 +21,6 @@ module read_writer(
 	always_comb
 		begin
 			cstatus = |columns;
-			
-			case(current_state)
-				idle: begin
-					if(cstatus) begin
-						next_state = update;
-						end
-					else next_state = idle;
-					end
-				
-				update: begin
-					next_state = hold;
-					control_1 = control_2;
-					control_2 = new_control;
-					end
-					
-				hold: begin
-					if(cstatus) next_state = hold;
-					else next_state = idle;
-					end
-			endcase
 			
 			case(rows)
 				4'b0001: begin
@@ -77,6 +57,29 @@ module read_writer(
 					end
 			
 			endcase
+			
+			
+			case(current_state)
+				idle: begin
+					if(cstatus) begin
+						next_state = update;
+						end
+					else next_state = idle;
+					end
+				
+				update: begin
+					next_state = hold;
+					control_2 = control_1;
+					control_1 = new_control;
+					end
+					
+				hold: begin
+					if(cstatus) next_state = hold;
+					else next_state = idle;
+					end
+			endcase
+			
+			
 		end
 		
 endmodule

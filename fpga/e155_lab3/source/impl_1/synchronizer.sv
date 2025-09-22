@@ -1,19 +1,23 @@
 module synchronizer(
-	input logic [3:0] cin,
-	input logic clk, reset,
-	output logic [3:0] cout
+	input logic cin,
+	input logic clk, reset, clamp,
+	output logic cout
 );
-	logic [3:0] cmid;
+	logic cmid;
 	
 	always_ff @(posedge clk, reset)
 		if(reset) begin
-			cmid[3:0] <= 4'b0000;
-			cout[3:0] <= 4'b0000;
+			cmid <= 1'b0;
+			cout <= 1'b0;
 			end
+		else if(clamp) begin
+				cout <= cmid;
+				cmid <= cin;
+				end
 		else begin
-			cout <= cmid;
-			cmid <= cin;
+				cout<= 1'b0;
 			end
+			
 		
 	
 

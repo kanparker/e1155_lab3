@@ -1,46 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>clk</Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35001476</ID>
@@ -376,13 +335,193 @@
         <Message>
             <ID>35001200</ID>
             <Severity>16</Severity>
-            <Dynamic>read_writer</Dynamic>
+            <Dynamic>top</Dynamic>
         </Message>
         <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
             <Dynamic>C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(1): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): </Dynamic>
+            <Dynamic>HSOC</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): </Dynamic>
+            <Dynamic>clock_divider</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901084</ID>
+            <Severity>128</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(16): </Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): </Dynamic>
+            <Dynamic>counter</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): </Dynamic>
+            <Dynamic>P</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(1): </Dynamic>
+            <Dynamic>row_sweep</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901084</ID>
+            <Severity>128</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(11): </Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
+            <Dynamic>current_state</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
+            <Dynamic>stop</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(1): </Dynamic>
+            <Dynamic>synchronizer</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901084</ID>
+            <Severity>128</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(8): </Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(13): </Dynamic>
+            <Dynamic>clamp</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(14): </Dynamic>
+            <Dynamic>cmid</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): </Dynamic>
+            <Dynamic>cin</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(1): </Dynamic>
+            <Dynamic>debounce</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901084</ID>
+            <Severity>128</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(8): </Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(13): </Dynamic>
+            <Dynamic>raw_data</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(14): </Dynamic>
+            <Dynamic>pvalue</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(14): </Dynamic>
+            <Dynamic>nvalue</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(15): </Dynamic>
+            <Dynamic>raw_data</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(1): </Dynamic>
+            <Dynamic>stop_clamp</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv</Navigation>
+            <Navigation>1</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -408,179 +547,329 @@
             <Navigation>18</Navigation>
         </Message>
         <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(48): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>48</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(50): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>50</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(51): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>51</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(56): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>56</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(57): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>57</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(58): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>58</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(59): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>59</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(64): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>64</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(65): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>65</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(66): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>66</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(67): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>67</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(73): </Dynamic>
-            <Dynamic>2</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>73</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(74): </Dynamic>
-            <Dynamic>2</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>74</Navigation>
-        </Message>
-        <Message>
-            <ID>35901209</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(75): </Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>1</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>75</Navigation>
-        </Message>
-        <Message>
             <ID>35901899</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(80): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(83): </Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>80</Navigation>
+            <Navigation>83</Navigation>
         </Message>
         <Message>
-            <ID>35002028</ID>
-            <Severity>256</Severity>
-            <Dynamic>clk</Dynamic>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(1): </Dynamic>
+            <Dynamic>display_driver</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv(8): </Dynamic>
+            <Dynamic>seven_seg_display</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(55): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>s2</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(55): </Dynamic>
+            <Dynamic>contrl2</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[31]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[30]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[29]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[28]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[27]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[26]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[25]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[24]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[23]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[22]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[21]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[20]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[19]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[18]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[17]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[16]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[15]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[14]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[13]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[12]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[11]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[10]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[9]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[8]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[6]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>counter[0]</Dynamic>
         </Message>
         <Message>
             <ID>35935043</ID>
             <Severity>16</Severity>
-            <Dynamic>next_state[2:0]_i3</Dynamic>
+            <Dynamic>\read_write/next_state_i3</Dynamic>
             <Dynamic>input</Dynamic>
             <Dynamic>Zero</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>clk</Dynamic>
+            <Dynamic>cols_c_0_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>next_state_1__I_1</Dynamic>
+            <Dynamic>cols_c_1_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>next_state_0__I_2</Dynamic>
+            <Dynamic>cols_c_2_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>control_2_c_I_0</Dynamic>
+            <Dynamic>cols_c_3_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>new_control_I_3</Dynamic>
+            <Dynamic>csynched_0__I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>new_control_I_0</Dynamic>
+            <Dynamic>csynched_1__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>csynched_2__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>csynched_3__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_0__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_0_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/next_state_0__I_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_1__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_2__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_3__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_1_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_2_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/next_state_1__I_2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

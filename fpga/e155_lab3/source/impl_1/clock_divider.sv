@@ -1,14 +1,14 @@
 module clock_divider(
 	input 	logic clk,
+	input logic [31:0]P,
 	input logic reset,
 	output 	logic slow_clk
 );
 
 	
 	logic [31:0] counter = 0;
-	logic [31:0] P;
 	
-	assign P = 32'b01000000000000000000000000000000;
+	
 	
 	
 	

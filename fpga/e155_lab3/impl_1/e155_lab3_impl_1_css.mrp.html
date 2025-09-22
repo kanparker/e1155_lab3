@@ -42,14 +42,14 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Mrp"></A>                         Lattice Mapping Report File
 
-Design:  read_writer
+Design:  top
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Mon Sep 15 21:44:26 2025
+Mapped on: Sun Sep 21 17:02:41 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
@@ -59,20 +59,21 @@ Command line:   map -i e155_lab3_impl_1_syn.udb -o e155_lab3_impl_1_map.udb -mp
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:   0 out of  5280 (0%)
+   Number of slice registers:   4 out of  5280 (&lt;1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            19 out of  5280 (&lt;1%)
-      Number of logic LUT4s:              19
-      Number of ripple logic:              0 (0 LUT4s)
-   Number of IO sites used:   11 out of 39 (28%)
-      Number of IO sites used for general PIO: 11
+   Number of LUT4s:           194 out of  5280 (4%)
+      Number of logic LUT4s:             158
+      Number of replicated LUT4s:          2
+      Number of ripple logic:             17 (34 LUT4s)
+   Number of IO sites used:   26 out of 39 (67%)
+      Number of IO sites used for general PIO: 26
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 11 out of 36 (31%)
+      Number of IO sites used for PIO+I3C: 26 out of 36 (72%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 11 out of 39 (28%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 26 out of 39 (67%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -85,29 +86,30 @@ Command line:   map -i e155_lab3_impl_1_syn.udb -o e155_lab3_impl_1_map.udb -mp
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  0
+   Number of Clocks:  1
+      Net gate1_c: 4 loads, 0 rising, 4 falling (Driver: Pin
+     one_khz_clock.i3402_2_lut/Z)
    Number of Clock Enables:  0
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net columns_c_0: 6 loads
-      Net columns_c_1: 6 loads
-      Net columns_c_2: 6 loads
-      Net columns_c_3: 6 loads
-      Net reset_c: 6 loads
-      Net next_state[0]: 5 loads
-      Net next_state[1]: 4 loads
-      Net control_2_c: 3 loads
-      Net current_state[1]: 3 loads
-      Net rows_c_0: 3 loads
+      Net reset_c: 59 loads
+      Net cout[3]: 35 loads
+      Net cdebounced[2]: 28 loads
+      Net current_state[0]: 23 loads
+      Net current_state[1]: 22 loads
+      Net cdebounced[1]: 16 loads
+      Net cdebounced[0]: 15 loads
+      Net d0_c_1: 15 loads
+      Net d0_c_2: 15 loads
+      Net d0_c_0: 14 loads
 
-   Number of warnings:  2
+   Number of warnings:  0
    Number of criticals: 0
    Number of errors:    0
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
 
-WARNING &lt;71003020&gt; - map: Top module port &apos;clk&apos; does not connect to anything.
-WARNING &lt;71003020&gt; - map: Top module port &apos;clk&apos; does not connect to anything.
+   No error, critical, or warning presents.
 
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
@@ -115,33 +117,62 @@ WARNING &lt;71003020&gt; - map: Top module port &apos;clk&apos; does not connect
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rows[2]             | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| rows[3]             | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| rows[1]             | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| columns[0]          | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| columns[1]          | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| columns[2]          | INPUT     |           |       |       |           |
+| cols[0]             | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| control_2           | OUTPUT    |           |       |       |           |
+| cols[1]             | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rows[0]             | INPUT     |           |       |       |           |
+| cols[2]             | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| columns[3]          | INPUT     |           |       |       |           |
+| cols[3]             | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| control_1           | OUTPUT    |           |       |       |           |
+| gate2               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| gate1               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[4]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[5]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| seg[6]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d1[0]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d1[1]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d1[2]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d1[3]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d0[0]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d0[1]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d0[2]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| d0[3]               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rows[0]             | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rows[1]             | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rows[2]             | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rows[3]             | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block control_2_pad.vhi_inst was optimized away.
-Block rows_pad[2].vlo_inst was optimized away.
+Block reset_pad.vlo_inst was optimized away.
 
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 
@@ -155,8 +186,8 @@ Block rows_pad[2].vlo_inst was optimized away.
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 61 MB
-Checksum -- map: 4883a3bc33e1b5aa9c2470b24836e68235a5bd4
+   Peak Memory Usage: 63 MB
+Checksum -- map: b519e9ba549df0d1c66f5443fbbe90d842d816
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.
