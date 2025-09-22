@@ -11,9 +11,10 @@ module lab3_top_tb();
     logic [3:0][3:0] keys;
 
     // dut
-    top dut(.clk(clk), .cols(cols), .reset(reset), .rows(rows), .d0(d0), .d1(d1), .seg(seg), .gate1(gate1), .gate2(gate2));
+    top dut(clk, cols, reset, rows, d0, d1, seg, gate1, gate2);
 	
-    // ensures rows = 4'b1111 when no key is pressed
+	
+    // ensures rows = 4'b0000 when no key is pressed
 	pulldown(cols[0]);
     pulldown(cols[1]);
     pulldown(cols[2]);
@@ -48,33 +49,129 @@ module lab3_top_tb();
 
     // apply stimuli and check outputs
     initial begin
-        reset = 1;
+        reset = 1;#22;
 
         // no key pressed
         keys = '{default:0};
 
         #22 reset = 0;
-		
-        // press key at row=1, col=2
-        #50 keys[1][2] = 1;
-        check_key(4'h0, 4'hx, "First key press");
+		#100
+        // press key at row=0, col=0
+        #50 keys[0][0] = 1;
+		#100
+        check_key(4'ha, 4'hx, "First key press");
 
         // release button
-        keys[1][2] = 0;
+        keys[0][0] = 0;
 
-        // press another key at row=0, col=0
-        keys[2][3] = 1;
-        check_key(4'hc, 4'h6, "Second key press");
+        // press another key at row=1, col=0
+        keys[1][0] = 1;
+		#100
+        check_key(4'h7, 4'ha, "Second key press");
 
+        // release buttons
+        #100 keys[1][0] = 0;
+
+         
+		
+		 // press another key at row=2, col=0
+        keys[2][0] = 1;
+		#100
+        check_key(4'h4, 4'h7, "third key press");
+
+        // release buttons
+        #100 keys[2][0] = 0;
+
+        
+		
+		 // press another key at row=3, col=0
+        keys[3][0] = 1;
+		#100
+        check_key(4'h1, 4'h4, "fourth key press");
+		
+		#100
+		keys[3][0]=0;
+		keys[0][1] = 1;
+		#100
+        check_key(4'h0, 4'h1, "fifth key press");
+
+        // release button
+        #100 keys[0][1] = 0;
+		keys[1][1] = 1;
+		#100
+        check_key(4'h8, 4'h0, "sixth key press");
+
+        // release button
+        #100 keys[1][1] = 0;
+		keys[2][1] = 1;
+		#100
+        check_key(4'h5, 4'h8, "seventh key press");
+
+        // release button
+        #100 keys[2][1] = 0;
+		keys[3][1] = 1;
+		#100
+        check_key(4'h2, 4'h5, "eight key press");
+
+        // release button
+        #100 keys[3][1] = 0;
+		keys[0][2] = 1;
+		#100
+        check_key(4'hb, 4'h2, "ninth key press");
+
+        // release button
+        #100 keys[0][2] = 0;
+		keys[1][2] = 1;
+		#100
+        check_key(4'h9, 4'hb, "tenth key press");
+
+        // release button
+        #100 keys[1][2] = 0;
+		keys[2][2] = 1;
+		#100
+        check_key(4'h6, 4'h9, "11th key press");
+
+        // release button
+        #100 keys[2][2] = 0;
+		keys[3][2] = 1;
+		#100
+        check_key(4'h3, 4'h6, "12th key press");
+
+        // release button
+        #100 keys[3][2] = 0;
+		keys[0][3] = 1;
+		#100
+        check_key(4'hf, 4'h3, "13th key press");
+
+        // release button
+        #100 keys[0][3] = 0;
+		keys[1][3] = 1;
+		#100
+        check_key(4'he, 4'hf, "14th key press");
+
+        // release button
+        #100 keys[1][3] = 0;
+		keys[2][3] = 1;
+		#100
+        check_key(4'hd, 4'he, "15th key press");
+
+        // release button
+        #100 keys[2][3] = 0;
+		keys[3][3] = 1;
+		#100
+        check_key(4'hc, 4'hd, "16th key press");
+
+        // release button
+        #100 keys[3][3] = 0;
         // release buttons
         #100 keys = '{default:0};
 
-        #100 $stop;
+		$stop;
     end
 
     // add a timeout
     initial begin
-        #5000; // wait 5 us
+        #50000; // wait 50 us
         $error("Simulation did not complete in time.");
         $stop;
     end

@@ -55,6 +55,7 @@
 
 
 -path "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3"
+-top top
 -udb "e155_lab3_impl_1_rtl.udb"
 -output_hdl "e155_lab3_impl_1.vm"
 

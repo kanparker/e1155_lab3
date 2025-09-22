@@ -1,6 +1,6 @@
                          Lattice PAR Report File
 Radiant Software (64-bit) 2024.2.0.3.0
-Sun Sep 21 17:02:50 2025
+Sun Sep 21 18:35:05 2025
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab3_impl_1_map.udb e155_lab3_impl_1.udb 
@@ -9,16 +9,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
 Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
 ----------   --------     -----------     ------       ---------------    -----------     ----     ------
-5_1   *      0            -               -            -                  -               06       Completed
+5_1   *      0            -               -            -                  -               05       Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 5 secs 
 
 par done!
 
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Sun Sep 21 17:02:50 2025
+PARed on: Sun Sep 21 18:35:05 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab3_impl_1_map.udb e155_lab3_impl_1_par.dir/5_1.udb 
@@ -40,15 +40,15 @@ Constraint Summary
    Total number of constraints: 0
    Total number of constraints dropped: 0
 
-Number of Signals: 234
-Number of Connections: 642
+Number of Signals: 134
+Number of Connections: 454
 Device utilization summary:
 
-   SLICE (est.)      99/2640          4% used
-     LUT            194/5280          4% used
+   SLICE (est.)      66/2640          3% used
+     LUT            124/5280          2% used
      REG              4/5280         <1% used
-   PIO               26/56           46% used
-                     26/36           72% bonded
+   PIO               27/56           48% used
+                     27/36           75% bonded
    IOLOGIC            0/56            0% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -67,7 +67,7 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 26 pins locked (0% locked).
+   0 out of 27 pins locked (0% locked).
 .
 ............
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
@@ -78,20 +78,20 @@ Finished Placer Phase 0 (AP).  CPU time: 0 secs , REAL time: 0 secs
 
 Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs 
 ..  ..
-....................
+.....................
 
-Placer score = 34171.
+Placer score = 28158.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             99/2640          3% used
+   SLICE             66/2640          2% used
 
-Finished Placer Phase 1. CPU time: 5 secs , REAL time: 5 secs 
+Finished Placer Phase 1. CPU time: 4 secs , REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  72976
-Finished Placer Phase 2.  CPU time: 5 secs , REAL time: 5 secs 
+Placer score =  59971
+Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 4 secs 
 
 
 ------------------ Clock Report ------------------
@@ -104,24 +104,24 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   26 out of 56 (46.4%) I/O sites used.
-   26 out of 36 (72.2%) bonded I/O sites used.
-   Number of I/O components: 26; differential: 0
+   27 out of 56 (48.2%) I/O sites used.
+   27 out of 36 (75.0%) bonded I/O sites used.
+   Number of I/O components: 27; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
 +----------+----------------+------------+------------+------------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+----------------+------------+------------+------------+
-| 0        | 4 / 14 ( 28%)  | 3.3V       |            |            |
+| 0        | 5 / 14 ( 35%)  | 3.3V       |            |            |
 | 1        | 14 / 14 (100%) | 3.3V       |            |            |
 | 2        | 8 / 8 (100%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 5 secs , REAL time: 5 secs 
+Total Placer CPU time: 4 secs , REAL time: 4 secs 
 
 
-Checksum -- place: 9ac24ecd4722b92032a57416216a898bbce81b2
+Checksum -- place: 8d8c2002678c342a9fc93bc4fbe8dd72190678a0
 Writing design to file e155_lab3_impl_1_par.dir/5_1.udb ...
 
 
@@ -130,7 +130,7 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 -----------------------------------------------------------------
 
 
-Start NBR router at 17:02:55 09/21/25
+Start NBR router at 18:35:09 09/21/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -148,47 +148,47 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-37 connections routed (of 641 total) (5.77%)
+4 connections routed (of 452 total) (0.88%)
 ---------------------------------------------------------
 Clock routing summary:
 Other clocks:
-    Signal "gate1_c"
-       Clock   loads: 0     out of     3 routed (  0.00%)
-       Data    loads: 0     out of    12 routed (  0.00%)
+    Signal "gate1_c_c"
+       Clock   loads: 0     out of     2 routed (  0.00%)
+       Data    loads: 0     out of    18 routed (  0.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 17:02:55 09/21/25
+Start NBR section for initial routing at 18:35:10 09/21/25
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-23(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+26(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 17:02:55 09/21/25
+Start NBR section for normal routing at 18:35:10 09/21/25
 Level 4, iteration 1
 6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 2
-7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 3
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 4
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 17:02:56 09/21/25
+Start NBR section for post-routing at 18:35:10 09/21/25
 
 End NBR router with 0 unrouted connection(s)
 
-Checksum -- route: fb3344bab57dcf27a02e34258faf896184b890a2
+Checksum -- route: 40b650ec7a5841ed8bb84e7fc46cbd6be5aa96e9
 
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  641 routed (100.00%); 0 unrouted.
+End of route.  452 routed (100.00%); 0 unrouted.
 
 Writing design to file e155_lab3_impl_1_par.dir/5_1.udb ...
 
@@ -206,9 +206,9 @@ PAR_SUMMARY::Number of errors = 0
 
 Note: user must run 'timing' for timing closure signoff.
 
-Total CPU  Time: 6 secs 
-Total REAL Time: 6 secs 
-Peak Memory Usage: 106.80 MB
+Total CPU  Time: 4 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 106.43 MB
 
 
 par done!

@@ -1,59 +1,101 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
 Register bits:  4 of 5280 (0.076%)
-I/O cells:      26
+I/O cells:      27
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        17          100.0
                             FD1P3XZ         4          100.0
-                                 IB         5          100.0
+                                 IB         6          100.0
                                 INV         1          100.0
-                               LUT4       160          100.0
+                               LUT4       124          100.0
                                  OB        21          100.0
 SUB MODULES
-                      clock_divider         1
                            debounce         1
+                        debounce_U2         1
                         debounce_U3         1
                         debounce_U4         1
-                        debounce_U5         1
                      display_driver         1
                         read_writer         1
                           row_sweep         1
                   seven_seg_display         1
-                         stop_clamp         1
                        synchronizer         1
                     synchronizer_U0         1
                     synchronizer_U1         1
-                    synchronizer_U2         1
-                              TOTAL       222
+                              TOTAL       167
+----------------------------------------------------------------------
+Report for cell synchronizer_U0.v1
+Instance Path : synchc1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.8
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell debounce.v1
+Instance Path : debounce3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1           25.0
+                                INV         1          100.0
+                               LUT4         9            7.3
+                              TOTAL        11
 ----------------------------------------------------------------------
 Report for cell debounce_U4.v1
+Instance Path : debounce0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1           25.0
+                               LUT4         2            1.6
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell debounce_U3.v1
 Instance Path : debounce1
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1P3XZ         1           25.0
-                               LUT4         2            1.2
-                              TOTAL         3
+                               LUT4         4            3.2
+                              TOTAL         5
 ----------------------------------------------------------------------
 Report for cell synchronizer_U1.v1
-Instance Path : synchc1
+Instance Path : synchc0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            0.6
+                               LUT4         1            0.8
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell read_writer.v1
+Instance Path : read_write
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        63           50.8
+                              TOTAL        63
+----------------------------------------------------------------------
+Report for cell debounce_U2.v1
+Instance Path : debounce2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1           25.0
+                               LUT4         3            2.4
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell synchronizer.v1
+Instance Path : synchc2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.8
                               TOTAL         1
 ----------------------------------------------------------------------
 Report for cell row_sweep.v1
 Instance Path : row_sweeper
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         7            4.4
-                              TOTAL         7
+                               LUT4         9            7.3
+                              TOTAL         9
 ----------------------------------------------------------------------
 Report for cell display_driver.v1
 Instance Path : display_outputs
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        22           13.8
+                               LUT4        22           17.7
 SUB MODULES
                   seven_seg_display         1
                               TOTAL        23
@@ -62,73 +104,5 @@ Report for cell seven_seg_display.v1
 Instance Path : display_outputs.seven_seg_counter
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        18           11.2
+                               LUT4        18           14.5
                               TOTAL        18
-----------------------------------------------------------------------
-Report for cell synchronizer_U2.v1
-Instance Path : synchc0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            0.6
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell read_writer.v1
-Instance Path : read_write
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        65           40.6
-                              TOTAL        65
-----------------------------------------------------------------------
-Report for cell debounce.v1
-Instance Path : debounce3
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         1           25.0
-                                INV         1          100.0
-                               LUT4        13            8.1
-                              TOTAL        15
-----------------------------------------------------------------------
-Report for cell synchronizer_U0.v1
-Instance Path : synchc2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            0.6
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell debounce_U5.v1
-Instance Path : debounce0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         1           25.0
-                               LUT4         8            5.0
-                              TOTAL         9
-----------------------------------------------------------------------
-Report for cell stop_clamp.v1
-Instance Path : filter_enabler
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            1.2
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell debounce_U3.v1
-Instance Path : debounce2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         1           25.0
-                               LUT4         2            1.2
-                              TOTAL         3
-----------------------------------------------------------------------
-Report for cell synchronizer.v1
-Instance Path : synchc3
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            0.6
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell clock_divider.v1
-Instance Path : one_khz_clock
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        17          100.0
-                               LUT4        32           20.0
-                              TOTAL        49

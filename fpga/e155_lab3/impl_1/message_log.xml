@@ -2,10 +2,6 @@
 <BaliMessageLog>
     <Task name="Synthesis">
         <Message>
-            <ID>35001476</ID>
-            <Severity>256</Severity>
-        </Message>
-        <Message>
             <ID>35935050</ID>
             <Severity>16</Severity>
             <Dynamic>TRIM9</Dynamic>
@@ -333,11 +329,6 @@
             <Navigation>4</Navigation>
         </Message>
         <Message>
-            <ID>35001200</ID>
-            <Severity>16</Severity>
-            <Dynamic>top</Dynamic>
-        </Message>
-        <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
@@ -350,22 +341,6 @@
             <Dynamic>top</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
             <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): </Dynamic>
-            <Dynamic>HSOC</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>1</Severity>
-            <Dynamic>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
-            <Dynamic>HSOSC</Dynamic>
-            <Navigation>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
-            <Navigation>756</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -572,20 +547,20 @@
         <Message>
             <ID>35901330</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(55): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): </Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>4</Dynamic>
             <Dynamic>s2</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
-            <Navigation>55</Navigation>
+            <Navigation>56</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(55): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): </Dynamic>
             <Dynamic>contrl2</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
-            <Navigation>55</Navigation>
+            <Navigation>56</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -748,6 +723,16 @@
             <Dynamic>counter[0]</Dynamic>
         </Message>
         <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>current_state[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>current_state[0]</Dynamic>
+        </Message>
+        <Message>
             <ID>35935043</ID>
             <Severity>16</Severity>
             <Dynamic>\read_write/next_state_i3</Dynamic>
@@ -797,7 +782,7 @@
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_8</Dynamic>
+            <Dynamic>d0_c_3_I_7</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -817,17 +802,17 @@
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_7</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
             <Dynamic>d0_c_3_I_6</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
             <Dynamic>d0_c_3_I_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>d0_c_3_I_4</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -863,13 +848,6 @@
             <ID>35001783</ID>
             <Severity>256</Severity>
             <Dynamic>\read_write/next_state_1__I_2</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1081100</ID>
-            <Severity>1</Severity>
-            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

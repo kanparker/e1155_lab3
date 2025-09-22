@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1758499391">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1758499391"/>
+        <Milestone name="Export" build_result="2" build_time="1758504925">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1758504925"/>
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1758499361">
-            <Task name="Map" build_result="2" update_result="0" update_time="1758499361"/>
+        <Milestone name="Map" build_result="2" build_time="1758504896">
+            <Task name="Map" build_result="2" update_result="0" update_time="1758504896"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1758499376">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1758499376"/>
+        <Milestone name="PAR" build_result="2" build_time="1758504910">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1758504910"/>
             <Task name="PostParVM" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1758499376"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1758504911"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1758499352">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1758499352"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1758499391"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1758504887">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1758504887"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1758504911"/>
             <Task name="LSE_Lint" build_result="0" update_result="2" update_time="1758490330"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1758490330"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1758490330"/>
         </Milestone>
-        <Report name="e155_lab3_impl_1.bgn" last_build_time="1758499391" last_build_size="1204"/>
-        <Report name="e155_lab3_impl_1.bin" last_build_time="1758499391" last_build_size="104156"/>
+        <Report name="e155_lab3_impl_1.bgn" last_build_time="1758504925" last_build_size="1161"/>
+        <Report name="e155_lab3_impl_1.bin" last_build_time="1758504925" last_build_size="104156"/>
         <Report name="e155_lab3_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="e155_lab3_impl_1.twr.html" last_build_time="1758499376" last_build_size="17413"/>
-        <Report name="e155_lab3_impl_1.udb" last_build_time="1758499376" last_build_size="27294"/>
-        <Report name="e155_lab3_impl_1_map.udb" last_build_time="1758499361" last_build_size="16557"/>
-        <Report name="e155_lab3_impl_1_rtl.udb" last_build_time="1758499351" last_build_size="9147"/>
-        <Report name="e155_lab3_impl_1_syn.udb" last_build_time="1758499352" last_build_size="11426"/>
+        <Report name="e155_lab3_impl_1.twr.html" last_build_time="1758504911" last_build_size="14866"/>
+        <Report name="e155_lab3_impl_1.udb" last_build_time="1758504910" last_build_size="20423"/>
+        <Report name="e155_lab3_impl_1_map.udb" last_build_time="1758504896" last_build_size="12205"/>
+        <Report name="e155_lab3_impl_1_rtl.udb" last_build_time="1758504887" last_build_size="8246"/>
+        <Report name="e155_lab3_impl_1_syn.udb" last_build_time="1758504887" last_build_size="9097"/>
     </Strategy>
 </BuildStatus>
                    

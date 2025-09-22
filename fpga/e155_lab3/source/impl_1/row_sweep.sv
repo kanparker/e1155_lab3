@@ -1,18 +1,19 @@
 module row_sweep(
-	input clk, reset,
-	input stop,
-	output [3:0] rows
+	input logic clk, reset,
+	input logic stop,
+	output logic [3:0] rows
 );
-	logic [1:0]current_state;
+	logic [1:0]current_state = 2'b00;
 	typedef enum logic[3:0]{r1=4'b0001, r2 = 4'b0010, r3=4'b0100, r4=4'b1000} row_output;
 	row_output output_state;
 
 	
 	always_ff@(posedge clk, reset)
-		if(reset) current_state = 2'b11;
-		else
+		if(reset) begin
+			current_state <= 2'b00;			end
+		else if(stop)
 			begin
-				current_state = current_state + stop;
+				current_state <= current_state + 2'b01;
 			end
 	
 	always_comb

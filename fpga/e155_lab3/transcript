@@ -2017,3 +2017,1431 @@ run -all
 # ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(72)
 #    Time: 572 ns  Iteration: 0  Instance: /lab3_top_tb
 # Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 72
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+quit -sim
+# End time: 18:15:44 on Sep 21,2025, Elapsed time: 1:09:50
+# Errors: 2, Warnings: 8
+vsim -gui -voptargs=+acc -L iCE40UP work.lab3_top_tb
+# vsim -gui -voptargs="+acc" -L iCE40UP work.lab3_top_tb 
+# Start time: 18:15:57 on Sep 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 55
+add wave -position insertpoint  \
+sim:/lab3_top_tb/clk \
+sim:/lab3_top_tb/reset \
+sim:/lab3_top_tb/rows \
+sim:/lab3_top_tb/cols \
+sim:/lab3_top_tb/d0 \
+sim:/lab3_top_tb/d1 \
+sim:/lab3_top_tb/seg \
+sim:/lab3_top_tb/gate1 \
+sim:/lab3_top_tb/gate2 \
+sim:/lab3_top_tb/keys
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
+#           Attempting to use alternate WLF file "./wlft5qarhm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5qarhm
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/clk
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/synchc0/clk
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/debounce0/clk
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=0 d1=x at time 172.
+#    Time: 172 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 45
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=c d1=6 at time 322.
+#    Time: 322 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 45
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(72)
+#    Time: 572 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 72
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 55
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 194.
+#    Time: 194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 344.
+#    Time: 344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 55
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 194.
+#    Time: 194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 344.
+#    Time: 344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 55
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 194.
+#    Time: 194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 344.
+#    Time: 344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(72): (vopt-2182) 'control_1' might be read before written in always_comb or always @* block.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 194.
+#    Time: 194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 344.
+#    Time: 344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/rows
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 194.
+#    Time: 194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 344.
+#    Time: 344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/stop
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/current_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/current_state
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/output_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+run -all
+# ** Error: Simulation did not complete in time.
+#    Time: 5 us  Scope: lab3_top_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 79
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(80)
+#    Time: 5 us  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 80
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/filter_enabler/stop
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/filter_enabler/clamps
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/row_sweeper/clk
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(22): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(23): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(24): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(25): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=5, Warnings=4.
+run -all
+# No Design Loaded!
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+# Break key hit
+restart -f
+# No Design Loaded!
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# No Design Loaded!
+restart -f
+# No Design Loaded!
+vsim -gui -voptargs=+acc -L iCE40UP work.lab3_top_tb
+# vsim -gui -voptargs="+acc" -L iCE40UP work.lab3_top_tb 
+# Start time: 18:15:57 on Sep 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1".
+# ** Warning: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(72): (vopt-2182) 'control_1' might be read before written in always_comb or always @* block.
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(22): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(23): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(24): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# ** Error (suppressible): C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(25): (vopt-7033) Variable 'output_state' driven in a combinational block, may not be driven by any other process. See C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/work/@_opt1".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=10, Warnings=12.
+# Error loading design
+# End time: 18:46:58 on Sep 21,2025, Elapsed time: 0:31:01
+# Errors: 10, Warnings: 15
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc -L iCE40UP work.lab3_top_tb
+# vsim -gui -voptargs="+acc" -L iCE40UP work.lab3_top_tb 
+# Start time: 18:48:04 on Sep 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(72): (vopt-2182) 'control_1' might be read before written in always_comb or always @* block.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: kanparker  Hostname: 5GMZ0R3  ProcessID: 19844
+#           Attempting to use alternate WLF file "./wlfttkxs4i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttkxs4i
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1194.
+#    Time: 1194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1344.
+#    Time: 1344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(73)
+#    Time: 1594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 73
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 1294.
+#    Time: 1294 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 2194.
+#    Time: 2194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 3344.
+#    Time: 3344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 3594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 2194.
+#    Time: 2194 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 3344.
+#    Time: 3344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 3594 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful with warnings.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/read_write/control_1 \
+sim:/lab3_top_tb/dut/read_write/control_2
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/read_write/rows \
+sim:/lab3_top_tb/dut/read_write/columns
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/read_write/new_control
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/read_write/current_state
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/read_write/next_state
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/display_outputs/s1
+add wave -position insertpoint  \
+sim:/lab3_top_tb/dut/display_outputs/s2
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'control_1'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/read_write File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 53
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'control_2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/read_write File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 53
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's2'. The port definition is at: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_top_tb/dut/display_outputs File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv Line: 56
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=x d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=x d1=x expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=7 d1=a expected d0=7 d1=7 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 1544.
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(75)
+#    Time: 1794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 75
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# ** Error: FAILED!: Second key press -- got d0=7 d1=a expected d0=4 d1=7 at time 1094.
+#    Time: 1094 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=a d1=4 expected d0=1 d1=4 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=1 d1=a expected d0=0 d1=1 at time 1994.
+#    Time: 1994 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=5 d1=0 expected d0=8 d1=0 at time 2444.
+#    Time: 2444 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=8 d1=5 expected d0=5 d1=8 at time 2894.
+#    Time: 2894 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=0 d1=5 expected d0=2 d1=5 at time 3344.
+#    Time: 3344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=2 d1=0 expected d0=b d1=2 at time 3794.
+#    Time: 3794 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=6 d1=b expected d0=9 d1=b at time 4244.
+#    Time: 4244 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=6 d1=9 expected d0=6 d1=9 at time 4694.
+# ** Error: Simulation did not complete in time.
+#    Time: 5 us  Scope: lab3_top_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 216
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(217)
+#    Time: 5 us  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 217
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# ** Error: FAILED!: Second key press -- got d0=7 d1=a expected d0=4 d1=7 at time 1094.
+#    Time: 1094 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=a d1=4 expected d0=1 d1=4 at time 1544.
+#    Time: 1544 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=1 d1=a expected d0=0 d1=1 at time 1994.
+#    Time: 1994 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=5 d1=0 expected d0=8 d1=0 at time 2444.
+#    Time: 2444 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=8 d1=5 expected d0=5 d1=8 at time 2894.
+#    Time: 2894 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=0 d1=5 expected d0=2 d1=5 at time 3344.
+#    Time: 3344 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=2 d1=0 expected d0=b d1=2 at time 3794.
+#    Time: 3794 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# ** Error: FAILED!: Second key press -- got d0=6 d1=b expected d0=9 d1=b at time 4244.
+#    Time: 4244 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=6 d1=9 expected d0=6 d1=9 at time 4694.
+# ** Error: Simulation did not complete in time.
+#    Time: 5 us  Scope: lab3_top_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 216
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(217)
+#    Time: 5 us  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 217
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# PASSED!: third key press -- got d0=4 d1=7 expected d0=4 d1=7 at time 994.
+# PASSED!: fourth key press -- got d0=1 d1=4 expected d0=1 d1=4 at time 1344.
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(210)
+#    Time: 1494 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 210
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# PASSED!: third key press -- got d0=4 d1=7 expected d0=4 d1=7 at time 994.
+# PASSED!: fourth key press -- got d0=1 d1=4 expected d0=1 d1=4 at time 1344.
+# PASSED!: First key press -- got d0=0 d1=1 expected d0=0 d1=1 at time 1694.
+# PASSED!: First key press -- got d0=8 d1=0 expected d0=8 d1=0 at time 2044.
+# PASSED!: First key press -- got d0=5 d1=8 expected d0=5 d1=8 at time 2394.
+# PASSED!: First key press -- got d0=2 d1=5 expected d0=2 d1=5 at time 2744.
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(239)
+#    Time: 2994 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 239
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# PASSED!: third key press -- got d0=4 d1=7 expected d0=4 d1=7 at time 994.
+# PASSED!: fourth key press -- got d0=1 d1=4 expected d0=1 d1=4 at time 1344.
+# PASSED!: fifth key press -- got d0=0 d1=1 expected d0=0 d1=1 at time 1694.
+# PASSED!: sixth key press -- got d0=8 d1=0 expected d0=8 d1=0 at time 2044.
+# PASSED!: seventh key press -- got d0=5 d1=8 expected d0=5 d1=8 at time 2394.
+# PASSED!: eight key press -- got d0=2 d1=5 expected d0=2 d1=5 at time 2744.
+# PASSED!: ninth key press -- got d0=b d1=2 expected d0=b d1=2 at time 3094.
+# PASSED!: tenth key press -- got d0=9 d1=b expected d0=9 d1=b at time 3444.
+# PASSED!: 11th key press -- got d0=6 d1=9 expected d0=6 d1=9 at time 3794.
+# PASSED!: 12th key press -- got d0=3 d1=6 expected d0=3 d1=6 at time 4144.
+# PASSED!: 13th key press -- got d0=f d1=3 expected d0=f d1=3 at time 4494.
+# PASSED!: 14th key press -- got d0=e d1=f expected d0=e d1=f at time 4844.
+# ** Error: Simulation did not complete in time.
+#    Time: 5 us  Scope: lab3_top_tb File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 290
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(291)
+#    Time: 5 us  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 291
+# Compile of lab3_top_tb.sv was successful.
+# Compile of top.sv was successful.
+# Compile of clock_divider.sv was successful.
+# Compile of display_driver.sv was successful.
+# Compile of seven_seg_dsiplay.sv was successful.
+# Compile of synchronizer.sv was successful.
+# Compile of read_writer.sv was successful.
+# Compile of clk_tb.sv was successful.
+# Compile of debounce.sv was successful.
+# Compile of HSOC.sv was successful.
+# Compile of row_sweep.sv was successful.
+# Compile of stop_clamp.sv was successful.
+# Compile of row_sweep_tb.sv was successful.
+# Compile of stop_clamp_tb.sv was successful.
+# 14 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.lab3_top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clock_divider(fast)
+# Loading work.row_sweep(fast)
+# Loading work.synchronizer(fast)
+# Loading work.debounce(fast)
+# Loading work.stop_clamp(fast)
+# Loading work.read_writer(fast)
+# Loading work.display_driver(fast)
+# Loading work.seven_seg_display(fast)
+run -all
+# ** Error: FAILED!: First key press -- got d0=a d1=x expected d0=a d1=x at time 394.
+#    Time: 394 ns  Scope: lab3_top_tb.check_key File: C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv Line: 46
+# PASSED!: Second key press -- got d0=7 d1=a expected d0=7 d1=a at time 644.
+# PASSED!: third key press -- got d0=4 d1=7 expected d0=4 d1=7 at time 994.
+# PASSED!: fourth key press -- got d0=1 d1=4 expected d0=1 d1=4 at time 1344.
+# PASSED!: fifth key press -- got d0=0 d1=1 expected d0=0 d1=1 at time 1694.
+# PASSED!: sixth key press -- got d0=8 d1=0 expected d0=8 d1=0 at time 2044.
+# PASSED!: seventh key press -- got d0=5 d1=8 expected d0=5 d1=8 at time 2394.
+# PASSED!: eight key press -- got d0=2 d1=5 expected d0=2 d1=5 at time 2744.
+# PASSED!: ninth key press -- got d0=b d1=2 expected d0=b d1=2 at time 3094.
+# PASSED!: tenth key press -- got d0=9 d1=b expected d0=9 d1=b at time 3444.
+# PASSED!: 11th key press -- got d0=6 d1=9 expected d0=6 d1=9 at time 3794.
+# PASSED!: 12th key press -- got d0=3 d1=6 expected d0=3 d1=6 at time 4144.
+# PASSED!: 13th key press -- got d0=f d1=3 expected d0=f d1=3 at time 4494.
+# PASSED!: 14th key press -- got d0=e d1=f expected d0=e d1=f at time 4844.
+# PASSED!: 15th key press -- got d0=d d1=e expected d0=d d1=e at time 5194.
+# PASSED!: 16th key press -- got d0=c d1=d expected d0=c d1=d at time 5544.
+# ** Note: $stop    : C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv(169)
+#    Time: 5794 ns  Iteration: 0  Instance: /lab3_top_tb
+# Break in Module lab3_top_tb at C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv line 169

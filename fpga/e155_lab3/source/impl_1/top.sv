@@ -9,22 +9,23 @@ module top(
 );
 	//logic clk;
 	logic tenkhz_clock,onekhz_clock,twkhz_clock,stop;
-	logic [3:0] control1, control2;
+	logic [3:0] control_1, control_2;
 	logic [3:0] csynched,cdebounced,cout,clamp;
 	logic [31:0] p1, p2, p3;
 	
-	assign p1 = 32'b00000000000000000000000011010111;
-	assign p2 = 32'b00000000000000000000100001100011;
-	assign p3 = 32'b00000000000000000001000011000110;
+	assign p1 = 32'b11111001100110011001100110011001;
+	assign p2 = 32'b11111001100110011001100110011001;
+	assign p3 = 32'b0110000100110011001100110011001;
 	//assign p1 = 32'b10000000000000000000000011010111;
 	//assign p2 = 32'b10000000000000000000100001100011;
 	
 	//HSOC high_speed_clock(clk);
-	clock_divider one_khz_clock(clk,p1,reset,onekhz_clock);
-	clock_divider tenk_hz_clock(clk,p2,reset,tenkhz_clock);
+	//clock_divider one_khz_clock(clk,p1,reset,onekhz_clock);
+	//clock_divider tenk_hz_clock(clk,p2,reset,tenkhz_clock);
 	clock_divider twk_hz_clock(clk,p3,reset,twkhz_clock);
-	//assign tenkhz_clock = clk;
-	//assign onekhz_clock = clk;
+
+	assign tenkhz_clock = clk;
+	assign onekhz_clock = clk;
 	/*
 	synch - 10k
 	debounce- 1 k 
@@ -49,11 +50,11 @@ module top(
 	stop_clamp filter_enabler(cdebounced,clamp,cout,stop);
 	
 	//read_write
-	read_writer read_write(tenkhz_clock,reset,cout,rows,control1,control2);
+	read_writer read_write(tenkhz_clock,reset,rows,cout,control_1,control_2);
 	
 	//display driver
-	display_driver display_outputs(onekhz_clock,control1,contrl2,seg,gate1,gate2);
+	display_driver display_outputs(onekhz_clock,control_1,control_2,seg,gate1,gate2);
 	
-	assign d0 = control1;
-	assign d1 = control2;
+	assign d0 = control_1;
+	assign d1 = control_2;
 endmodule

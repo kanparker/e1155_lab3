@@ -16,6 +16,10 @@ module read_writer(
 			end
 		else begin
 			current_state<=next_state;
+			if(current_state == update) begin
+				control_2<=control_1;
+				control_1<=new_control;
+				end
 			end
 	
 	always_comb
@@ -69,8 +73,6 @@ module read_writer(
 				
 				update: begin
 					next_state = hold;
-					control_2 = control_1;
-					control_1 = new_control;
 					end
 					
 				hold: begin

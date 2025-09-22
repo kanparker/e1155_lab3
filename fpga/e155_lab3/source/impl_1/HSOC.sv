@@ -1,5 +1,5 @@
 module HSOC(
-	output 	clk
+	output logic clk
 );
 
 	logic int_osc;
