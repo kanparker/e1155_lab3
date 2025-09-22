@@ -345,6 +345,22 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): </Dynamic>
+            <Dynamic>HSOC</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
             <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): </Dynamic>
             <Dynamic>clock_divider</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
@@ -391,18 +407,26 @@
         <Message>
             <ID>35901221</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
-            <Dynamic>current_state</Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14): </Dynamic>
+            <Dynamic>stop</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>15</Navigation>
+            <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35901221</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): </Dynamic>
-            <Dynamic>stop</Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): </Dynamic>
+            <Dynamic>current_state</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
-            <Navigation>15</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(19): </Dynamic>
+            <Dynamic>current_state</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -442,6 +466,14 @@
             <Dynamic>cin</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
             <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(19): </Dynamic>
+            <Dynamic>cin</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv</Navigation>
+            <Navigation>19</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -522,11 +554,42 @@
             <Navigation>18</Navigation>
         </Message>
         <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(19): </Dynamic>
+            <Dynamic>current_state</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(20): </Dynamic>
+            <Dynamic>control_1</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(21): </Dynamic>
+            <Dynamic>new_control</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
             <ID>35901899</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(83): </Dynamic>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(64): </Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
-            <Navigation>83</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35901899</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(86): </Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv</Navigation>
+            <Navigation>86</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -543,24 +606,6 @@
             <Dynamic>seven_seg_display</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv</Navigation>
             <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>35901330</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): </Dynamic>
-            <Dynamic>1</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>s2</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
-            <Navigation>56</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): </Dynamic>
-            <Dynamic>contrl2</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
-            <Navigation>56</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -723,16 +768,6 @@
             <Dynamic>counter[0]</Dynamic>
         </Message>
         <Message>
-            <ID>35001771</ID>
-            <Severity>16</Severity>
-            <Dynamic>current_state[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001771</ID>
-            <Severity>16</Severity>
-            <Dynamic>current_state[0]</Dynamic>
-        </Message>
-        <Message>
             <ID>35935043</ID>
             <Severity>16</Severity>
             <Dynamic>\read_write/next_state_i3</Dynamic>
@@ -742,22 +777,12 @@
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>cols_c_0_I_0</Dynamic>
+            <Dynamic>\row_sweeper/current_state_1__I_1</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>cols_c_1_I_0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>cols_c_2_I_0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>cols_c_3_I_0</Dynamic>
+            <Dynamic>d0_c_0_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -782,7 +807,7 @@
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_7</Dynamic>
+            <Dynamic>\read_write/next_state_0__I_3</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -792,42 +817,12 @@
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>d0_c_0_I_0</Dynamic>
+            <Dynamic>\read_write/new_control_0__I_0_2</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>\read_write/next_state_0__I_3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_6</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_5</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>d0_c_3_I_4</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>\read_write/new_control_1__I_0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>\read_write/new_control_2__I_0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>\read_write/new_control_3__I_0</Dynamic>
+            <Dynamic>\row_sweeper/current_state_1__I_0_2</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -848,6 +843,43 @@
             <ID>35001783</ID>
             <Severity>256</Severity>
             <Dynamic>\read_write/next_state_1__I_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_1__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_2__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_3__I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_1__I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_2__I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>\read_write/new_control_3__I_0_2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

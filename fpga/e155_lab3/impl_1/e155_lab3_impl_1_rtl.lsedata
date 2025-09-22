@@ -1,7 +1,6 @@
 <top name = "top"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "clk"  type = "port" />
     <clockitem name = "debounce0/n10"  type = "net" />
     <clockitem name = "debounce2/n10"  type = "net" />
     <clockitem name = "debounce3/n10"  type = "net" />

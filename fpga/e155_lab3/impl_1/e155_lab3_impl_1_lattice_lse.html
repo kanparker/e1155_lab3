@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Sep 21 18:34:35 2025
+Sun Sep 21 21:27:05 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
@@ -234,19 +234,23 @@ INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Use
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(1): compiling module top. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): compiling module HSOC. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
 WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(16): no support for synthesis of mixed edge and level triggers. VERI-1084
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): counter should be on the sensitivity list. VERI-1221
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): P should be on the sensitivity list. VERI-1221
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(1): compiling module row_sweep. VERI-1018
 WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(11): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): current_state should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(15): stop should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(14): stop should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): current_state should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(19): current_state should be on the sensitivity list. VERI-1221
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(1): compiling module synchronizer. VERI-1018
 WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(8): no support for synthesis of mixed edge and level triggers. VERI-1084
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(13): clamp should be on the sensitivity list. VERI-1221
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(14): cmid should be on the sensitivity list. VERI-1221
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): cin should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(19): cin should be on the sensitivity list. VERI-1221
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(1): compiling module debounce. VERI-1018
 WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(8): no support for synthesis of mixed edge and level triggers. VERI-1084
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(13): raw_data should be on the sensitivity list. VERI-1221
@@ -257,15 +261,21 @@ INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_l
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(1): compiling module read_writer. VERI-1018
 WARNING <35901084> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(13): no support for synthesis of mixed edge and level triggers. VERI-1084
 WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(18): next_state should be on the sensitivity list. VERI-1221
-WARNING <35901899> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(83): behavior inside always_comb block does not represent combinational logic. VERI-1899
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(19): current_state should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(20): control_1 should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(21): new_control should be on the sensitivity list. VERI-1221
+WARNING <35901899> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(64): behavior inside always_comb block does not represent combinational logic. VERI-1899
+WARNING <35901899> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(86): behavior inside always_comb block does not represent combinational logic. VERI-1899
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(1): compiling module display_driver. VERI-1018
 INFO <35901018> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv(8): compiling module seven_seg_display. VERI-1018
-WARNING <35901330> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): actual bit length 1 differs from formal bit length 4 for port s2. VERI-1330
-WARNING <35931002> - synthesis: c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(56): net contrl2 does not have a driver. VDB-1002
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): hf_osc]
+	(Module: HSOSC)
+		CLKHF_DIV                 "0b00"
 
 [Parameter Setting Section End]
 WARNING <35001771> - synthesis: Initial value found on net counter[31] will be ignored due to unrecognized driver type
@@ -300,201 +310,1957 @@ WARNING <35001771> - synthesis: Initial value found on net counter[3] will be ig
 WARNING <35001771> - synthesis: Initial value found on net counter[2] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net counter[1] will be ignored due to unrecognized driver type
 WARNING <35001771> - synthesis: Initial value found on net counter[0] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net current_state[1] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net current_state[0] will be ignored due to unrecognized driver type
-######## Missing driver on net contrl2. Patching with GND.
 
 
 
 WARNING <35935043> - synthesis: Latch \read_write/next_state_i3 input is stuck at Zero. VDB-5043
 Combinational loop due to latch found: 1
 
-	Instance cols_c_0_I_0 
+	Instance \row_sweeper/current_state_1__I_1 
 
-	Net \synchc0/cmid 
+	Net \row_sweeper/current_state[0] 
 
 Combinational loop due to latch found: 2
-
-	Instance cols_c_1_I_0 
-
-	Net \synchc1/cmid 
-
-Combinational loop due to latch found: 3
-
-	Instance cols_c_2_I_0 
-
-	Net \synchc2/cmid 
-
-Combinational loop due to latch found: 4
-
-	Instance cols_c_3_I_0 
-
-	Net \synchc3/cmid 
-
-Combinational loop due to latch found: 5
-
-	Instance csynched_0__I_0 
-
-	Net cdebounced[0] 
-
-Combinational loop due to latch found: 6
-
-	Instance csynched_1__I_0 
-
-	Net cdebounced[1] 
-
-Combinational loop due to latch found: 7
-
-	Instance csynched_2__I_0 
-
-	Net cdebounced[2] 
-
-Combinational loop due to latch found: 8
-
-	Instance csynched_3__I_0 
-
-	Net cout[3] 
-
-Combinational loop due to latch found: 9
-
-	Instance d0_c_3_I_7 
-
-	Net d0_c_0 
-
-Combinational loop due to latch found: 10
-
-	Instance \read_write/new_control_0__I_0 
-
-	Net \read_write/new_control[0] 
-
-Combinational loop due to latch found: 11
 
 	Instance d0_c_0_I_0 
 
 	Net d1_c_0 
 
-Combinational loop due to latch found: 12
+Combinational loop found : 1
+
+ Net gate1_c 
+
+ Instance gate1_c_I_4 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 2
+
+ Net \one_khz_clock/counter[30] 
+
+ Instance gate1_c_I_5 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 3
+
+ Net \one_khz_clock/counter[29] 
+
+ Instance gate1_c_I_6 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 4
+
+ Net \one_khz_clock/counter[28] 
+
+ Instance gate1_c_I_7 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 5
+
+ Net \one_khz_clock/counter[27] 
+
+ Instance gate1_c_I_8 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 6
+
+ Net \one_khz_clock/counter[26] 
+
+ Instance gate1_c_I_9 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 7
+
+ Net \one_khz_clock/counter[25] 
+
+ Instance gate1_c_I_10 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 8
+
+ Net \one_khz_clock/counter[24] 
+
+ Instance gate1_c_I_11 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 9
+
+ Net \one_khz_clock/counter[23] 
+
+ Instance gate1_c_I_12 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 10
+
+ Net \one_khz_clock/counter[22] 
+
+ Instance gate1_c_I_13 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 11
+
+ Net \one_khz_clock/counter[21] 
+
+ Instance gate1_c_I_14 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 12
+
+ Net \one_khz_clock/counter[20] 
+
+ Instance gate1_c_I_15 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 13
+
+ Net \one_khz_clock/counter[19] 
+
+ Instance gate1_c_I_16 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 14
+
+ Net \one_khz_clock/counter[18] 
+
+ Instance gate1_c_I_17 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 15
+
+ Net \one_khz_clock/counter[17] 
+
+ Instance gate1_c_I_18 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 16
+
+ Net \one_khz_clock/counter[16] 
+
+ Instance gate1_c_I_19 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 17
+
+ Net \one_khz_clock/counter[15] 
+
+ Instance gate1_c_I_20 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 18
+
+ Net \one_khz_clock/counter[14] 
+
+ Instance gate1_c_I_21 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 19
+
+ Net \one_khz_clock/counter[13] 
+
+ Instance gate1_c_I_22 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 20
+
+ Net \one_khz_clock/counter[12] 
+
+ Instance gate1_c_I_23 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 21
+
+ Net \one_khz_clock/counter[11] 
+
+ Instance gate1_c_I_24 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 22
+
+ Net \one_khz_clock/counter[10] 
+
+ Instance gate1_c_I_25 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 23
+
+ Net \one_khz_clock/counter[9] 
+
+ Instance gate1_c_I_26 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 24
+
+ Net \one_khz_clock/counter[8] 
+
+ Instance gate1_c_I_27 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[4] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 25
+
+ Net \one_khz_clock/counter[7] 
+
+ Instance gate1_c_I_28 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[4] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[3] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 26
+
+ Net \one_khz_clock/counter[6] 
+
+ Instance gate1_c_I_29 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[4] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[3] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[2] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 27
+
+ Net \one_khz_clock/counter[5] 
+
+ Instance gate1_c_I_30 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[4] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[3] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[2] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[1] 
+
+ Instance add_409_add_5 
+
+Combinational loop found : 28
+
+ Net \one_khz_clock/counter[4] 
+
+ Instance gate1_c_I_31 
+
+ Net gate1_c_N_45[27] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[26] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[25] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[24] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[23] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[22] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[21] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[20] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[19] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[18] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[17] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[16] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[15] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[14] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[13] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[12] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[11] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[10] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[9] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[8] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[7] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[6] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[5] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[4] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[3] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[2] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[1] 
+
+ Instance add_409_add_5 
+
+ Net gate1_c_N_45[0] 
+
+ Instance add_409_add_5 
+
+Combinational loop due to latch found: 3
+
+	Instance csynched_0__I_0 
+
+	Net cdebounced[0] 
+
+Combinational loop due to latch found: 4
+
+	Instance csynched_1__I_0 
+
+	Net cdebounced[1] 
+
+Combinational loop due to latch found: 5
+
+	Instance csynched_2__I_0 
+
+	Net cdebounced[2] 
+
+Combinational loop due to latch found: 6
+
+	Instance csynched_3__I_0 
+
+	Net cdebounced[3] 
+
+Combinational loop due to latch found: 7
 
 	Instance \read_write/next_state_0__I_3 
 
 	Net \read_write/next_state[0] 
 
-Combinational loop due to latch found: 13
+Combinational loop due to latch found: 8
 
-	Instance d0_c_3_I_6 
+	Instance \read_write/new_control_0__I_0 
 
-	Net d0_c_1 
+	Net d0_c_0 
 
-Combinational loop due to latch found: 14
+Combinational loop due to latch found: 9
 
-	Instance d0_c_3_I_5 
+	Instance \read_write/new_control_0__I_0_2 
 
-	Net d0_c_2 
+	Net \read_write/new_control[0] 
 
-Combinational loop due to latch found: 15
+Combinational loop due to latch found: 10
 
-	Instance d0_c_3_I_4 
+	Instance \row_sweeper/current_state_1__I_0_2 
 
-	Net d0_c_3 
+	Net \row_sweeper/current_state[1] 
 
-Combinational loop due to latch found: 16
-
-	Instance \read_write/new_control_1__I_0 
-
-	Net \read_write/new_control[1] 
-
-Combinational loop due to latch found: 17
-
-	Instance \read_write/new_control_2__I_0 
-
-	Net \read_write/new_control[2] 
-
-Combinational loop due to latch found: 18
-
-	Instance \read_write/new_control_3__I_0 
-
-	Net \read_write/new_control[3] 
-
-Combinational loop due to latch found: 19
+Combinational loop due to latch found: 11
 
 	Instance d0_c_1_I_0 
 
 	Net d1_c_1 
 
-Combinational loop due to latch found: 20
+Combinational loop due to latch found: 12
 
 	Instance d0_c_2_I_0 
 
 	Net d1_c_2 
 
-Combinational loop due to latch found: 21
+Combinational loop due to latch found: 13
 
 	Instance d0_c_3_I_0 
 
 	Net d1_c_3 
 
-Combinational loop due to latch found: 22
+Combinational loop due to latch found: 14
 
 	Instance \read_write/next_state_1__I_2 
 
 	Net \read_write/next_state[1] 
 
-Combinational loop found : 1
+Combinational loop due to latch found: 15
 
- Net \row_sweeper/current_state[1] 
+	Instance \read_write/new_control_1__I_0 
 
- Instance \row_sweeper/current_state_1__I_0_2 
+	Net d0_c_1 
 
- Net \row_sweeper/current_state_1__N_23[1] 
+Combinational loop due to latch found: 16
 
- Instance i704 
+	Instance \read_write/new_control_2__I_0 
 
-Combinational loop found : 2
+	Net d0_c_2 
 
- Net \row_sweeper/current_state[0] 
+Combinational loop due to latch found: 17
 
- Instance \row_sweeper/current_state_1__I_1 
+	Instance \read_write/new_control_3__I_0 
 
- Net \row_sweeper/current_state_1__N_23[0] 
+	Net d0_c_3 
 
- Instance i696 
+Combinational loop due to latch found: 18
 
-CRITICAL <35001783> - synthesis: Mapping latch cols_c_0_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch cols_c_1_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch cols_c_2_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch cols_c_3_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+	Instance \read_write/new_control_1__I_0_2 
+
+	Net \read_write/new_control[1] 
+
+Combinational loop due to latch found: 19
+
+	Instance \read_write/new_control_2__I_0_2 
+
+	Net \read_write/new_control[2] 
+
+Combinational loop due to latch found: 20
+
+	Instance \read_write/new_control_3__I_0_2 
+
+	Net \read_write/new_control[3] 
+
+CRITICAL <35001783> - synthesis: Mapping latch \row_sweeper/current_state_1__I_1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch d0_c_0_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch csynched_0__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch csynched_1__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch csynched_2__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch csynched_3__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_0__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_0_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch \read_write/next_state_0__I_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_1__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_2__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_3__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_0__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_0__I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \row_sweeper/current_state_1__I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch d0_c_1_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch d0_c_2_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 CRITICAL <35001783> - synthesis: Mapping latch \read_write/next_state_1__I_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_1__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_2__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_3__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_1__I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_2__I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_3__I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
 Number of register bits => 4 of 5280 (0 % )
+CCU2 => 15
 FD1P3XZ => 4
-IB => 6
+IB => 5
 INV => 1
-LUT4 => 124
+LUT4 => 90
 OB => 21
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
-Number of even-length carry chains : 0
+Number of even-length carry chains : 1
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -507,16 +2273,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : row_sweeper/current_state[0], loads : 21
-  Net : debounce2/cdebounced[2], loads : 20
-  Net : reset_c, loads : 19
-  Net : row_sweeper/current_state[1], loads : 19
-  Net : gate1_c_c, loads : 17
-  Net : debounce1/cdebounced[1], loads : 16
-  Net : cout[3], loads : 16
-  Net : read_write/n1584, loads : 16
-  Net : read_write/d0_c_2, loads : 14
-  Net : read_write/d0_c_1, loads : 13
+  Net : reset_c, loads : 41
+  Net : one_khz_clock/gate1_c_N_45[27], loads : 16
+  Net : one_khz_clock/n4026, loads : 16
+  Net : debounce3/cdebounced[3], loads : 15
+  Net : one_khz_clock/gate1_c_N_45[25], loads : 15
+  Net : one_khz_clock/gate1_c_N_45[26], loads : 15
+  Net : one_khz_clock/n4024, loads : 15
+  Net : one_khz_clock/n4022, loads : 14
+  Net : one_khz_clock/gate1_c_N_45[23], loads : 14
+  Net : one_khz_clock/gate1_c_N_45[24], loads : 14
 ################### End Clock Report ##################
 
 
@@ -534,7 +2300,7 @@ Peak Memory Usage: 94 MB
 Total CPU Time: 5 secs 
 Total REAL Time: 12 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 568f483a183b0429f28ec584c382fee547778841
+Checksum -- synthesis -- netlist: 25fa88668d25129838cb8fb5e760b6142f1eec3
 
 
 

@@ -16,6 +16,7 @@ module synchronizer(
 				end
 		else begin
 				cout<= 1'b0;
+				cmid<=cin;
 			end
 			
 		

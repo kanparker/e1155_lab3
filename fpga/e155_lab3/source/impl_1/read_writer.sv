@@ -61,8 +61,9 @@ module read_writer(
 					end
 			
 			endcase
+			end
 			
-			
+			always_comb begin
 			case(current_state)
 				idle: begin
 					if(cstatus) begin

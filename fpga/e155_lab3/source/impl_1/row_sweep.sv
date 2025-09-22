@@ -15,15 +15,19 @@ module row_sweep(
 			begin
 				current_state <= current_state + 2'b01;
 			end
-	
+		else begin
+			current_state <= current_state;
+		end
 	always_comb
-		case(current_state)
-			2'b00: output_state = r1;
-			2'b01: output_state =r2;
-			2'b10: output_state = r3;
-			2'b11: output_state = r4;
-		endcase
-	
+		begin
+			case(current_state)
+				2'b00: output_state = r1;
+				2'b01: output_state =r2;
+				2'b10: output_state = r3;
+				2'b11: output_state = r4;
+				default: output_state = r1;
+			endcase
+		end
 	assign rows = output_state;
 	
 endmodule
