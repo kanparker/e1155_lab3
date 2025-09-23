@@ -1,65 +1,34 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
 Register bits:  0 of 5280 (0.000%)
-I/O cells:      26
+I/O cells:      18
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        17          100.0
+                               CCU2        15          100.0
                                  IB         5          100.0
-                               LUT4       103          100.0
-                                 OB        21          100.0
+                               LUT4       100          100.0
+                                 OB        13          100.0
 SUB MODULES
                       clock_divider         1
                            debounce         1
                         debounce_U0         1
                         debounce_U1         1
-                        debounce_U2         1
                      display_driver         1
                         read_writer         1
                           row_sweep         1
                   seven_seg_display         1
                          stop_clamp         1
-                              TOTAL       156
+                              TOTAL       142
 ----------------------------------------------------------------------
-Report for cell display_driver.v1
-Instance Path : display_outputs
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        12           11.7
-SUB MODULES
-                  seven_seg_display         1
-                              TOTAL        13
-----------------------------------------------------------------------
-Report for cell seven_seg_display.v1
-Instance Path : display_outputs.seven_seg_counter
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7            6.8
-                              TOTAL         7
-----------------------------------------------------------------------
-Report for cell debounce_U0.v1
-Instance Path : debounce2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         4            3.9
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell debounce_U2.v1
-Instance Path : debounce0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            1.9
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell debounce.v1
-Instance Path : debounce3
+Report for cell debounce_U1.v1
+Instance Path : debounce1
                                   Cell usage:
                                cell     count   Res Usage(%)
                                LUT4         1            1.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell debounce_U1.v1
-Instance Path : debounce1
+Report for cell debounce_U0.v1
+Instance Path : debounce2
                                   Cell usage:
                                cell     count   Res Usage(%)
                                LUT4         1            1.0
@@ -69,27 +38,50 @@ Report for cell read_writer.v1
 Instance Path : read_write
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        36           35.0
-                              TOTAL        36
+                               LUT4        40           40.0
+                              TOTAL        40
+----------------------------------------------------------------------
+Report for cell debounce.v1
+Instance Path : debounce3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            1.0
+                              TOTAL         1
 ----------------------------------------------------------------------
 Report for cell row_sweep.v1
 Instance Path : row_sweeper
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         4            3.9
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell clock_divider.v1
-Instance Path : one_khz_clock
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        17          100.0
-                               LUT4        32           31.1
-                              TOTAL        49
+                               LUT4         8            8.0
+                              TOTAL         8
 ----------------------------------------------------------------------
 Report for cell stop_clamp.v1
 Instance Path : filter_enabler
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         3            2.9
-                              TOTAL         3
+                               LUT4         8            8.0
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell clock_divider.v1
+Instance Path : one_khz_clock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        15          100.0
+                               LUT4        28           28.0
+                              TOTAL        43
+----------------------------------------------------------------------
+Report for cell display_driver.v1
+Instance Path : display_outputs
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        12           12.0
+SUB MODULES
+                  seven_seg_display         1
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell seven_seg_display.v1
+Instance Path : display_outputs.seven_seg_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7            7.0
+                              TOTAL         7
