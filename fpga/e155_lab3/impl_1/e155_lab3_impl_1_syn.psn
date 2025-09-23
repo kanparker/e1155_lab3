@@ -16,5 +16,5 @@ Writing output file 'e155_lab3_impl_1_syn.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 39 MB
-Checksum -- postsyn: a1d98d3d99433aa25a20a9074d9ee1e82441ec9e
+Peak Memory Usage: 40 MB
+Checksum -- postsyn: c6ea6a9340945a634dfdaaa5c10d7a85aacb1dab

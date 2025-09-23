@@ -20,7 +20,7 @@ module top(
 	//assign p2 = 32'b10000000000000000000100001100011;
 	//assign p3 = 32'b00100000000000000010100001100011;
 	
-	//HSOC high_speed_clock(clk);
+	HSOC high_speed_clock(clk);
 	clock_divider one_khz_clock(clk,p1,reset,onekhz_clock);
 	clock_divider tenk_hz_clock(clk,p2,reset,tenkhz_clock);
 	clock_divider twk_hz_clock(clk,p3,reset,twkhz_clock);

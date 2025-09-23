@@ -352,6 +352,22 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
+            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): </Dynamic>
+            <Dynamic>HSOC</Dynamic>
+            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): </Dynamic>
+            <Dynamic>HSOSC</Dynamic>
+            <Navigation>C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v</Navigation>
+            <Navigation>756</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
             <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): </Dynamic>
             <Dynamic>clock_divider</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv</Navigation>
@@ -543,14 +559,6 @@
             <Dynamic>seven_seg_display</Dynamic>
             <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv</Navigation>
             <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
-            <Dynamic>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(24): </Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Navigation>c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv</Navigation>
-            <Navigation>24</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

@@ -9,7 +9,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep 23 15:57:12 2025
+Tue Sep 23 16:18:07 2025
 
 
 Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
@@ -195,6 +195,8 @@ INFO <35921504> - The default VHDL library search path is now "C:/Users/kanparke
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
 INFO <35901018> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(1): compiling module top. VERI-1018
+INFO <35901018> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): compiling module HSOC. VERI-1018
+INFO <35901018> - C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
 INFO <35901018> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
 WARNING <35901084> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(16): no support for synthesis of mixed edge and level triggers. VERI-1084
 WARNING <35901221> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): counter should be on the sensitivity list. VERI-1221
@@ -220,8 +222,11 @@ WARNING <35901221> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/sour
 WARNING <35901221> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(22): next_control_2 should be on the sensitivity list. VERI-1221
 INFO <35901018> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(1): compiling module display_driver. VERI-1018
 INFO <35901018> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv(8): compiling module seven_seg_display. VERI-1018
-WARNING <35931002> - c:/users/kanparker/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(24): net clk does not have a driver. VDB-1002
 [Parameter Setting Section Start]
+
+	[Parameter Settings for Instance(s): hf_osc]
+	(Module: HSOSC)
+		CLKHF_DIV                 "0b00"
 
 [Parameter Setting Section End]
 
@@ -2097,11 +2102,11 @@ Combinational loop found : 31
 
  Instance i1179 
 
- Net n1772 
+ Net n1773 
 
  Instance i1177 
 
- Net n1769 
+ Net n1770 
 
  Instance i1365 
 
@@ -2125,7 +2130,7 @@ Combinational loop found : 31
 
  Instance i1180 
 
- Net n1773 
+ Net n1774 
 
  Instance i1372 
 
@@ -2167,7 +2172,7 @@ Combinational loop found : 32
 
  Instance i1168 
 
- Net n1760 
+ Net n1761 
 
  Instance Mux_1164_i3 
 
@@ -2269,7 +2274,7 @@ Combinational loop found : 37
 
  Instance \row_sweeper/current_state_1__I_0_5 
 
- Net n766 
+ Net n767 
 
  Instance i504 
 
@@ -2425,13 +2430,13 @@ Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : reset_c, loads : 44
   Net : debounce3/cdebounced[3], loads : 16
-  Net : one_khz_clock/n4738, loads : 16
+  Net : one_khz_clock/n4737, loads : 16
   Net : one_khz_clock/gate1_c_N_53[27], loads : 16
-  Net : one_khz_clock/n4736, loads : 15
+  Net : one_khz_clock/n4735, loads : 15
   Net : one_khz_clock/gate1_c_N_53[25], loads : 15
   Net : one_khz_clock/gate1_c_N_53[26], loads : 15
   Net : debounce1/cdebounced[1], loads : 14
-  Net : one_khz_clock/n4734, loads : 14
+  Net : one_khz_clock/n4733, loads : 14
   Net : one_khz_clock/gate1_c_N_53[23], loads : 14
 ################### End Clock Report ##################
 
@@ -2441,13 +2446,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 95 MB
+Peak Memory Usage: 94 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
 Total REAL Time: 12 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: d82a7f19350b14628032bdd8ff38171c6b6eb9a2
+Checksum -- synthesis -- netlist: 5882469e62756e0e63de6765375c04ec52ab949b
 
 
 
@@ -2461,8 +2466,8 @@ Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V 
 Reading input file 'e155_lab3_impl_1.vm' ...
 CPU Time to convert: 0.0625
 REAL Time to convert: 0
-convert PEAK Memory Usage: 34 MB
-convert CURRENT Memory Usage: 34 MB
+convert PEAK Memory Usage: 35 MB
+convert CURRENT Memory Usage: 35 MB
 Removing unused logic ...
 Starting design annotation....
  
@@ -2474,8 +2479,8 @@ Writing output file 'e155_lab3_impl_1_syn.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 39 MB
-Checksum -- postsyn: a1d98d3d99433aa25a20a9074d9ee1e82441ec9e
+Peak Memory Usage: 40 MB
+Checksum -- postsyn: c6ea6a9340945a634dfdaaa5c10d7a85aacb1dab
 
 
 
@@ -2544,7 +2549,7 @@ Design Summary:
       Net cdebounced[2]: 12 loads
       Net current_state[1]: 12 loads
       Net gate2_pad.vcc: 9 loads
-      Net n2534: 8 loads
+      Net n24: 8 loads
       Net read_write.next_state_1__N_34: 8 loads
       Net cdebounced[0]: 7 loads
 Running physical design DRC...
@@ -2557,7 +2562,7 @@ Running physical design DRC...
    Number of errors:    0
 
 Constraint Summary:
-   Total number of constraints: 19
+   Total number of constraints: 21
    Total number of constraints dropped: 0
 
 
@@ -2565,13 +2570,13 @@ Total CPU Time: 0 secs
 Total REAL Time: 0 secs  
 Peak Memory Usage: 67 MB
 
-Checksum -- map: 133b5f071b467dc33cb89b2d9cb4b62f2ac5cbed
+Checksum -- map: 6e09156a8509c30590fd4dd194a6b8138f842add
 Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 
 
 pnmainc -log pnmain "e155_lab3_impl_1_par.tcl"
 
 PAR: Place And Route Radiant Software (64-bit) 2024.2.0.3.0.
-PARed on: Tue Sep 23 15:57:42 2025
+PARed on: Tue Sep 23 16:18:37 2025
 
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	e155_lab3_impl_1_map.udb e155_lab3_impl_1_par.dir/5_1.udb 
@@ -2632,18 +2637,18 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 22552.
+Placer score = 24672.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE             64/2640          2% used
 
-Finished Placer Phase 1. CPU time: 4 secs , REAL time: 4 secs 
+Finished Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  54377
-Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 4 secs 
+Placer score =  58183
+Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 5 secs 
 
 
 ------------------ Clock Report ------------------
@@ -2670,10 +2675,10 @@ I/O Bank Usage Summary:
 | 2        | 7 / 8 ( 87%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 4 secs , REAL time: 4 secs 
+Total Placer CPU time: 4 secs , REAL time: 5 secs 
 
 
-Checksum -- place: 22b780225f208988bdd0d582b6098301dd3cae51
+Checksum -- place: 6911b8f07c748fd5a07715a2290260cf45adf7bf
 Writing design to file e155_lab3_impl_1_par.dir/5_1.udb ...
 
 
@@ -2682,7 +2687,7 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 -----------------------------------------------------------------
 
 
-Start NBR router at 15:57:46 09/23/25
+Start NBR router at 16:18:42 09/23/25
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -2704,27 +2709,33 @@ Preassignment Summary:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 15:57:46 09/23/25
+Start NBR section for initial routing at 16:18:42 09/23/25
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-15(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+20(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 15:57:47 09/23/25
+Start NBR section for normal routing at 16:18:42 09/23/25
 Level 4, iteration 1
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 Level 4, iteration 2
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 3
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 15:57:47 09/23/25
+Start NBR section for post-routing at 16:18:42 09/23/25
 
 End NBR router with 0 unrouted connection(s)
 
-Checksum -- route: bf9c7434b9465b1baa9d939838ce3f2ce833ad
+Checksum -- route: 3f241166f9da3a437d41376df7861a518f91e577
 
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
@@ -2746,7 +2757,7 @@ Note: user must run 'timing' for timing closure signoff.
 
 Total CPU  Time: 4 secs 
 Total REAL Time: 5 secs 
-Peak Memory Usage: 109.73 MB
+Peak Memory Usage: 109.47 MB
 
 
 par done!
@@ -2773,7 +2784,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.03 seconds
+Successfully loading udb, 0.02 seconds
 
 Initializing timer
 Starting design annotation....
@@ -2781,15 +2792,15 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  0  counted  371  covered  0
+Connections ignored  0  counted  370  covered  0
 Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 102 MB
+Peak Memory Usage: 103 MB
 
- 0.609096s wall, 0.484375s user + 0.125000s system = 0.609375s CPU (100.0%)
+ 0.622051s wall, 0.515625s user + 0.078125s system = 0.593750s CPU (95.5%)
 
 
 tmcheck -par "e155_lab3_impl_1.par"  
@@ -2841,7 +2852,7 @@ INFO <1081100> - Bitstream authenticated.
 Bitstream generation complete!
 
 Total CPU Time: 0 secs 
-Total REAL Time: 6 secs 
+Total REAL Time: 5 secs 
 Peak Memory Usage: 118 MB
 
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /6 secs 
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /5 secs 

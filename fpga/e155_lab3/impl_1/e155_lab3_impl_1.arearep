@@ -38,8 +38,8 @@ Report for cell read_writer.v1
 Instance Path : read_write
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        40           40.0
-                              TOTAL        40
+                               LUT4        41           41.0
+                              TOTAL        41
 ----------------------------------------------------------------------
 Report for cell debounce.v1
 Instance Path : debounce3
@@ -59,8 +59,8 @@ Report for cell stop_clamp.v1
 Instance Path : filter_enabler
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         8            8.0
-                              TOTAL         8
+                               LUT4         7            7.0
+                              TOTAL         7
 ----------------------------------------------------------------------
 Report for cell clock_divider.v1
 Instance Path : one_khz_clock
