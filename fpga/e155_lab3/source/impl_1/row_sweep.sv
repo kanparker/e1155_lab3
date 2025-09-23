@@ -3,7 +3,7 @@ module row_sweep(
 	input logic stop,
 	output logic [3:0] rows
 );
-	logic [1:0]current_state = 2'b00;
+	logic [1:0]current_state;
 	typedef enum logic[3:0]{r1=4'b0001, r2 = 4'b0010, r3=4'b0100, r4=4'b1000} row_output;
 	row_output output_state;
 

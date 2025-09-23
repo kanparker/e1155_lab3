@@ -6,7 +6,7 @@ module clock_divider(
 );
 
 	
-	logic [31:0] counter = 0;
+	logic [31:0] counter;
 	
 	
 	

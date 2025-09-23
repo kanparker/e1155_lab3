@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Synthesis Report</TITLE>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2024.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Users/kanoa/Downloads/2025.1.0.39.0_Radiant/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Users/kanoa/Downloads/2025.1.0.39.0_Radiant/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -41,17 +41,17 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Syn"></A><B><U><big>Synthesis Report</big></U></B>
-synthesis:  version Radiant Software (64-bit) 2024.2.0.3.0
+synthesis:  version Radiant Software (64-bit) 2025.1.0.39.0
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep 23 10:33:41 2025
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Sep 23 14:23:54 2025
 
 
-Command Line:  C:\lscc\radiant\2024.2\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml 
+Command Line:  C:\Users\kanoa\Downloads\2025.1.0.39.0_Radiant\ispfpga\bin\nt64\synthesis.exe -f C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_lattice.synproj -logfile e155_lab3_impl_1_lattice.srp -gui -msgset C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml 
 
 INFO <35002000> - synthesis: Lattice Synthesis Engine launched.
 
@@ -89,6 +89,7 @@ I/O Pins              | 56
 
 Resolving user-selected strategy settings...
 
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
 
 ###################### Strategy Settings #######################
 ----------------------------------------------------------------
@@ -144,6 +145,8 @@ Remove LOC Properties | False
 ----------------------------------------------------------------
 Partition Flow        | False
 ----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
 ################################################################
 
 
@@ -151,23 +154,24 @@ The -comp option is FALSE.
 The -syn option is FALSE.
 
 Output HDL filename: e155_lab3_impl_1.vm
--path C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3 (searchpath added)
--path C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1 (searchpath added)
--path C:/lscc/radiant/2024.2/ispfpga/ice40tp/data (searchpath added)
+-path C:/Users/kanoa/Downloads/2025.1.0.39.0_Radiant/ispfpga/ice40tp/data (searchpath added)
+-path C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3 (searchpath added)
+-path C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1 (searchpath added)
+-path C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1 (searchpath added)
 Mixed language design
-Verilog design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv
-Verilog design file: C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv
+Verilog design file: C:/Users/kanoa/Downloads/2025.1.0.39.0_Radiant/ip/pmi/pmi_iCE40UP.v
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv
+Verilog design file: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv
 VHDL library: pmi
-VHDL design file: C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd
+VHDL design file: C:/Users/kanoa/Downloads/2025.1.0.39.0_Radiant/ip/pmi/pmi_iCE40UP.vhd
 WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
 WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
@@ -182,188 +186,107 @@ WARNING <35935050> - synthesis: input port I is not connected on this instance. 
 
 Compiling design...
 
-Analyzing Verilog file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO <35901328> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.2/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv. VERI-1482
-Analyzing Verilog file c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd
+Analyzing Verilog file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_addsub.v(40): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_add.v(50): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_counter.v(39): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_fifo.v(44): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_mac.v(52): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_mult.v(51): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp.v(49): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq.v(46): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_rom.v(45): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_sub.v(50): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dp_be.v(50): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../LFMXO4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ram_dq_be.v(46): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/../LFMXO4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv. VERI-1482
+Analyzing Verilog file c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv. VERI-1482
+Analyzing VHDL file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.vhd
 
-INFO <35921014> - synthesis: c:/lscc/radiant/2024.2/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1". VHDL-1504
+INFO <35921014> - synthesis: c:/users/kanoa/downloads/2025.1.0.39.0_radiant/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - synthesis: The default VHDL library search path is now "C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(1): compiling module top. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/hsoc.sv(1): compiling module HSOC. VERI-1018
-INFO <35901018> - synthesis: C:/lscc/radiant/2024.2/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
-WARNING <35901084> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(16): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): counter should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): P should be on the sensitivity list. VERI-1221
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(1): compiling module row_sweep. VERI-1018
-WARNING <35901084> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(11): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): current_state should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): stop should be on the sensitivity list. VERI-1221
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(1): compiling module synchronizer. VERI-1018
-WARNING <35901084> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(8): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(14): cin should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): cmid should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): clamp should be on the sensitivity list. VERI-1221
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(1): compiling module debounce. VERI-1018
-WARNING <35901084> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(27): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(33): pvalue should be on the sensitivity list. VERI-1221
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(34): raw_data should be on the sensitivity list. VERI-1221
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(1): compiling module stop_clamp. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(1): compiling module read_writer. VERI-1018
-WARNING <35901084> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(13): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING <35901221> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(18): next_state should be on the sensitivity list. VERI-1221
-WARNING <35901899> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(88): behavior inside always_comb block does not represent combinational logic. VERI-1899
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(1): compiling module display_driver. VERI-1018
-INFO <35901018> - synthesis: c:/users/kanparker/documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv(8): compiling module seven_seg_display. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv(1): compiling module top. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(1): compiling module clock_divider. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(16): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): counter should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv(21): P should be on the sensitivity list. VERI-1221
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(1): compiling module row_sweep. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(11): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): current_state should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv(16): stop should be on the sensitivity list. VERI-1221
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(1): compiling module synchronizer. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(8): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(14): cin should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): cmid should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv(15): clamp should be on the sensitivity list. VERI-1221
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(1): compiling module debounce. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(27): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(33): pvalue should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv(34): raw_data should be on the sensitivity list. VERI-1221
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv(1): compiling module stop_clamp. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(1): compiling module read_writer. VERI-1018
+WARNING <35901084> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(13): no support for synthesis of mixed edge and level triggers. VERI-1084
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(20): next_state should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(21): next_control_1 should be on the sensitivity list. VERI-1221
+WARNING <35901221> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv(22): next_control_2 should be on the sensitivity list. VERI-1221
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv(1): compiling module display_driver. VERI-1018
+INFO <35901018> - synthesis: c:/users/kanoa/downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv(8): compiling module seven_seg_display. VERI-1018
 
 <A name="lse_parameter"></A><B><U><big>Parameter Setting</big></U></B>
 
 [Parameter Setting Section Start]
 
-	[Parameter Settings for Instance(s): hf_osc]
-	(Module: HSOSC)
-		CLKHF_DIV                 "0b00"
-
 [Parameter Setting Section End]
-WARNING <35001771> - synthesis: Initial value found on net counter[31] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[30] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[29] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[28] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[27] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[26] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[25] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[24] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[23] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[22] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[21] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[20] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[19] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[18] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[17] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[16] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[15] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[14] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[13] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[12] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[11] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[10] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[9] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[8] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[7] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[6] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[5] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[4] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[3] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[2] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[1] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net counter[0] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net current_state[1] will be ignored due to unrecognized driver type
-WARNING <35001771> - synthesis: Initial value found on net current_state[0] will be ignored due to unrecognized driver type
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
 
 
 
-Combinational loop due to latch found: 1
-
-	Instance d0_c_0_I_0 
-
-	Net d1_c_0 
-
-Combinational loop due to latch found: 2
-
-	Instance \read_write/new_control_0__I_0 
-
-	Net d0_c_0 
-
-Combinational loop due to latch found: 3
-
-	Instance d0_c_1_I_0 
-
-	Net d1_c_1 
-
-Combinational loop due to latch found: 4
-
-	Instance d0_c_2_I_0 
-
-	Net d1_c_2 
-
-Combinational loop due to latch found: 5
-
-	Instance d0_c_3_I_0 
-
-	Net d1_c_3 
-
-Combinational loop due to latch found: 6
-
-	Instance \read_write/new_control_1__I_0 
-
-	Net d0_c_1 
-
-Combinational loop due to latch found: 7
-
-	Instance \read_write/new_control_2__I_0 
-
-	Net d0_c_2 
-
-Combinational loop due to latch found: 8
-
-	Instance \read_write/new_control_3__I_0 
-
-	Net d0_c_3 
-
+CRITICAL <35002028> - synthesis: I/O port's net has no driver and is unused: clk
 Combinational loop found : 1
 
  Net gate1_c 
 
  Instance gate1_c_I_4 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 2
 
@@ -371,13 +294,13 @@ Combinational loop found : 2
 
  Instance gate1_c_I_5 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 3
 
@@ -385,17 +308,17 @@ Combinational loop found : 3
 
  Instance gate1_c_I_6 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 4
 
@@ -403,21 +326,21 @@ Combinational loop found : 4
 
  Instance gate1_c_I_7 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 5
 
@@ -425,25 +348,25 @@ Combinational loop found : 5
 
  Instance gate1_c_I_8 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 6
 
@@ -451,29 +374,29 @@ Combinational loop found : 6
 
  Instance gate1_c_I_9 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 7
 
@@ -481,33 +404,33 @@ Combinational loop found : 7
 
  Instance gate1_c_I_10 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 8
 
@@ -515,37 +438,37 @@ Combinational loop found : 8
 
  Instance gate1_c_I_11 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 9
 
@@ -553,41 +476,41 @@ Combinational loop found : 9
 
  Instance gate1_c_I_12 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 10
 
@@ -595,45 +518,45 @@ Combinational loop found : 10
 
  Instance gate1_c_I_13 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 11
 
@@ -641,49 +564,49 @@ Combinational loop found : 11
 
  Instance gate1_c_I_14 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 12
 
@@ -691,53 +614,53 @@ Combinational loop found : 12
 
  Instance gate1_c_I_15 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 13
 
@@ -745,57 +668,57 @@ Combinational loop found : 13
 
  Instance gate1_c_I_16 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 14
 
@@ -803,61 +726,61 @@ Combinational loop found : 14
 
  Instance gate1_c_I_17 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 15
 
@@ -865,65 +788,65 @@ Combinational loop found : 15
 
  Instance gate1_c_I_18 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 16
 
@@ -931,69 +854,69 @@ Combinational loop found : 16
 
  Instance gate1_c_I_19 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 17
 
@@ -1001,73 +924,73 @@ Combinational loop found : 17
 
  Instance gate1_c_I_20 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 18
 
@@ -1075,77 +998,77 @@ Combinational loop found : 18
 
  Instance gate1_c_I_21 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 19
 
@@ -1153,81 +1076,81 @@ Combinational loop found : 19
 
  Instance gate1_c_I_22 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 20
 
@@ -1235,85 +1158,85 @@ Combinational loop found : 20
 
  Instance gate1_c_I_23 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 21
 
@@ -1321,89 +1244,89 @@ Combinational loop found : 21
 
  Instance gate1_c_I_24 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 22
 
@@ -1411,93 +1334,93 @@ Combinational loop found : 22
 
  Instance gate1_c_I_25 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 23
 
@@ -1505,97 +1428,97 @@ Combinational loop found : 23
 
  Instance gate1_c_I_26 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 24
 
@@ -1603,101 +1526,101 @@ Combinational loop found : 24
 
  Instance gate1_c_I_27 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[4] 
+ Net gate1_c_N_53[8] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 25
 
@@ -1705,105 +1628,105 @@ Combinational loop found : 25
 
  Instance gate1_c_I_28 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[4] 
+ Net gate1_c_N_53[8] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[3] 
+ Net gate1_c_N_53[7] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 26
 
@@ -1811,109 +1734,109 @@ Combinational loop found : 26
 
  Instance gate1_c_I_29 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[4] 
+ Net gate1_c_N_53[8] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[3] 
+ Net gate1_c_N_53[7] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[2] 
+ Net gate1_c_N_53[6] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 27
 
@@ -1921,113 +1844,113 @@ Combinational loop found : 27
 
  Instance gate1_c_I_30 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[4] 
+ Net gate1_c_N_53[8] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[3] 
+ Net gate1_c_N_53[7] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[2] 
+ Net gate1_c_N_53[6] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[1] 
+ Net gate1_c_N_53[5] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 28
 
@@ -2035,275 +1958,631 @@ Combinational loop found : 28
 
  Instance gate1_c_I_31 
 
- Net gate1_c_N_37[27] 
+ Net gate1_c_N_53[31] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[26] 
+ Net gate1_c_N_53[30] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[25] 
+ Net gate1_c_N_53[29] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[24] 
+ Net gate1_c_N_53[28] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[23] 
+ Net gate1_c_N_53[27] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[22] 
+ Net gate1_c_N_53[26] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[21] 
+ Net gate1_c_N_53[25] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[20] 
+ Net gate1_c_N_53[24] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[19] 
+ Net gate1_c_N_53[23] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[18] 
+ Net gate1_c_N_53[22] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[17] 
+ Net gate1_c_N_53[21] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[16] 
+ Net gate1_c_N_53[20] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[15] 
+ Net gate1_c_N_53[19] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[14] 
+ Net gate1_c_N_53[18] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[13] 
+ Net gate1_c_N_53[17] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[12] 
+ Net gate1_c_N_53[16] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[11] 
+ Net gate1_c_N_53[15] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[10] 
+ Net gate1_c_N_53[14] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[9] 
+ Net gate1_c_N_53[13] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[8] 
+ Net gate1_c_N_53[12] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[7] 
+ Net gate1_c_N_53[11] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[6] 
+ Net gate1_c_N_53[10] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[5] 
+ Net gate1_c_N_53[9] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[4] 
+ Net gate1_c_N_53[8] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[3] 
+ Net gate1_c_N_53[7] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[2] 
+ Net gate1_c_N_53[6] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[1] 
+ Net gate1_c_N_53[5] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net gate1_c_N_37[0] 
+ Net gate1_c_N_53[4] 
 
- Instance add_315_add_5 
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 29
 
- Net \row_sweeper/current_state[1] 
+ Net \one_khz_clock/counter[3] 
 
- Instance \row_sweeper/current_state_1__I_0_2 
+ Instance gate1_c_I_32 
 
- Net \row_sweeper/current_state_1__N_1[1] 
+ Net gate1_c_N_53[31] 
 
- Instance i450 
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[30] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[29] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[28] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[27] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[26] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[25] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[24] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[23] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[22] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[21] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[20] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[19] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[18] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[17] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[16] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[15] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[14] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[13] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[12] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[11] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[10] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[9] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[8] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[7] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[6] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[5] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[4] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[3] 
+
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 30
 
- Net \row_sweeper/current_state[0] 
+ Net \one_khz_clock/counter[2] 
 
- Instance \row_sweeper/current_state_1__I_1 
+ Instance gate1_c_I_33 
 
- Net \row_sweeper/current_state_1__N_1[0] 
+ Net gate1_c_N_53[31] 
 
- Instance i442 
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[30] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[29] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[28] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[27] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[26] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[25] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[24] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[23] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[22] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[21] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[20] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[19] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[18] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[17] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[16] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[15] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[14] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[13] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[12] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[11] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[10] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[9] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[8] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[7] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[6] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[5] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[4] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[3] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[2] 
+
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 31
 
- Net cdebounced[1] 
+ Net \one_khz_clock/counter[1] 
 
- Instance \debounce1/pvalue_I_0 
+ Instance gate1_c_I_34 
 
- Net \debounce1/pvalue 
+ Net gate1_c_N_53[31] 
 
- Instance reset_c_I_0_4 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \debounce1/pvalue_N_77 
+ Net gate1_c_N_53[30] 
 
- Instance \synchc1/i4 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp[1] 
+ Net gate1_c_N_53[29] 
 
- Instance clamp_1__I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp_1__N_7 
+ Net gate1_c_N_53[28] 
 
- Instance i991 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net n1513 
+ Net gate1_c_N_53[27] 
 
- Instance i989 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net n1510 
+ Net gate1_c_N_53[26] 
 
- Instance i1162 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net cdebounced[0] 
+ Net gate1_c_N_53[25] 
 
- Instance \debounce0/pvalue_I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \debounce0/pvalue 
+ Net gate1_c_N_53[24] 
 
- Instance reset_c_I_0_2 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \debounce0/pvalue_N_76 
+ Net gate1_c_N_53[23] 
 
- Instance \synchc0/i4 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp[0] 
+ Net gate1_c_N_53[22] 
 
- Instance clamp_0__I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp_0__N_8 
+ Net gate1_c_N_53[21] 
 
- Instance i992 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net n1514 
+ Net gate1_c_N_53[20] 
 
- Instance i1168 
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[19] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[18] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[17] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[16] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[15] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[14] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[13] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[12] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[11] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[10] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[9] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[8] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[7] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[6] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[5] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[4] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[3] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[2] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[1] 
+
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 32
 
- Net cdebounced[0] 
+ Net \one_khz_clock/counter[0] 
 
- Instance \debounce0/pvalue_I_0 
+ Instance gate1_c_I_35 
 
- Net \debounce0/pvalue 
+ Net gate1_c_N_53[31] 
 
- Instance reset_c_I_0_2 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \debounce0/pvalue_N_76 
+ Net gate1_c_N_53[30] 
 
- Instance \synchc0/i4 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp[0] 
+ Net gate1_c_N_53[29] 
 
- Instance clamp_0__I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp_0__N_8 
+ Net gate1_c_N_53[28] 
 
- Instance i992 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net cdebounced[2] 
+ Net gate1_c_N_53[27] 
 
- Instance \debounce2/pvalue_I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \debounce2/pvalue_N_78 
+ Net gate1_c_N_53[26] 
 
- Instance \synchc2/i4 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp[2] 
+ Net gate1_c_N_53[25] 
 
- Instance clamp_2__I_0 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net clamp_2__N_6 
+ Net gate1_c_N_53[24] 
 
- Instance i980 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net n1501 
+ Net gate1_c_N_53[23] 
 
- Instance Mux_976_i3 
+ Instance \one_khz_clock/add_3_add_5 
 
- Net \Mux_976/n1 
+ Net gate1_c_N_53[22] 
 
- Instance i1163 
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[21] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[20] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[19] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[18] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[17] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[16] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[15] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[14] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[13] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[12] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[11] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[10] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[9] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[8] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[7] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[6] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[5] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[4] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[3] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[2] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[1] 
+
+ Instance \one_khz_clock/add_3_add_5 
+
+ Net gate1_c_N_53[0] 
+
+ Instance \one_khz_clock/add_3_add_5 
 
 Combinational loop found : 33
-
- Net cdebounced[2] 
-
- Instance \debounce2/pvalue_I_0 
-
- Net \debounce2/pvalue_N_78 
-
- Instance \synchc2/i4 
-
- Net clamp[2] 
-
- Instance clamp_2__I_0 
-
- Net clamp_2__N_6 
-
- Instance i980 
-
-Combinational loop found : 34
-
- Net cdebounced[3] 
-
- Instance \debounce3/pvalue_I_0 
-
- Net \debounce3/pvalue_N_79 
-
- Instance \synchc3/i4 
-
- Net clamp[3] 
-
- Instance clamp_3__I_0 
-
-Combinational loop found : 35
-
- Net \read_write/equal_36/n5 
-
- Instance \read_write/equal_36_i5 
 
  Net \read_write/current_state[0] 
 
@@ -2313,49 +2592,391 @@ Combinational loop found : 35
 
  Instance \read_write/next_state_0__I_3 
 
- Net \read_write/next_state_0__N_19 
+ Net \read_write/next_state_0__N_35 
 
- Instance \read_write/equal_36_i8 
-
-Combinational loop found : 36
-
- Net \read_write/current_state[1] 
-
- Instance \read_write/next_state_1__I_0 
-
- Net \read_write/next_state[1] 
-
- Instance \read_write/next_state_1__I_2 
-
- Net \read_write/next_state_1__N_17 
-
- Instance Select_972_i1 
+ Instance \read_write/equal_38_i8 
 
  Net \read_write/equal_38/n5 
 
  Instance \read_write/equal_38_i5 
 
- Net \read_write/equal_38/n2 
+Combinational loop found : 34
 
- Instance i545 
+ Net \read_write/current_state[1] 
 
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_0_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_0__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_1_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_2_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch d0_c_3_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_1__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_2__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-CRITICAL <35001783> - synthesis: Mapping latch \read_write/new_control_3__I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+ Instance \read_write/next_state_1__I_0 
+
+ Net \read_write/next_state[0] 
+
+ Instance \read_write/next_state_0__I_3 
+
+ Net \read_write/next_state_0__N_35 
+
+ Instance \read_write/equal_38_i8 
+
+ Net \read_write/equal_38/n5 
+
+ Instance \read_write/equal_38_i5 
+
+ Net \read_write/next_state[1] 
+
+ Instance \read_write/next_state_1__I_2 
+
+ Net \read_write/next_state_1__N_33 
+
+ Instance Select_1133_i1 
+
+ Net \read_write/n73 
+
+ Instance \read_write/equal_40_i8 
+
+ Net \read_write/equal_40/n5 
+
+ Instance \read_write/equal_40_i5 
+
+ Net \read_write/equal_40/n2 
+
+ Instance i616 
+
+Combinational loop found : 35
+
+ Net cdebounced[1] 
+
+ Instance \debounce1/pvalue_I_0 
+
+ Net \debounce1/pvalue 
+
+ Instance reset_c_I_0_4 
+
+ Net \debounce1/pvalue_N_89 
+
+ Instance \synchc1/i4 
+
+ Net clamp[1] 
+
+ Instance clamp_1__I_0 
+
+ Net clamp_1__N_7 
+
+ Instance i1176 
+
+ Net n1767 
+
+ Instance i1174 
+
+ Net n1764 
+
+ Instance i1366 
+
+ Net cdebounced[0] 
+
+ Instance \debounce0/pvalue_I_0 
+
+ Net \debounce0/pvalue 
+
+ Instance reset_c_I_0_2 
+
+ Net \debounce0/pvalue_N_88 
+
+ Instance \synchc0/i4 
+
+ Net clamp[0] 
+
+ Instance clamp_0__I_0 
+
+ Net clamp_0__N_8 
+
+ Instance i1177 
+
+ Net n1768 
+
+ Instance i1373 
+
+Combinational loop found : 36
+
+ Net cdebounced[0] 
+
+ Instance \debounce0/pvalue_I_0 
+
+ Net \debounce0/pvalue 
+
+ Instance reset_c_I_0_2 
+
+ Net \debounce0/pvalue_N_88 
+
+ Instance \synchc0/i4 
+
+ Net clamp[0] 
+
+ Instance clamp_0__I_0 
+
+ Net clamp_0__N_8 
+
+ Instance i1177 
+
+ Net cdebounced[2] 
+
+ Instance \debounce2/pvalue_I_0 
+
+ Net \debounce2/pvalue_N_90 
+
+ Instance \synchc2/i4 
+
+ Net clamp[2] 
+
+ Instance clamp_2__I_0 
+
+ Net clamp_2__N_6 
+
+ Instance i1165 
+
+ Net n1755 
+
+ Instance Mux_1161_i3 
+
+ Net \Mux_1161/n1 
+
+ Instance i1367 
+
+Combinational loop found : 37
+
+ Net cdebounced[2] 
+
+ Instance \debounce2/pvalue_I_0 
+
+ Net \debounce2/pvalue_N_90 
+
+ Instance \synchc2/i4 
+
+ Net clamp[2] 
+
+ Instance clamp_2__I_0 
+
+ Net clamp_2__N_6 
+
+ Instance i1165 
+
+Combinational loop found : 38
+
+ Net cdebounced[3] 
+
+ Instance \debounce3/pvalue_I_0 
+
+ Net \debounce3/pvalue_N_91 
+
+ Instance \synchc3/i4 
+
+ Net clamp[3] 
+
+ Instance clamp_3__I_0 
+
+Combinational loop found : 39
+
+ Net \read_write/next_state_1__N_34 
+
+ Instance \read_write/equal_39_i8 
+
+ Net \read_write/equal_39/n5 
+
+ Instance \read_write/equal_39_i5 
+
+ Net \read_write/equal_39/n1 
+
+ Instance i618 
+
+ Net \read_write/next_state[0] 
+
+ Instance \read_write/next_state_0__I_3 
+
+ Net \read_write/next_state_0__N_35 
+
+ Instance \read_write/equal_38_i8 
+
+ Net \read_write/equal_38/n5 
+
+ Instance \read_write/equal_38_i5 
+
+ Net \read_write/next_state[1] 
+
+ Instance \read_write/next_state_1__I_2 
+
+Combinational loop found : 40
+
+ Net \row_sweeper/current_state[1] 
+
+ Instance \row_sweeper/current_state_1__I_0_2 
+
+ Net \row_sweeper/current_state_1__N_1[1] 
+
+ Instance i508 
+
+Combinational loop found : 41
+
+ Net \row_sweeper/current_state[0] 
+
+ Instance \row_sweeper/current_state_1__I_1 
+
+ Net \read_write/new_control[3] 
+
+ Instance \read_write/new_control_3__I_0 
+
+ Net \read_write/new_control_3__N_9 
+
+ Instance \i377/i22/i2 
+
+ Net \i377/n18 
+
+ Instance \i377/i37 
+
+ Net rows_c_1 
+
+ Instance \row_sweeper/current_state_1__I_0_5 
+
+ Net n759 
+
+ Instance i502 
+
+ Net \row_sweeper/current_state_1__N_1[1] 
+
+ Instance i508 
+
+ Net \row_sweeper/current_state_1__N_1[0] 
+
+ Instance i500 
+
+Combinational loop found : 42
+
+ Net d0_c_3 
+
+ Instance \read_write/next_control_1_3__I_0 
+
+ Net \read_write/next_control_1[3] 
+
+ Instance \read_write/next_control_1_3__I_0_2 
+
+ Net \read_write/next_control_1_3__N_18 
+
+ Instance Select_1149_i2 
+
+Combinational loop found : 43
+
+ Net d1_c_3 
+
+ Instance \read_write/next_control_2_3__I_0 
+
+ Net \read_write/next_control_2[3] 
+
+ Instance \read_write/next_control_2_3__I_0_2 
+
+Combinational loop found : 44
+
+ Net d0_c_2 
+
+ Instance \read_write/next_control_1_2__I_0 
+
+ Net \read_write/next_control_1[2] 
+
+ Instance \read_write/next_control_1_2__I_0_2 
+
+ Net \display_outputs/sev_seg_in[2] 
+
+ Instance gate1_c_I_0_3 
+
+ Net \read_write/next_control_1_2__N_20 
+
+ Instance Select_1153_i2 
+
+Combinational loop found : 45
+
+ Net d1_c_2 
+
+ Instance \read_write/next_control_2_2__I_0 
+
+ Net \display_outputs/sev_seg_in[2] 
+
+ Instance gate1_c_I_0_3 
+
+ Net \read_write/next_control_2[2] 
+
+ Instance \read_write/next_control_2_2__I_0_2 
+
+Combinational loop found : 46
+
+ Net d0_c_1 
+
+ Instance \read_write/next_control_1_1__I_0 
+
+ Net \read_write/next_control_1[1] 
+
+ Instance \read_write/next_control_1_1__I_0_2 
+
+ Net \display_outputs/seven_seg_counter/mux_3_Mux_0/n3 
+
+ Instance i1371 
+
+ Net \display_outputs/sev_seg_in[1] 
+
+ Instance gate1_c_I_0_4 
+
+ Net \read_write/next_control_1_1__N_22 
+
+ Instance Select_1157_i2 
+
+Combinational loop found : 47
+
+ Net d1_c_1 
+
+ Instance \read_write/next_control_2_1__I_0 
+
+ Net \display_outputs/seven_seg_counter/mux_3_Mux_0/n3 
+
+ Instance i1371 
+
+ Net \display_outputs/sev_seg_in[1] 
+
+ Instance gate1_c_I_0_4 
+
+ Net \read_write/next_control_2[1] 
+
+ Instance \read_write/next_control_2_1__I_0_2 
+
+Combinational loop found : 48
+
+ Net d0_c_0 
+
+ Instance \read_write/next_control_1_0__I_0 
+
+Combinational loop found : 49
+
+ Net d1_c_0 
+
+ Instance \read_write/next_control_2_0__I_0 
+
+ Net \read_write/next_control_2[0] 
+
+ Instance \read_write/next_control_2_0__I_0_2 
+
+ Net \display_outputs/seven_seg_counter/mux_3_Mux_0/n6 
+
+ Instance \display_outputs/seven_seg_counter/mux_3_Mux_0_i6 
+
+ Net \display_outputs/sev_seg_in[0] 
+
+ Instance gate1_c_I_0_5 
+
+ Net \read_write/next_control_2_0__N_32 
+
+ Instance Select_1125_i2 
+
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
 Number of register bits => 0 of 5280 (0 % )
-CCU2 => 15
+CCU2 => 17
 IB => 5
-LUT4 => 91
+LUT4 => 103
 OB => 21
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -2371,16 +2992,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : reset_c, loads : 35
-  Net : cdebounced[3], loads : 17
-  Net : one_khz_clock/gate1_c_N_37[27], loads : 16
-  Net : one_khz_clock/n4230, loads : 16
-  Net : one_khz_clock/gate1_c_N_37[26], loads : 15
-  Net : one_khz_clock/n4228, loads : 15
-  Net : one_khz_clock/gate1_c_N_37[25], loads : 15
-  Net : cdebounced[2], loads : 14
-  Net : one_khz_clock/n4226, loads : 14
-  Net : one_khz_clock/gate1_c_N_37[23], loads : 14
+  Net : reset_c, loads : 47
+  Net : cdebounced[3], loads : 18
+  Net : one_khz_clock/gate1_c_N_53[31], loads : 18
+  Net : one_khz_clock/n4762, loads : 18
+  Net : one_khz_clock/gate1_c_N_53[29], loads : 17
+  Net : one_khz_clock/gate1_c_N_53[30], loads : 17
+  Net : one_khz_clock/n4760, loads : 17
+  Net : one_khz_clock/gate1_c_N_53[27], loads : 16
+  Net : one_khz_clock/gate1_c_N_53[28], loads : 16
+  Net : one_khz_clock/n4758, loads : 16
 ################### End Clock Report ##################
 
 
@@ -2392,13 +3013,13 @@ Constraint Summary:
   Total number of constraints dropped: 0
 ###################  End Constraint Report  ######################
 
-Peak Memory Usage: 94 MB
+Peak Memory Usage: 97 MB
 
 --------------------------------------------------------------
-Total CPU Time: 5 secs 
-Total REAL Time: 8 secs 
+Total CPU Time: 11 secs 
+Total REAL Time: 11 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 55399bc0d3d4b1125fb2f11894aa2e13772460b9
+Checksum -- synthesis -- netlist: 9b3c1ac8fa750f7e768c31f8cbfe133e73483786
 
 
 

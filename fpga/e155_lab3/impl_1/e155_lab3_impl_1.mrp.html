@@ -48,24 +48,24 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Tue Sep 23 10:33:54 2025
+Mapper:    version Radiant Software (64-bit) 2025.1.0.39.0
+Mapped on: Tue Sep 23 14:24:15 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
 Command line:   map -pdc
-     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
+     C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
      e155_lab3_impl_1_syn.udb -o e155_lab3_impl_1_map.udb -mp
      e155_lab3_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml
+     C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
    Number of slice registers:   0 out of  5280 (0%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           121 out of  5280 (2%)
-      Number of logic LUT4s:              91
-      Number of ripple logic:             15 (30 LUT4s)
+   Number of LUT4s:           128 out of  5280 (2%)
+      Number of logic LUT4s:              94
+      Number of ripple logic:             17 (34 LUT4s)
    Number of IO sites used:   26 out of 39 (67%)
       Number of IO sites used for general PIO: 26
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -91,24 +91,25 @@ Command line:   map -pdc
    Number of Clock Enables:  0
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net reset_c: 38 loads
-      Net cdebounced[3]: 17 loads
-      Net cdebounced[1]: 15 loads
-      Net cdebounced[2]: 14 loads
-      Net current_state[1]: 14 loads
-      Net current_state[0]: 13 loads
-      Net gate2_pad.vcc: 9 loads
-      Net cdebounced[0]: 8 loads
-      Net read_write.d1_c_0_N_47: 8 loads
-      Net sev_seg_in[1]: 7 loads
+      Net reset_c: 50 loads
+      Net cdebounced[3]: 18 loads
+      Net current_state[0]: 14 loads
+      Net cdebounced[2]: 13 loads
+      Net current_state[1]: 13 loads
+      Net cdebounced[1]: 10 loads
+      Net next_state_1__N_34: 8 loads
+      Net display_outputs.sev_seg_in[0]: 7 loads
+      Net display_outputs.sev_seg_in[1]: 7 loads
+      Net display_outputs.sev_seg_in[2]: 7 loads
 
-   Number of warnings:  0
+   Number of warnings:  2
    Number of criticals: 0
    Number of errors:    0
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
 
-   No error, critical, or warning presents.
+WARNING &lt;71003020&gt; - map: Top module port &apos;clk&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;clk&apos; does not connect to anything.
 
 <A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
 
@@ -185,8 +186,8 @@ Block reset_pad.vlo_inst was optimized away.
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 67 MB
-Checksum -- map: 1eb02e90619ae284de7bf980d4e69fdda95f320
+   Peak Memory Usage: 68 MB
+Checksum -- map: 8db010ea7b00b973e7eb367a79298755117760bb
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.
@@ -194,7 +195,7 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2024 Lattice Semiconductor
+Copyright (c) 2002-2025 Lattice Semiconductor
      Corporation,  All rights reserved.
 </PRE></DIV>
 <DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>

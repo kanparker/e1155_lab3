@@ -3,22 +3,60 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        121        100.0
-                               LUTGATE	         91        100.0
-                                LUTCCU	         30        100.0
+                                  LUT4	        128        100.0
+                               LUTGATE	         94        100.0
+                                LUTCCU	         34        100.0
                                  IOBUF	         26        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                         clock_divider	          1        47.9
-                              debounce	          1         1.7
-                           debounce_U0	          1         1.7
+                         clock_divider	          1        51.6
+                              debounce	          1         0.8
+                           debounce_U0	          1         0.8
                            debounce_U1	          1         0.0
-                        display_driver	          1         5.8
-                           read_writer	          1        22.3
-                             row_sweep	          1         3.3
+                           debounce_U2	          1         0.0
+                        display_driver	          1         5.5
+                           read_writer	          1        13.3
+                             row_sweep	          1         3.1
+                            stop_clamp	          1         0.0
+---------------------------------------------------
+Report for cell display_driver
+   Instance path: top/display_outputs
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         5.5
+                               LUTGATE	          7         7.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     seven_seg_display	          1         5.5
+---------------------------------------------------
+Report for cell seven_seg_display
+   Instance path: top/display_outputs/seven_seg_counter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         5.5
+                               LUTGATE	          7         7.4
+---------------------------------------------------
+Report for cell debounce_U0
+   Instance path: top/debounce2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.8
+                               LUTGATE	          1         1.1
+---------------------------------------------------
+Report for cell debounce_U2
+   Instance path: top/debounce0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell debounce
+   Instance path: top/debounce3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.8
+                               LUTGATE	          1         1.1
 ---------------------------------------------------
 Report for cell debounce_U1
-   Instance path: top/debounce0
+   Instance path: top/debounce1
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
@@ -26,51 +64,25 @@ Report for cell read_writer
    Instance path: top/read_write
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         27        22.3
-                               LUTGATE	         27        29.7
----------------------------------------------------
-Report for cell debounce
-   Instance path: top/debounce3
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          2         1.7
-                               LUTGATE	          2         2.2
----------------------------------------------------
-Report for cell debounce_U0
-   Instance path: top/debounce1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          2         1.7
-                               LUTGATE	          2         2.2
----------------------------------------------------
-Report for cell clock_divider
-   Instance path: top/one_khz_clock
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         58        47.9
-                               LUTGATE	         28        30.8
-                                LUTCCU	         30        100.0
+                                  LUT4	         17        13.3
+                               LUTGATE	         17        18.1
 ---------------------------------------------------
 Report for cell row_sweep
    Instance path: top/row_sweeper
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          4         3.3
-                               LUTGATE	          4         4.4
+                                  LUT4	          4         3.1
+                               LUTGATE	          4         4.3
 ---------------------------------------------------
-Report for cell display_driver
-   Instance path: top/display_outputs
+Report for cell clock_divider
+   Instance path: top/one_khz_clock
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7         5.8
-                               LUTGATE	          7         7.7
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                     seven_seg_display	          1         5.8
+                                  LUT4	         66        51.6
+                               LUTGATE	         32        34.0
+                                LUTCCU	         34        100.0
 ---------------------------------------------------
-Report for cell seven_seg_display
-   Instance path: top/display_outputs/seven_seg_counter
+Report for cell stop_clamp
+   Instance path: top/filter_enabler
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7         5.8
-                               LUTGATE	          7         7.7

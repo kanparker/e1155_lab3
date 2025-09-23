@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/15/2025 20:21:23
+#Project Location: C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3; Project name: e155_lab3
+prj_open "C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/15/2025 20:26:43
