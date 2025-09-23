@@ -1,5 +1,5 @@
 module top(
-	//input logic clk,
+	input logic clk,
 	input logic [3:0]cols,
 	input logic reset,
 	output logic [3:0]rows,
@@ -13,13 +13,14 @@ module top(
 	logic [3:0] csynched,cdebounced,cout,clamp;
 	logic [31:0] p1, p2, p3;
 	
-	assign p1 = 32'b00000000000000010101111110010000;
-	assign p2 = 32'b00000000000011011010011101000000;
-	assign p3 = 32'b00000000000000001010111111001000;
-	//assign p1 = 32'b10000000000000000000000011010111;
-	//assign p2 = 32'b10000000000000000000100001100011;
+	//assign p1 = 32'b00000000000000010101111110010000;
+	//assign p2 = 32'b00000000000011011010011101000000;
+	//assign p3 = 32'b00000000000000001010111111001000;
+	assign p1 = 32'b10000000000000000000000011010111;
+	assign p2 = 32'b10000000000000000000100001100011;
+	assign p3 = 32'b00100000000000000010100001100011;
 	
-	HSOC high_speed_clock(clk);
+	//HSOC high_speed_clock(clk);
 	clock_divider one_khz_clock(clk,p1,reset,onekhz_clock);
 	clock_divider tenk_hz_clock(clk,p2,reset,tenkhz_clock);
 	clock_divider twk_hz_clock(clk,p3,reset,twkhz_clock);

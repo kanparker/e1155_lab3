@@ -4,7 +4,7 @@ module debounce(
 	output logic filtered_data
 );
 	logic pvalue, nvalue;
-	
+	/*
 	always_ff @(posedge clk, reset)
 		if(reset) begin
 			pvalue <= 0;
@@ -23,7 +23,21 @@ module debounce(
 		else begin
 			nvalue <= raw_data;
 		end
-		
+		*/
+	always_ff @(posedge clk, reset)
+		if(reset) begin
+			pvalue<=0;
+			nvalue<=0;
+			end
+		else begin
+			nvalue<=pvalue;
+			pvalue<=raw_data;
+			end
+			
+	always_comb
+		begin
+			filtered_data = nvalue&pvalue;
+		end
 	
 
 			

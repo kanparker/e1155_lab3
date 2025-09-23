@@ -10,13 +10,9 @@ module synchronizer(
 			cmid <= 1'b0;
 			cout <= 1'b0;
 			end
-		else if(clamp) begin
-				cout <= cmid;
-				cmid <= cin;
-				end
 		else begin
-				cout<= 1'b0;
-				cmid<=cin;
+			cmid<=cin;
+			cout<= cmid&clamp;
 			end
 			
 		

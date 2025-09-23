@@ -39,22 +39,22 @@
 -use_io_insertion 1
 
 -resolve_mixed_drivers 0
--path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/impl_1" "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3"
+-path "C:/lscc/radiant/2024.2/ispfpga/ice40tp/data" "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1" "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3"
 -ver "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/2024.2/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv"
-"C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv"
+-sver "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv"
+"C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv"
 
 
--path "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3"
+-path "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3"
 -top top
 -udb "e155_lab3_impl_1_rtl.udb"
 -output_hdl "e155_lab3_impl_1.vm"

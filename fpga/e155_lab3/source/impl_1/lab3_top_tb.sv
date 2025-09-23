@@ -39,7 +39,7 @@ module lab3_top_tb();
 
     // task to check expected values of d0 and d1
     task check_key(input [3:0] exp_d0, exp_d1, string msg);
-        #100;
+        #500;
         assert (d0 == exp_d0 && d1 == exp_d1)
             $display("PASSED!: %s -- got d0=%h d1=%h expected d0=%h d1=%h at time %0t.", msg, d0, d1, exp_d0, exp_d1, $time);
         else
@@ -55,10 +55,10 @@ module lab3_top_tb();
         keys = '{default:0};
 
         #22 reset = 0;
-		#100
+		#500
         // press key at row=0, col=0
         #50 keys[0][0] = 1;
-		#100
+		#500
         check_key(4'ha, 4'hx, "First key press");
 
         // release button
@@ -66,49 +66,49 @@ module lab3_top_tb();
 
         // press another key at row=1, col=0
         keys[1][0] = 1;
-		#100
+		#500
         check_key(4'h7, 4'ha, "Second key press");
 
         // release buttons
-        #100 keys[1][0] = 0;
+        #500 keys[1][0] = 0;
 
          
 		
 		 // press another key at row=2, col=0
         keys[2][0] = 1;
-		#100
+		#500
         check_key(4'h4, 4'h7, "third key press");
 
         // release buttons
-        #100 keys[2][0] = 0;
+        #500 keys[2][0] = 0;
 
         
 		
 		 // press another key at row=3, col=0
         keys[3][0] = 1;
-		#100
+		#500
         check_key(4'h1, 4'h4, "fourth key press");
 		
-		#100
+		#500
 		keys[3][0]=0;
 		keys[0][1] = 1;
-		#100
+		#500
         check_key(4'h0, 4'h1, "fifth key press");
 
         // release button
-        #100 keys[0][1] = 0;
+        #500 keys[0][1] = 0;
 		keys[1][1] = 1;
-		#100
+		#500
         check_key(4'h8, 4'h0, "sixth key press");
 
         // release button
-        #100 keys[1][1] = 0;
+        #500 keys[1][1] = 0;
 		keys[2][1] = 1;
-		#100
+		#500
         check_key(4'h5, 4'h8, "seventh key press");
 
         // release button
-        #100 keys[2][1] = 0;
+        #500 keys[2][1] = 0;
 		keys[3][1] = 1;
 		#100
         check_key(4'h2, 4'h5, "eight key press");
@@ -127,6 +127,7 @@ module lab3_top_tb();
 
         // release button
         #100 keys[1][2] = 0;
+		
 		keys[2][2] = 1;
 		#100
         check_key(4'h6, 4'h9, "11th key press");
@@ -171,7 +172,7 @@ module lab3_top_tb();
 
     // add a timeout
     initial begin
-        #50000; // wait 50 us
+        #5000000; // wait 50 us
         $error("Simulation did not complete in time.");
         $stop;
     end

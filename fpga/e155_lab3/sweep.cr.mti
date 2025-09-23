@@ -1,0 +1,43 @@
+C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module debounce_tb
+
+Top level modules:
+	debounce_tb
+
+} {} {}} C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module synchronizer
+
+Top level modules:
+	synchronizer
+
+} {} {}} C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module synchronizer_tb
+
+Top level modules:
+	synchronizer_tb
+
+} {} {}} C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module row_sweep
+
+Top level modules:
+	row_sweep
+
+} {} {}} C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module row_sweep_tb
+
+Top level modules:
+	row_sweep_tb
+
+} {} {}} C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module debounce
+
+Top level modules:
+	debounce
+
+} {} {}}

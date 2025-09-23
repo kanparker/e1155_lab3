@@ -1,6 +1,6 @@
 -w
 -gui
--msgset "C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml"
+-msgset "C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml"
 -n 1
 -t 1
 -s 1

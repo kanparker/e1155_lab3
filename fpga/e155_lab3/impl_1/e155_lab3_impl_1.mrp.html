@@ -49,23 +49,22 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
-Mapped on: Sun Sep 21 21:31:12 2025
+Mapped on: Tue Sep 23 10:33:54 2025
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
 Command line:   map -pdc
-     C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
+     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
      e155_lab3_impl_1_syn.udb -o e155_lab3_impl_1_map.udb -mp
      e155_lab3_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml
+     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:   4 out of  5280 (&lt;1%)
+   Number of slice registers:   0 out of  5280 (0%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           125 out of  5280 (2%)
+   Number of LUT4s:           121 out of  5280 (2%)
       Number of logic LUT4s:              91
-      Number of replicated LUT4s:          4
       Number of ripple logic:             15 (30 LUT4s)
    Number of IO sites used:   26 out of 39 (67%)
       Number of IO sites used for general PIO: 26
@@ -88,22 +87,20 @@ Command line:   map -pdc
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  1
-      Net gate1_c: 4 loads, 0 rising, 4 falling (Driver: Pin
-     one_khz_clock.i2326_2_lut/Z)
+   Number of Clocks:  0
    Number of Clock Enables:  0
    Number of LSRs:  0
    Top 10 highest fanout non-clock nets:
-      Net reset_c: 49 loads
-      Net cdebounced[3]: 18 loads
-      Net cdebounced[1]: 13 loads
-      Net cdebounced[2]: 12 loads
-      Net current_state[1]: 10 loads
-      Net cdebounced[0]: 9 loads
-      Net current_state[0]: 9 loads
+      Net reset_c: 38 loads
+      Net cdebounced[3]: 17 loads
+      Net cdebounced[1]: 15 loads
+      Net cdebounced[2]: 14 loads
+      Net current_state[1]: 14 loads
+      Net current_state[0]: 13 loads
       Net gate2_pad.vcc: 9 loads
-      Net read_write.d1_c_0_N_55: 8 loads
-      Net display_outputs.sev_seg_in[2]: 7 loads
+      Net cdebounced[0]: 8 loads
+      Net read_write.d1_c_0_N_47: 8 loads
+      Net sev_seg_in[1]: 7 loads
 
    Number of warnings:  0
    Number of criticals: 0
@@ -189,7 +186,7 @@ Block reset_pad.vlo_inst was optimized away.
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: 52835a11bd4eb11744a4a6114c3e537f7ffd323
+Checksum -- map: 1eb02e90619ae284de7bf980d4e69fdda95f320
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

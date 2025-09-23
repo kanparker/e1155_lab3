@@ -10,14 +10,12 @@ module row_sweep(
 	
 	always_ff@(posedge clk, reset)
 		if(reset) begin
-			current_state <= 2'b00;			end
-		else if(stop)
+			current_state <= 2'b11;			end
+		else
 			begin
-				current_state <= current_state + 2'b01;
+				current_state <= current_state + stop;
 			end
-		else begin
-			current_state <= current_state;
-		end
+		
 	always_comb
 		begin
 			case(current_state)

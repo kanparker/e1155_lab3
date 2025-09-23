@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2024.2.0.3.0
 
-Sun Sep 21 21:31:26 2025
+Tue Sep 23 10:34:04 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -8,7 +8,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt e155_lab3_impl_1.twr e155_lab3_impl_1.udb -gui -msgset C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt e155_lab3_impl_1.twr e155_lab3_impl_1.udb -gui -msgset C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml
 
 -----------------------------------------
 Design:          top
@@ -109,16 +109,9 @@ Number of I/O ports without constraint  |                        26
 
 Nets without clock definition
 Define a clock on a top level port or a generated clock on a clock divider pin associated with this net(s).
--------------------------------------------------------------------
-            Listing 1 Net(s)            |        Source pin        
--------------------------------------------------------------------
-gate1_c                                 |one_khz_clock/i2326_2_lut/Z
--------------------------------------------------------------------
-                                        |                          
-Number of clock nets without clock defi |                          
-nition                                  |                         1
-                                        |                          
--------------------------------------------------------------------
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
 
 
 1.5  Combinational Loop
@@ -126,163 +119,139 @@ nition                                  |                         1
 Combinational Loops
 -------------------
 ++++ Loop1
-read_write/i1728_3_lut/A	->	read_write/i1728_3_lut/Z
+read_write/i1953_4_lut/A	->	read_write/i1953_4_lut/Z
 
 ++++ Loop2
-read_write/i1720_3_lut/A	->	read_write/i1720_3_lut/Z
+read_write/i1947_3_lut/A	->	read_write/i1947_3_lut/Z
 
 ++++ Loop3
-read_write/i1708_3_lut/A	->	read_write/i1708_3_lut/Z
+read_write/i1943_3_lut/A	->	read_write/i1943_3_lut/Z
 
 ++++ Loop4
-read_write/i1696_3_lut/A	->	read_write/i1696_3_lut/Z
+read_write/i1941_3_lut/A	->	read_write/i1941_3_lut/Z
 
 ++++ Loop5
-read_write/i1726_3_lut/A	->	read_write/i1726_3_lut/Z
+read_write/i2119_3_lut/A	->	read_write/i2119_3_lut/Z
 
 ++++ Loop6
-read_write/i1718_3_lut/A	->	read_write/i1718_3_lut/Z
+read_write/i2095_3_lut/A	->	read_write/i2095_3_lut/Z
 
 ++++ Loop7
-read_write/i1724_3_lut/A	->	read_write/i1724_3_lut/Z
+row_sweeper/i2426_4_lut/C	->	row_sweeper/i2426_4_lut/Z
 
 ++++ Loop8
-read_write/i1716_3_lut/A	->	read_write/i1716_3_lut/Z
+read_write/i2113_3_lut/A	->	read_write/i2113_3_lut/Z
 
 ++++ Loop9
-read_write/i20_4_lut_4_lut/D	->	read_write/i20_4_lut_4_lut/Z
+read_write/i1955_3_lut/A	->	read_write/i1955_3_lut/Z
 
 ++++ Loop10
-read_write/i20_4_lut_4_lut/A	->	read_write/i20_4_lut_4_lut/Z
+i2_4_lut/C	->	i2_4_lut/Z
 
 ++++ Loop11
-read_write/i1706_4_lut_4_lut_4_lut/A	->	read_write/i1706_4_lut_4_lut_4_lut/Z
+i1_4_lut_adj_35/Z	->	i2_4_lut/Z
 
 ++++ Loop12
-debounce3/i1704_4_lut/A	->	debounce3/i1704_4_lut/Z
+i1_4_lut_adj_35/A	->	i1_4_lut_adj_35/Z
 
 ++++ Loop13
-debounce3/i1704_4_lut/B	->	debounce3/i1704_4_lut/Z
+i1_4_lut/Z	->	i1_2_lut_3_lut/Z
 
 ++++ Loop14
-read_write/i16_4_lut/A	->	read_write/i16_4_lut/Z
+i1_4_lut/Z	->	i2479_2_lut_3_lut/Z
 
 ++++ Loop15
-read_write/i1710_3_lut/A	->	read_write/i1710_3_lut/Z
+i1_4_lut/B	->	i1_4_lut/Z
 
 ++++ Loop16
-read_write/i1730_3_lut/A	->	read_write/i1730_3_lut/Z
+i1_4_lut_adj_36/C	->	i1_4_lut_adj_36/Z
 
 ++++ Loop17
-read_write/i1734_3_lut/A	->	read_write/i1734_3_lut/Z
+i1_3_lut/Z	->	i2_4_lut/Z
 
 ++++ Loop18
-i2_4_lut/A	->	i2_4_lut/Z
+one_khz_clock/add_315_add_5_29/S0	->	one_khz_clock/i2427_2_lut/Z
 
 ++++ Loop19
-debounce0/i1698_4_lut/B	->	debounce0/i1698_4_lut/Z
+one_khz_clock/add_315_add_5_19/S0	->	one_khz_clock/i2440_2_lut/Z
 
 ++++ Loop20
-debounce1/i1700_4_lut/B	->	debounce1/i1700_4_lut/Z
+one_khz_clock/add_315_add_5_19/B1	->	one_khz_clock/add_315_add_5_19/S1
 
 ++++ Loop21
-debounce1/i1700_4_lut/Z	->	synchc0/i3_4_lut/Z
+one_khz_clock/add_315_add_5_21/B1	->	one_khz_clock/add_315_add_5_21/S1
 
 ++++ Loop22
-debounce1/i1700_4_lut/Z	->	filter_enabler.i2295_2_lut/Z
+one_khz_clock/add_315_add_5_23/B1	->	one_khz_clock/add_315_add_5_23/S1
 
 ++++ Loop23
-row_sweeper/i1_3_lut/C	->	row_sweeper/i1_3_lut/Z
+one_khz_clock/add_315_add_5_25/B1	->	one_khz_clock/add_315_add_5_25/S1
 
 ++++ Loop24
-row_sweeper/i1712_4_lut/A	->	row_sweeper/i1712_4_lut/Z
+one_khz_clock/add_315_add_5_27/B1	->	one_khz_clock/add_315_add_5_27/S1
 
 ++++ Loop25
-debounce2/i1702_4_lut/B	->	debounce2/i1702_4_lut/Z
+one_khz_clock/add_315_add_5_27/B0	->	one_khz_clock/add_315_add_5_27/S0
 
 ++++ Loop26
-one_khz_clock/i2326_2_lut/A	->	one_khz_clock/i2326_2_lut/Z
+one_khz_clock/add_315_add_5_25/B0	->	one_khz_clock/add_315_add_5_25/S0
 
 ++++ Loop27
-one_khz_clock/add_409_add_5_27/S0	->	one_khz_clock/i2328_2_lut/Z
+one_khz_clock/add_315_add_5_23/B0	->	one_khz_clock/add_315_add_5_23/S0
 
 ++++ Loop28
-one_khz_clock/add_409_add_5_27/B1	->	one_khz_clock/add_409_add_5_27/S1
+one_khz_clock/add_315_add_5_21/B0	->	one_khz_clock/add_315_add_5_21/S0
 
 ++++ Loop29
-one_khz_clock/add_409_add_5_1/S1	->	one_khz_clock/i2355_2_lut/Z
+one_khz_clock/add_315_add_5_3/S0	->	one_khz_clock/i2463_2_lut/Z
 
 ++++ Loop30
-one_khz_clock/add_409_add_5_3/B1	->	one_khz_clock/add_409_add_5_3/S1
+one_khz_clock/add_315_add_5_3/B1	->	one_khz_clock/add_315_add_5_3/S1
 
 ++++ Loop31
-one_khz_clock/add_409_add_5_5/B1	->	one_khz_clock/add_409_add_5_5/S1
+one_khz_clock/add_315_add_5_5/B1	->	one_khz_clock/add_315_add_5_5/S1
 
 ++++ Loop32
-one_khz_clock/add_409_add_5_7/B1	->	one_khz_clock/add_409_add_5_7/S1
+one_khz_clock/add_315_add_5_7/B1	->	one_khz_clock/add_315_add_5_7/S1
 
 ++++ Loop33
-one_khz_clock/add_409_add_5_9/B1	->	one_khz_clock/add_409_add_5_9/S1
+one_khz_clock/add_315_add_5_9/B1	->	one_khz_clock/add_315_add_5_9/S1
 
 ++++ Loop34
-one_khz_clock/add_409_add_5_11/B1	->	one_khz_clock/add_409_add_5_11/S1
+one_khz_clock/add_315_add_5_11/B1	->	one_khz_clock/add_315_add_5_11/S1
 
 ++++ Loop35
-one_khz_clock/add_409_add_5_13/B1	->	one_khz_clock/add_409_add_5_13/S1
+one_khz_clock/add_315_add_5_13/B1	->	one_khz_clock/add_315_add_5_13/S1
 
 ++++ Loop36
-one_khz_clock/add_409_add_5_15/B1	->	one_khz_clock/add_409_add_5_15/S1
+one_khz_clock/add_315_add_5_15/B1	->	one_khz_clock/add_315_add_5_15/S1
 
 ++++ Loop37
-one_khz_clock/add_409_add_5_17/B1	->	one_khz_clock/add_409_add_5_17/S1
+one_khz_clock/add_315_add_5_17/B1	->	one_khz_clock/add_315_add_5_17/S1
 
 ++++ Loop38
-one_khz_clock/add_409_add_5_19/B1	->	one_khz_clock/add_409_add_5_19/S1
+one_khz_clock/add_315_add_5_17/B0	->	one_khz_clock/add_315_add_5_17/S0
 
 ++++ Loop39
-one_khz_clock/add_409_add_5_21/B1	->	one_khz_clock/add_409_add_5_21/S1
+one_khz_clock/add_315_add_5_15/B0	->	one_khz_clock/add_315_add_5_15/S0
 
 ++++ Loop40
-one_khz_clock/add_409_add_5_23/B1	->	one_khz_clock/add_409_add_5_23/S1
+one_khz_clock/add_315_add_5_13/B0	->	one_khz_clock/add_315_add_5_13/S0
 
 ++++ Loop41
-one_khz_clock/add_409_add_5_25/B1	->	one_khz_clock/add_409_add_5_25/S1
+one_khz_clock/add_315_add_5_11/B0	->	one_khz_clock/add_315_add_5_11/S0
 
 ++++ Loop42
-one_khz_clock/add_409_add_5_25/B0	->	one_khz_clock/add_409_add_5_25/S0
+one_khz_clock/add_315_add_5_9/B0	->	one_khz_clock/add_315_add_5_9/S0
 
 ++++ Loop43
-one_khz_clock/add_409_add_5_23/B0	->	one_khz_clock/add_409_add_5_23/S0
+one_khz_clock/add_315_add_5_7/B0	->	one_khz_clock/add_315_add_5_7/S0
 
 ++++ Loop44
-one_khz_clock/add_409_add_5_21/B0	->	one_khz_clock/add_409_add_5_21/S0
+one_khz_clock/add_315_add_5_5/B0	->	one_khz_clock/add_315_add_5_5/S0
 
 ++++ Loop45
-one_khz_clock/add_409_add_5_19/B0	->	one_khz_clock/add_409_add_5_19/S0
-
-++++ Loop46
-one_khz_clock/add_409_add_5_17/B0	->	one_khz_clock/add_409_add_5_17/S0
-
-++++ Loop47
-one_khz_clock/add_409_add_5_15/B0	->	one_khz_clock/add_409_add_5_15/S0
-
-++++ Loop48
-one_khz_clock/add_409_add_5_13/B0	->	one_khz_clock/add_409_add_5_13/S0
-
-++++ Loop49
-one_khz_clock/add_409_add_5_11/B0	->	one_khz_clock/add_409_add_5_11/S0
-
-++++ Loop50
-one_khz_clock/add_409_add_5_9/B0	->	one_khz_clock/add_409_add_5_9/S0
-
-++++ Loop51
-one_khz_clock/add_409_add_5_7/B0	->	one_khz_clock/add_409_add_5_7/S0
-
-++++ Loop52
-one_khz_clock/add_409_add_5_5/B0	->	one_khz_clock/add_409_add_5_5/S0
-
-++++ Loop53
-one_khz_clock/add_409_add_5_3/B0	->	one_khz_clock/add_409_add_5_3/S0
+one_khz_clock/add_315_add_5_1/S1	->	one_khz_clock/i2464_2_lut/Z
 
 ===============================================================
 2  Setup at Speed Grade High-Performance_1.2V Corner at 100 Degrees

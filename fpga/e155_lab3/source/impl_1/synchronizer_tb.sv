@@ -5,10 +5,10 @@ module synchronizer_tb();
 	logic clk, reset;
 	logic [31:0] vectornum,errors;
 	logic [2:0] testvectors[10000:0];
-	logic cin, cout, stop, cout_expected;
+	logic cin, cout, clamp, cout_expected;
 	
 	// instantiate device under test
-	synchronizer dut(cin,clk,reset,stop,cout);
+	synchronizer dut(cin,clk,reset,clamp,cout);
 	
 	// at start of test, load vectors and pulse reset
 	initial
@@ -26,7 +26,7 @@ module synchronizer_tb();
 		// apply test vectors on rising edge of clk
 	always @(posedge clk)
 		begin
-			#1; {cin,cout_expected,stop} = testvectors[vectornum];
+			#1; {cin,cout_expected,clamp} = testvectors[vectornum];
 			
 		end
 
@@ -34,7 +34,7 @@ module synchronizer_tb();
 	always @(negedge clk)
 		if (~reset) begin // skip during reset
 			if(cout !=cout_expected) begin
-					$display("Error: inputs = %b", {stop});
+					$display("Error: inputs = %b", {clamp});
 					$display(" outputs = %b (%b expected)", cout, cout_expected);
 					errors = errors + 1;
 				end;

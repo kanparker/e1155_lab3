@@ -16,16 +16,11 @@ module read_writer(
 			end
 		else begin
 			current_state<=next_state;
-			if(current_state == update) begin
-				control_2<=control_1;
-				control_1<=new_control;
-				end
 			end
 	
 	always_comb
 		begin
 			cstatus = |columns;
-			
 			case(rows)
 				4'b0001: begin
 						case(columns)
@@ -33,6 +28,7 @@ module read_writer(
 							4'b0010: new_control = 4'b0000;
 							4'b0100: new_control = 4'b1011;
 							4'b1000: new_control = 4'b1111;
+							default: new_control = 4'b0000;
 						endcase
 					end
 				4'b0010: begin
@@ -41,6 +37,7 @@ module read_writer(
 							4'b0010: new_control = 4'b1000;
 							4'b0100: new_control = 4'b1001; 
 							4'b1000: new_control = 4'b1110;
+							default: new_control = 4'b0000;
 						endcase
 					end
 				4'b0100: begin
@@ -49,6 +46,7 @@ module read_writer(
 							4'b0010: new_control = 4'b0101;
 							4'b0100: new_control = 4'b0110;
 							4'b1000: new_control = 4'b1101;
+							default: new_control = 4'b0000;
 						endcase
 					end
 				4'b1000:begin
@@ -57,8 +55,10 @@ module read_writer(
 							4'b0010: new_control = 4'b0010;
 							4'b0100: new_control = 4'b0011;
 							4'b1000: new_control = 4'b1100;
+							default: new_control = 4'b0000;
 						endcase
 					end
+				default: new_control =4'b0000;
 			
 			endcase
 			end
@@ -73,6 +73,8 @@ module read_writer(
 					end
 				
 				update: begin
+					control_2 = control_1;
+					control_1 = new_control;
 					next_state = hold;
 					end
 					
@@ -80,9 +82,10 @@ module read_writer(
 					if(cstatus) next_state = hold;
 					else next_state = idle;
 					end
+				default: next_state = idle;
 			endcase
-			
-			
-		end
+		
+			end
+		
 		
 endmodule
