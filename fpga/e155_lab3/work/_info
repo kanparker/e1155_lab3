@@ -39,6 +39,8 @@ R0
 R1
 R0
 R1
+R0
+R1
 Z2 !s12c _opt1
 R1
 R2
@@ -303,10 +305,10 @@ n@_opt2
 R12
 R5
 T_opt3
-!s110 1758658395
-V@WD1a:Q>M9U:6N`d]mI<h3
+!s110 1758663465
+VDOc82XXOSDD42[=:9[h0[0
 R13
-=13-00be43e571e5-68d2ff5b-1b5-5b9c
+=14-00be43e571e5-68d31329-324-5b9c
 R1
 !s12f OEM25U18 
 R7
@@ -319,7 +321,7 @@ R12
 vclk_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
 Z14 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z15 !s110 1758658389
+Z15 !s110 1758663456
 !i10b 1
 !s100 QZAX;K3M12eZT`aiknOmd2
 I2^1m1I@EgljRVTHW<XKR43
@@ -328,14 +330,14 @@ Z16 dC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3
 Z17 w1758645236
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
-!i122 1118
+!i122 1135
 Z18 L0 6 26
 Z19 VDg1SIo80bB@j0V0VzS_@n1
 Z20 OL;L;2024.2;79
 r1
 !s85 0
 31
-Z21 !s108 1758658389.000000
+Z21 !s108 1758663456.000000
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv|
 !i113 0
@@ -346,15 +348,15 @@ vclock_divider
 R14
 R15
 !i10b 1
-!s100 Rii6Mkn6J4lWQ>@F8E@Rh3
-IOoo_Az:b0m6lhl8;S19n41
+!s100 M]_F[M2zg3zW0S=ZU;dbM1
+I>:>eS2>66[H]_3BBhE>zi0
 S1
 R16
-R17
+Z23 w1758663307
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
-!i122 1119
-Z23 L0 1 27
+!i122 1136
+Z24 L0 1 27
 R19
 R20
 r1
@@ -378,7 +380,7 @@ R16
 w1758647732
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce.sv
-!i122 1120
+!i122 1137
 L0 1 45
 R19
 R20
@@ -403,7 +405,7 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/debounce_tb.sv
-!i122 1121
+!i122 1138
 L0 4 43
 R19
 R20
@@ -419,7 +421,7 @@ R11
 vdisplay_driver
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv
 R14
-R15
+Z25 !s110 1758663457
 !i10b 1
 !s100 91<@@X;hQf5]THPbn<cOe3
 IbB;R_D^hLK8>bbm82Bh@b0
@@ -428,7 +430,7 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/display_driver.sv
-!i122 1122
+!i122 1139
 L0 1 39
 R19
 R20
@@ -444,7 +446,7 @@ R11
 vHSOC
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
 R14
-R15
+R25
 !i10b 1
 !s100 nCIziQ9fL0h5kYEOIE87:1
 I]<e3?PFk1V@RHjXKnhHCO2
@@ -453,14 +455,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv
-!i122 1123
+!i122 1140
 L0 1 15
 R19
 R20
 r1
 !s85 0
 31
-R21
+Z26 !s108 1758663457.000000
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/HSOC.sv|
 !i113 0
@@ -470,7 +472,7 @@ n@h@s@o@c
 vlab3_top_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv
 R14
-R15
+R25
 !i10b 1
 !s100 =1W8WWJNh?>cM;FdEc3ld2
 I<]5HB4f2lM;2`7ML]f5GR1
@@ -479,14 +481,14 @@ R16
 w1758658385
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv
-!i122 1124
+!i122 1141
 L0 1 179
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/lab3_top_tb.sv|
 !i113 0
@@ -495,23 +497,23 @@ R11
 vread_writer
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
 R14
-R15
+R25
 !i10b 1
-!s100 IU^o0RV7LV7TV[;nT>>BQ3
-IfBCi4:_S0mfc9XZaPEjVB1
+!s100 KYjVB:5^`fPBT_CN:YKPG3
+ImcbO7Cn4dAJoGOAka7T?k3
 S1
 R16
-w1758648821
+R23
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv
-!i122 1125
-L0 1 91
+!i122 1142
+L0 1 103
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer.sv|
 !i113 0
@@ -520,7 +522,7 @@ R11
 vread_writer_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer_tb.sv
 R14
-R15
+R25
 !i10b 1
 !s100 :ibVCUGRiJ07Vh`UWbYKf1
 Io^^?P8m0CG:8N;:A4:gkB1
@@ -529,14 +531,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer_tb.sv
-!i122 1126
+!i122 1143
 L0 4 61
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/read_writer_tb.sv|
 !i113 0
@@ -545,23 +547,23 @@ R11
 vrow_sweep
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
 R14
-R15
+R25
 !i10b 1
-!s100 GPoG:Zi@UF1Ul:Rg^o:PD2
-I2KON[DG3[ZUjfmXz7>FN=3
+!s100 DZ:0QcKaHJDHaOBjYi^^M2
+ITn[0UaE;X8gal:;Df]cn20
 S1
 R16
-w1758649600
+R23
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv
-!i122 1127
+!i122 1144
 L0 1 31
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep.sv|
 !i113 0
@@ -570,7 +572,7 @@ R11
 vrow_sweep_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
 R14
-R15
+R25
 !i10b 1
 !s100 HH=n`8B=`75D@5m6zhKL01
 IZff=C;h@KXP=;3^<`GPdG2
@@ -579,14 +581,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv
-!i122 1128
+!i122 1145
 L0 4 56
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/row_sweep_tb.sv|
 !i113 0
@@ -595,7 +597,7 @@ R11
 vseven_seg_display
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv
 R14
-R15
+R25
 !i10b 1
 !s100 `cGD2II]@QG9E@bL8Pg]V1
 I::[J0Z1G2HQR7e^32zd;X2
@@ -604,14 +606,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv
-!i122 1129
+!i122 1146
 L0 8 63
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/seven_seg_dsiplay.sv|
 !i113 0
@@ -620,7 +622,7 @@ R11
 vstop_clamp
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 R14
-R15
+R25
 !i10b 1
 !s100 =8EYTkWU59gz_ZLi^?50[2
 IW:2]>lOi^;>fQdQgQCVYH0
@@ -629,14 +631,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv
-!i122 1130
+!i122 1147
 L0 1 99
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp.sv|
 !i113 0
@@ -645,7 +647,7 @@ R11
 vstop_clamp_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
 R14
-R15
+R25
 !i10b 1
 !s100 >Im4EME7zN[@2nYL?k^D=2
 I20:eN7G8Rk_2DGAf_e1XY0
@@ -654,14 +656,14 @@ R16
 R17
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv
-!i122 1131
+!i122 1148
 L0 4 67
 R19
 R20
 r1
 !s85 0
 31
-R21
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/stop_clamp_tb.sv|
 !i113 0
@@ -670,7 +672,7 @@ R11
 vsynchronizer
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
 R14
-Z24 !s110 1758658390
+R25
 !i10b 1
 !s100 ce_nJGBAn[^2gTRO9Ubfn1
 IFdPMVX:jWC4:bOZFQ<[EL0
@@ -679,14 +681,14 @@ R16
 w1758646332
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv
-!i122 1132
+!i122 1149
 L0 1 23
 R19
 R20
 r1
 !s85 0
 31
-Z25 !s108 1758658390.000000
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer.sv|
 !i113 0
@@ -695,7 +697,7 @@ R11
 vsynchronizer_tb
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
 R14
-R24
+R25
 !i10b 1
 !s100 ]K;ifDkXNIzY>iiBZSbY<2
 IZ]1I@H4=iLO20B0zk=cT=1
@@ -704,14 +706,14 @@ R16
 w1758646889
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv
-!i122 1133
+!i122 1150
 L0 4 55
 R19
 R20
 r1
 !s85 0
 31
-R25
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/synchronizer_tb.sv|
 !i113 0
@@ -745,7 +747,7 @@ R11
 vtestbench_seven
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv
 R14
-Z26 !s110 1757814891
+Z27 !s110 1757814891
 !i10b 1
 !s100 dUZ:YJQ64IoQ;RJC;fSTK3
 IZKl=W7b4lDKbLFe5?iNcW0
@@ -761,7 +763,7 @@ R20
 r1
 !s85 0
 31
-Z27 !s108 1757814891.000000
+Z28 !s108 1757814891.000000
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clk_tb.sv|
 !i113 0
@@ -770,7 +772,7 @@ R11
 vthree_led
 2C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 R14
-R26
+R27
 !i10b 1
 !s100 d_Y?k42LcoVN5HS>JZX7K1
 IAkCA_mS:cFaFTPKiF_[b51
@@ -780,13 +782,13 @@ w1757814420
 8C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 FC:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv
 !i122 11
-R23
+R24
 R19
 R20
 r1
 !s85 0
 31
-R27
+R28
 !s107 C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Downloads/e1155_lab3/fpga/e155_lab3/source/impl_1/clock_divider.sv|
 !i113 0
@@ -795,7 +797,7 @@ R11
 vtop
 2C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv
 R14
-R24
+R25
 !i10b 1
 !s100 >UDMLK=f19EeJR8bR@Y^Y2
 IS94iA]Da8QVAiP`aN0o<a0
@@ -804,14 +806,14 @@ R16
 w1758657654
 8C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv
 FC:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv
-!i122 1134
+!i122 1151
 L0 1 61
 R19
 R20
 r1
 !s85 0
 31
-R25
+R26
 !s107 C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/source/impl_1/top.sv|
 !i113 0

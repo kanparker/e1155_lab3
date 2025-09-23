@@ -4,13 +4,13 @@
 set ret 0
 if {[catch {
 
-if {![file exists {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1}]} {
-  file mkdir {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1}
+if {![file exists {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1}]} {
+  file mkdir {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1}
 }
-cd {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1}
+cd {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1}
 
-sys_set_attribute -gui on -msg {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml}
-msg_load {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml}
+sys_set_attribute -gui on -msg {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml}
+msg_load {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml}
 des_set_project_udb -in {e155_lab3_impl_1_map.udb} -out {e155_lab3_impl_1.udb} -milestone par -pm ice40tp
 des_set_reference_udb -clean
 # par option
@@ -18,13 +18,13 @@ par_set_option { disable_timing_driven false placement_iterations 1 placement_it
 # run place & route
 par_run
 # backup netlist & constraint file
-if {[file exists {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_syn.udb}] && [file exists {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_map.udb}] && [file exists {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1.udb}]} {
-  file delete -force {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1_syn.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1_map.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/lastrun.pdc}
-  file copy -force -- {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_syn.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/postsyn.udb}
-  file copy -force -- {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_map.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/postmap.udb}
-  file copy -force -- {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1.udb} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/postpar.udb}
-  if [file exists {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc}] {
-    file copy -force -- {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc} {C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/impl_1/incr/lastrun.pdc}
+if {[file exists {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_syn.udb}] && [file exists {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_map.udb}] && [file exists {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1.udb}]} {
+  file delete -force {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1_syn.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1_map.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/e155_lab3_impl_1.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/lastrun.pdc}
+  file copy -force -- {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_syn.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/postsyn.udb}
+  file copy -force -- {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1_map.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/postmap.udb}
+  file copy -force -- {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/e155_lab3_impl_1.udb} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/postpar.udb}
+  if [file exists {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc}] {
+    file copy -force -- {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc} {C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/impl_1/incr/lastrun.pdc}
   }
 }
 

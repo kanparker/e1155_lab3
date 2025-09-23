@@ -7,17 +7,17 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2025.1.0.39.0
-Mapped on: Tue Sep 23 14:24:15 2025
+Mapper:    version Radiant Software (64-bit) 2024.2.0.3.0
+Mapped on: Tue Sep 23 14:35:55 2025
 
 Design Information
 ------------------
 
 Command line:   map -pdc
-     C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
+     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/e155_lab3.pdc -i
      e155_lab3_impl_1_syn.udb -o e155_lab3_impl_1_map.udb -mp
      e155_lab3_impl_1.mrp -hierrpt -gui -msgset
-     C:/Users/kanoa/Downloads/e1155_lab3/fpga/e155_lab3/promote.xml
+     C:/Users/kanparker/Documents/e1155_lab3/fpga/e155_lab3/promote.xml
 
 Design Summary
 --------------
@@ -171,8 +171,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 68 MB
-Checksum -- map: 8db010ea7b00b973e7eb367a79298755117760bb
+   Peak Memory Usage: 67 MB
+Checksum -- map: 61ffced6895e017f90fa0c9c680a7f84e76f13f
 
 
 
@@ -204,5 +204,5 @@ Copyright (c) 1995-2001 Lucent
      Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems
      All rights reserved.
-Copyright (c) 2002-2025 Lattice Semiconductor
+Copyright (c) 2002-2024 Lattice Semiconductor
      Corporation,  All rights reserved.
